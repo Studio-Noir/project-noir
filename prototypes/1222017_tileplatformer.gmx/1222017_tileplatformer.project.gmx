@@ -12,6 +12,13 @@
     <sprite>sprites\fall_left</sprite>
     <sprite>sprites\jump_left</sprite>
     <sprite>sprites\jump_right</sprite>
+    <sprites name="enemy">
+      <sprite>sprites\enemy1</sprite>
+      <sprite>sprites\enemy2</sprite>
+    </sprites>
+    <sprites name="block">
+      <sprite>sprites\invisible_block</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -38,6 +45,13 @@
     <object>objects\player</object>
     <object>objects\baddie</object>
     <object>objects\minime</object>
+    <objects name="enemy">
+      <object>objects\obj_enemy1</object>
+      <object>objects\obj_ememy2</object>
+    </objects>
+    <objects name="block">
+      <object>objects\obj_invisible_block</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
