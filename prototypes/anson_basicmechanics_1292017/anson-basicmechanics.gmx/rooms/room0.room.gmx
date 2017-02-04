@@ -51,10 +51,6 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="&lt;undefined&gt;" x="32" y="32" name="inst_2B3F7976" locked="0" code="path_start(path0,1,1,false);" scaleX="1" scaleY="1" colour="4294901760" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="608" y="64" name="inst_37D7F2FE" locked="0" code="path_start(path1,1,1,false);" scaleX="1" scaleY="1" colour="4294967040" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="512" y="192" name="inst_0FA1FBCF" locked="0" code="path_start(path2,1,1,false);" scaleX="1" scaleY="1" colour="4278255424" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="64" y="192" name="inst_B289C28A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_char" x="160" y="736" name="inst_C217F8CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="32" y="800" name="inst_F1EBB9BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="96" y="800" name="inst_0DDFCE3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -590,6 +586,10 @@
     <instance objName="obj_ground" x="3264" y="704" name="inst_F097FDC5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="3264" y="672" name="inst_5E7ABC7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="3200" y="768" name="inst_EE42FF4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_orb00" x="192" y="736" name="inst_51EDB313" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy2" x="288" y="704" name="inst_B68D458E" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground" x="512" y="768" name="inst_DC1B2670" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="pbj_enemy1" x="992" y="736" name="inst_288116C4" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

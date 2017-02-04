@@ -18,6 +18,18 @@
     <sprite>sprites\spr_block</sprite>
     <sprite>sprites\spr_char_push</sprite>
     <sprite>sprites\sprite13</sprite>
+    <sprites name="Enemy(Dover)">
+      <sprites name="enemies">
+        <sprite>sprites\spr_enemy1</sprite>
+        <sprite>sprites\spr_enemy2</sprite>
+        <sprite>sprites\spr_enemy1_stun</sprite>
+        <sprite>sprites\spr_enemy2_stun</sprite>
+      </sprites>
+      <sprites name="others">
+        <sprite>sprites\spr_orb00</sprite>
+        <sprite>sprites\spr_inv_block</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_rocks</background>
@@ -41,6 +53,16 @@
     <object>objects\obj_block</object>
     <object>objects\par_block</object>
     <object>objects\obj_parallax</object>
+    <objects name="Enemy(Dover)">
+      <objects name="enemies">
+        <object>objects\pbj_enemy1</object>
+        <object>objects\obj_enemy2</object>
+      </objects>
+      <objects name="others">
+        <object>objects\obj_orb00</object>
+        <object>objects\obj_inv_block</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
