@@ -590,6 +590,9 @@
     <instance objName="obj_enemy2" x="288" y="704" name="inst_B68D458E" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="512" y="768" name="inst_DC1B2670" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="pbj_enemy1" x="992" y="736" name="inst_288116C4" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_orb00" x="928" y="768" name="inst_80D71F21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_orb00" x="1184" y="768" name="inst_F80ACF3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_orb00" x="384" y="736" name="inst_877DEB63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
