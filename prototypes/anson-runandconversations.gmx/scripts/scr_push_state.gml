@@ -7,7 +7,7 @@ key_jump = keyboard_check_pressed(vk_space);
 
 if (block && (movement != 0) && !key_jump) {
     image_xscale = -movement;
-    if (place_meeting(x + (speed_move * movement), y, par_block) && place_meeting(x, y + 1, obj_ground)) {
+    if (place_meeting(x + (speed_move * movement), y, par_block) && place_meeting(x, y + 20, obj_ground)) {
         speed_horizontal = speed_move / 2 * movement;
         var itm_block = instance_place(x + (speed_move * movement), y, par_block);
         with (itm_block) {

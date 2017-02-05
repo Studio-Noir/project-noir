@@ -93,7 +93,7 @@ if (key_up || key_down) {
 */
 
 is_climb = false;
-if (place_meeting(x+speed_horizontal, y, obj_ground)) {
+if (place_meeting(x+speed_horizontal, y, obj_ground) || place_meeting(x+speed_horizontal, y - 10, par_block)) {
     y_iter = 0;
     while (place_meeting(x+speed_horizontal, y-y_iter, obj_ground) && y_iter <= abs(3 * speed_horizontal)) { // Walking on hill
         y_iter += 1;
