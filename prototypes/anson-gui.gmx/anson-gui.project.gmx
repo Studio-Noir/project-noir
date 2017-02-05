@@ -21,6 +21,10 @@
     <sprite>sprites\spr_orbcount</sprite>
     <sprite>sprites\spr_dropball</sprite>
     <sprite>sprites\spr_lobball</sprite>
+    <sprite>sprites\spr_clear</sprite>
+    <sprite>sprites\spr_orb</sprite>
+    <sprite>sprites\spr_orbcount_max</sprite>
+    <sprite>sprites\spr_orbcount_ready</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_rocks</background>
@@ -47,6 +51,7 @@
     <objects name="Controllers">
       <object>objects\cont_main</object>
     </objects>
+    <object>objects\obj_orb</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

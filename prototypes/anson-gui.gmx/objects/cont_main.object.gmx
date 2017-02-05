@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>global.ORBCOUNT_TOTAL = 5;
+global.ORBCOUNT_CURRENT = 5;
+</string>
           </argument>
         </arguments>
       </action>
@@ -48,10 +50,13 @@
           <argument>
             <kind>1</kind>
             <string>/// Draw UI
+draw_sprite_ext(spr_orbcount_max, 10, view_wview-150, 110, 1, global.ORBCOUNT_TOTAL / 20, 0, c_white, 1);
+draw_sprite_ext(spr_orbcount_ready, 10, view_wview-150, 110, 1, global.ORBCOUNT_CURRENT / 20, 0, c_white, 1);
 
-draw_sprite(spr_orbcount, 0, view_wview - 120, 170);
+draw_sprite(spr_orbcount, 1000, view_wview - 150, 170);
 draw_sprite(spr_dropball, 0, 50, view_hview - 60);
-draw_sprite(spr_lobball, 0, 120, view_hview - 60);
+draw_sprite(spr_lobball, 0, 100, view_hview - 60);
+draw_sprite(spr_clear, 0, 150, view_hview - 60);
 </string>
           </argument>
         </arguments>

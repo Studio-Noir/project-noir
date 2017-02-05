@@ -7,6 +7,14 @@ if (keyboard_check(ord('A'))) {
     exit;
 }
 
+/// Setup dropping orb 
+/// FIXME: Implementation currently isn't there. This simply shows off the GUI
+if (keyboard_check_pressed(ord('1')) || keyboard_check_pressed(ord('2'))) {
+    if (global.ORBCOUNT_CURRENT > 0) {
+        global.ORBCOUNT_CURRENT--;
+    }    
+}
+
 /// Read movement keys
 
 /* 
@@ -53,6 +61,18 @@ if (move != 0 && place_meeting(x, y + 1, obj_ground)) {
         state = scr_push_state;
         exit;
     }
+}
+
+/*
+    Orb Interaction
+*/
+if (place_meeting(x, y + 1, obj_orb)) {
+    var itm_orb = instance_place(x, y + 1, obj_orb);
+    with (itm_orb) {
+        instance_destroy();
+    }
+    global.ORBCOUNT_TOTAL++;
+    global.ORBCOUNT_CURRENT++;
 }
 
 /* 
