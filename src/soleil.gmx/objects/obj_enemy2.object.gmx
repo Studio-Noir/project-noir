@@ -101,7 +101,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>200</string>
           </argument>
         </arguments>
       </action>
@@ -148,11 +148,12 @@
           <argument>
             <kind>1</kind>
             <string>///Initialize move
-x_distance = 124
+x_distance = 200
 y_distance = 36
 
 //check collision
-if place_free(self.x+h_speed,self.y) and place_free(self.x+h_speed,self.y){
+dir = sign(obj_char.x - x) // + = right; - = left 
+if place_free(self.x+dir*h_speed,self.y){
     stop = 0
 }else{
     stop = 1
@@ -235,7 +236,7 @@ if stun == 0 and stop == 0{
             <string>///change image; speed; refresh
 sprite_index = spr_enemy2_stun
 if (stun_time&gt;=0){
-    stun_time -= level*10
+    stun_time -= level
 }else{
     stun = 0
     sprite_index = spr_enemy2

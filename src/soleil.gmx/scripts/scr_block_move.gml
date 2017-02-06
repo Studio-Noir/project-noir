@@ -7,6 +7,8 @@ if (place_meeting(x+speed_horizontal, y, obj_ground)) { // We've hit a wall, don
     }
     speed_horizontal = 0;
 }
+// cannot move if collision with enemies (Dover)
 
 x += speed_horizontal;
+
 return speed_horizontal;

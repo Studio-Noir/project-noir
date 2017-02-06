@@ -77,7 +77,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>1.5</string>
           </argument>
         </arguments>
       </action>
@@ -101,7 +101,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>200</string>
           </argument>
         </arguments>
       </action>
@@ -125,7 +125,7 @@
             <kind>1</kind>
             <string>///Initialize move
 if(stun==0){
-    if(not place_free(x+sign(h_speed)*72, y+1)){
+    if(not place_free(x+sign(h_speed)*72, y+2)){
         x += h_speed
     }else{
         h_speed = -h_speed
@@ -431,11 +431,12 @@ h_speed = -h_speed
             <string>///change image; speed; refresh
 sprite_index = spr_enemy1_stun
 if (stun_time&gt;=0){
-    stun_time -= level*10
+    stun_time -= level
 }else{
     stun = 0
     sprite_index = spr_enemy1
     stun_time = 100 - level
+    h_speed = -h_speed
 }
 
 </string>
