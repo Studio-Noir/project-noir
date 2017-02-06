@@ -26,6 +26,13 @@
     <sprite>sprites\spr_orb</sprite>
     <sprite>sprites\spr_orbcount_max</sprite>
     <sprite>sprites\spr_orbcount_ready</sprite>
+    <sprites name="Enemy(Dover)">
+      <sprite>sprites\spr_enemy1</sprite>
+      <sprite>sprites\spr_enemy2</sprite>
+      <sprite>sprites\spr_enemy1_stun</sprite>
+      <sprite>sprites\spr_enemy2_stun</sprite>
+      <sprite>sprites\spr_enemy2_move</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_rocks</background>
@@ -58,6 +65,10 @@
     </objects>
     <object>objects\obj_orb</object>
     <object>objects\obj_text</object>
+    <objects name="Enemy(Dover)">
+      <object>objects\obj_enemy1</object>
+      <object>objects\obj_enemy2</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
