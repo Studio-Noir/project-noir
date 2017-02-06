@@ -14,9 +14,10 @@ if (key_jump) {
 }
 
 if (ladder) {
-    if (key_up) { speed_vertical = -5; } 
+    if (key_up && !place_meeting(x, y-1, obj_ground)) { speed_vertical = -5; } 
     if (key_down && !place_meeting(x, y+1, obj_ground)) { speed_vertical = 5; }
     if (!place_meeting(x, y, par_ladder)) { ladder = false; }
+    if (key_down && place_meeting(x, y+1, obj_ground)) { state = scr_move_state; }
     y += speed_vertical;
     speed_vertical = 0;
 } else {

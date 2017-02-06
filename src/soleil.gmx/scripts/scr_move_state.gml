@@ -138,14 +138,15 @@ y = clamp(y, 0, room_height);
     Ledge Climb
 */
 
-var right_was_free = !place_meeting(x + (10 * direction_horizontal), yprevious - 70, obj_ground);
-var right_is_not_free = place_meeting(x + (10 * direction_horizontal), y-30, obj_ground);
+var right_was_free = !place_meeting(x + (10 * direction_horizontal), yprevious - 170, obj_ground);
+var right_is_not_free = place_meeting(x + (10 * direction_horizontal), y-130, obj_ground);
 if (right_was_free && right_is_not_free && (yprevious <= y)) {
     speed_horizontal = 0;
     speed_vertical = 0;
-    sprite_index = spr_char_ledge;
+    sprite_index = spr_char_ledge_static;
     image_xscale = direction_horizontal;
     state = scr_ledge_grab_state;
+    speed_ledge = 0;
     exit;
 }
 
