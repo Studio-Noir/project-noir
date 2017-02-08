@@ -105,6 +105,34 @@ if(speed != 0){
         <isnot>0</isnot>
       </action>
     </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>size=128;
+draw_set_blend_mode(bm_subtract);
+surface_set_target(light);
+draw_ellipse_color(x - size/2 - view_xview, y - size/2 - view_yview, x + size/2 - view_xview, y + size/2 - view_yview, c_white, c_black, false);
+surface_reset_target();
+draw_set_blend_mode(bm_normal);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -152,8 +180,22 @@ if(speed != 0){
           <argument>
             <kind>1</kind>
             <string>move_contact_solid(direction,12);
-vspeed=0;
-hspeed=0;
+if place_free(x,y+1) {
+    hspeed *= -0.5;
+}else{
+    if(abs(vspeed)&lt;3){
+        vspeed=0;
+    }else{
+        vspeed *= -0.5;
+    }
+    if(vspeed = 0){
+        if(abs(hspeed)&lt;3){
+            hspeed=0;
+        }else{
+            hspeed *= 0.5;
+        }
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -176,12 +218,12 @@ hspeed=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Lighting
-draw_set_blend_mode( bm_add );
+            <string>//Lighting (old)
+/*draw_set_blend_mode( bm_add );
 draw_set_alpha(0.4);
 draw_circle_colour(x, y - sprite_height/2, lightsize, c_white, c_black, 0);
 draw_set_alpha(1);
-draw_set_blend_mode( bm_normal );
+draw_set_blend_mode( bm_normal );*/
 </string>
           </argument>
         </arguments>

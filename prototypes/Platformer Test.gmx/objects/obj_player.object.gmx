@@ -79,6 +79,15 @@ key_orb2 = false;
 }else{
     //hspeed = 0;
 }
+//Lighting (new)
+/**/
+size=128;
+draw_set_blend_mode(bm_subtract);
+surface_set_target(light);
+draw_ellipse_color(x - size/2 - view_xview, y - size/2 - view_yview, x + size/2 - view_xview, y + size/2 - view_yview, c_white, c_black, false);
+surface_reset_target();
+draw_set_blend_mode(bm_normal);
+/**/
 </string>
           </argument>
         </arguments>
@@ -235,11 +244,11 @@ vspeed=0;
           <argument>
             <kind>1</kind>
             <string>//Lighting
-draw_set_blend_mode( bm_add );
+/*draw_set_blend_mode( bm_add );
 draw_set_alpha(0.3);
 draw_circle_colour(x, y - sprite_height/2, 64, c_white, c_black, 0);
 draw_set_alpha(1);
-draw_set_blend_mode( bm_normal );
+draw_set_blend_mode( bm_normal );*/
 </string>
           </argument>
         </arguments>
