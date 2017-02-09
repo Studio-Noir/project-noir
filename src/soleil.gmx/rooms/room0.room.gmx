@@ -564,7 +564,6 @@
     <instance objName="obj_ground" x="2048" y="352" name="inst_9740F493" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder" x="1792" y="640" name="inst_E586C869" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder" x="1792" y="480" name="inst_061B2B99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block" x="2345" y="768" name="inst_E65C7A87" locked="0" code="" scaleX="0.902912616729736" scaleY="0.858490586280823" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="3328" y="608" name="inst_363F838E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="3392" y="608" name="inst_701683B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="3456" y="608" name="inst_5F2E6830" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -602,6 +601,7 @@
     <instance objName="obj_enemy1" x="2976" y="736" name="inst_FE266F4F" locked="0" code="" scaleX="2.06451606750488" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy1" x="2880" y="736" name="inst_1D2DB302" locked="0" code="" scaleX="2.06451606750488" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy1" x="1184" y="736" name="inst_D0365E62" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_next" x="0" y="704" name="inst_F163E307" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
