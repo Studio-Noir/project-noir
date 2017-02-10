@@ -64,6 +64,7 @@
     <objects name="Controllers">
       <object>objects\cont_main</object>
     </objects>
+    <object>objects\obj_orb_pickup</object>
     <object>objects\obj_orb</object>
     <object>objects\obj_text</object>
     <objects name="Enemy(Dover)">
@@ -71,6 +72,7 @@
       <object>objects\obj_enemy2</object>
     </objects>
     <object>objects\obj_next</object>
+    <object>objects\obj_lighting</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

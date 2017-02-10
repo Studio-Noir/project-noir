@@ -458,7 +458,7 @@ if (stun_time&gt;=0){
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="4" ename="obj_orb">
+    <event eventtype="4" ename="obj_orb_pickup">
       <action>
         <libid>1</libid>
         <id>203</id>
