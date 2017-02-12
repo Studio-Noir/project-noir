@@ -11,6 +11,8 @@
     <sound>sound\snd_pushing</sound>
     <sound>sound\snd_vine</sound>
     <sound>sound\snd_drop</sound>
+    <sound>sound\snd_lightorb</sound>
+    <sound>sound\snd_dark</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_char</sprite>
