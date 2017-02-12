@@ -105,6 +105,30 @@
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>base_speed</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1.5</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -156,7 +180,7 @@ if(stun==0){
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>-30</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -196,6 +220,7 @@ if(stun==0){
             <kind>1</kind>
             <string>///reverse horizontal direction
 h_speed = -h_speed
+
 </string>
           </argument>
         </arguments>
@@ -274,6 +299,7 @@ h_speed = -h_speed
             <kind>1</kind>
             <string>///reverse horizontal direction
 h_speed = -h_speed
+image_xscale = 1;
 </string>
           </argument>
         </arguments>
@@ -429,14 +455,15 @@ h_speed = -h_speed
           <argument>
             <kind>1</kind>
             <string>///change image; speed; refresh
-sprite_index = spr_enemy1_stun
+sprite_index = spr_enemy1_stun;
+h_speed = 0;
 if (stun_time&gt;=0){
     stun_time -= level
 }else{
     stun = 0
     sprite_index = spr_enemy1
     stun_time = 100 - level
-    h_speed = -h_speed
+    h_speed = base_speed
 }
 
 </string>
