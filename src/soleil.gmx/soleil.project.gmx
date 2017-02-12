@@ -43,6 +43,7 @@
       <sprite>sprites\spr_enemy2_move</sprite>
     </sprites>
     <sprite>sprites\spr_next</sprite>
+    <sprite>sprites\spr_h_bar</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_rocks</background>
@@ -87,7 +88,7 @@
     <object>objects\obj_lighting</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\test_room0</room>
     <room>rooms\lv1_1</room>
     <room>rooms\lv1_2</room>
     <room>rooms\lv1_3</room>
