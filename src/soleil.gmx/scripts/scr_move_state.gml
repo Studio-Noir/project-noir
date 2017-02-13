@@ -48,7 +48,7 @@ if (key_orb2 and !key_orb2_prev) {
         //Lob orb forwards at calculated angle
         var inst;
         inst = instance_create(x, y - sprite_height/2, obj_orb);
-        inst.speed = 17;
+        inst.speed = lob_power;
         inst.direction = lob_direction;
         inst.orb_value = 2;
     }    
