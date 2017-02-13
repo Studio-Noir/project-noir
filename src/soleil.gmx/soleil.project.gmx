@@ -44,6 +44,7 @@
     </sprites>
     <sprite>sprites\spr_next</sprite>
     <sprite>sprites\spr_h_bar</sprite>
+    <sprite>sprites\spr_convo</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_rocks</background>
@@ -86,6 +87,7 @@
     </objects>
     <object>objects\obj_next</object>
     <object>objects\obj_lighting</object>
+    <object>objects\obj_convo</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\test_room0</room>
