@@ -92,7 +92,6 @@
     <room>rooms\lv1_1</room>
     <room>rooms\lv1_2</room>
     <room>rooms\lv1_3</room>
-    <room>rooms\room4</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
