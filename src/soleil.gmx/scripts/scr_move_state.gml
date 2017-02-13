@@ -7,14 +7,6 @@ if (keyboard_check(ord('A'))) {
     exit;
 }
 
-/// Setup dropping orb 
-/// FIXME: Implementation currently isn't there. This simply shows off the GUI
-if (keyboard_check_pressed(ord('1')) || keyboard_check_pressed(ord('2'))) {
-    if (global.ORBCOUNT_CURRENT > 0) {
-        global.ORBCOUNT_CURRENT--;
-    }    
-}
-
 /// Read movement keys
 
 /* 
@@ -27,6 +19,40 @@ key_left = -keyboard_check(vk_left); // Instantiates action for left keyboard cl
 key_jump = keyboard_check_pressed(vk_space);
 key_up = keyboard_check_direct(vk_up);
 key_down = keyboard_check_direct(vk_down);
+key_orb1_prev = key_orb1;
+key_orb2_prev = key_orb2;
+key_orb1 = keyboard_check(ord('Z')) or keyboard_check(ord('H')) or keyboard_check_pressed(ord('1'));
+key_orb2 = keyboard_check(ord('X')) or keyboard_check(ord('J')) or keyboard_check_pressed(ord('2'));
+
+/// Setup dropping orb 
+/// FIXME: Implementation currently isn't there. This simply shows off the GUI
+if (key_orb1 and !key_orb1_prev) {
+    if (global.ORBCOUNT_CURRENT > 0) {
+        global.ORBCOUNT_CURRENT--;
+        //Action should only work with sufficient orbs.
+        //Drop orb in place, no velocity
+        instance_create(x, y - sprite_height/2, obj_orb);
+    }
+}
+if (key_orb2 and !key_orb2_prev) {
+    //Action should only work with sufficient orbs.
+    if (global.ORBCOUNT_CURRENT > 1) {
+        global.ORBCOUNT_CURRENT -= 2;
+        //Calculate direction of throw: 30 degree angle upwards from the ground
+        lob_direction = direction;
+        if(image_xscale > 0){
+            lob_direction = 150;
+        }else{
+            lob_direction = 30;
+        }
+        //Lob orb forwards at calculated angle
+        var inst;
+        inst = instance_create(x, y - sprite_height/2, obj_orb);
+        inst.speed = 20;
+        inst.direction = lob_direction;
+        inst.orb_value = 2;
+    }    
+}
 
 /// Execute movement actions
 
@@ -66,8 +92,8 @@ if (move != 0 && place_meeting(x, y + 1, obj_ground)) {
 /*
     Orb Interaction
 */
-if (place_meeting(x, y + 1, obj_orb)) {
-    var itm_orb = instance_place(x, y + 1, obj_orb);
+if (place_meeting(x, y + 1, obj_orb_pickup)) {
+    var itm_orb = instance_place(x, y + 1, obj_orb_pickup);
     with (itm_orb) {
         instance_destroy();
     }

@@ -45,6 +45,10 @@ STATE_STAND = 1;
 STATE_JUMP = 2;
 STATE_WALK = 3;
 
+/* Input variables */
+key_orb1 = false;
+key_orb2 = false;
+
 /* Init Character */
 sprite_state = STATE_STAND;
 state = scr_move_state;

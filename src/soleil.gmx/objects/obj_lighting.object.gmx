@@ -81,7 +81,7 @@ surface_reset_target();
             <kind>1</kind>
             <string>draw_set_blend_mode(bm_add);
 //So as not to make the demo unplayable, our fog of war is not absolute
-draw_set_alpha(0.25);
+draw_set_alpha(0.6);
 draw_set_color(c_white);
 draw_surface(light_overlay, view_xview, view_yview);
 //Reset draw alpha
