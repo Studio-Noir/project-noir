@@ -47,6 +47,9 @@
   <backgrounds name="background">
     <background>background\bg_rocks</background>
     <background>background\bg_skyline</background>
+    <background>background\mn1</background>
+    <background>background\mn2</background>
+    <background>background\mn3</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -88,6 +91,7 @@
     <room>rooms\lv1_1</room>
     <room>rooms\lv1_2</room>
     <room>rooms\lv1_3</room>
+    <room>rooms\room4</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
