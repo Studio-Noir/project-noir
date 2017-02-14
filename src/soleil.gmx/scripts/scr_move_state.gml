@@ -32,6 +32,7 @@ if (key_orb1 and !key_orb1_prev) {
         //Action should only work with sufficient orbs.
         //Drop orb in place, no velocity
         instance_create(x, y - sprite_height/2, obj_orb);
+        audio_play_sound(snd_lightorb,0,0); // THIS ONE WORKS FINE.
     }
 }
 if (key_orb2 and !key_orb2_prev) {
@@ -51,6 +52,7 @@ if (key_orb2 and !key_orb2_prev) {
         inst.speed = lob_power;
         inst.direction = lob_direction;
         inst.orb_value = 2;
+        audio_play_sound(snd_lightorb,0,0); // THIS ONE WORKS FINE.
     }    
 }
 
@@ -99,6 +101,7 @@ if (place_meeting(x, y + 1, obj_orb_pickup)) {
     }
     global.ORBCOUNT_TOTAL++;
     global.ORBCOUNT_CURRENT++;
+    audio_play_sound(snd_lightorb,0,0); // THIS ONE WORKS FINE.
 }
 
 /* 
@@ -148,8 +151,10 @@ if (place_meeting(x, y+speed_vertical, obj_ground) || place_meeting(x, y+speed_v
 
 if (speed_vertical != 0 && !is_climb) {
     sprite_state = STATE_JUMP;
+    audio_play_sound(snd_jumping,0,false); //BUZZ NOISE
 } else if (speed_horizontal != 0) {
     sprite_state = STATE_WALK;
+    audio_play_sound(snd_walking,0,false);//BUZZ NOISE
 } else {
     sprite_state = STATE_STAND;
 }

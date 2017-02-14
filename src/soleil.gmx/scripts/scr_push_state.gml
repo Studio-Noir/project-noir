@@ -18,6 +18,7 @@ if (block && (movement != 0) && !key_jump) {
         speed_horizontal = 0;
     }
     x += speed_horizontal;
+    audio_play_sound(snd_pushing,0,0)
 } else {
     state = scr_move_state;
 }
