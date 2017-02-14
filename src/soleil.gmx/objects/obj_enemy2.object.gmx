@@ -162,7 +162,7 @@ if place_free(self.x+dir*h_speed,self.y){
 //move to player
 close = -1
 if stun == 0 and stop == 0{
-    if (x - obj_char.x &lt;= x_distance and obj_char.x - x &lt;= x_distance + 550){
+    if (x - obj_char.x &lt;= x_distance and obj_char.x - x &lt;= x_distance - 50){
         if(abs(y - obj_char.y) &lt;= y_distance){
             close = 1
             mp_potential_step(obj_char.x,self.y,h_speed,false)
