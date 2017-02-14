@@ -11,7 +11,9 @@ if (key_jump) {
     }
     ladder = false;
     statte = scr_move_state;
-    audio_play_sound(snd_vine,0,0)
+    if (!audio_is_playing(snd_vine)) {
+        audio_play_sound(snd_vine,0,0)
+    }
 }
 
 if (ladder) {
