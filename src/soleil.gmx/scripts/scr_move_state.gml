@@ -151,10 +151,14 @@ if (place_meeting(x, y+speed_vertical, obj_ground) || place_meeting(x, y+speed_v
 
 if (speed_vertical != 0 && !is_climb) {
     sprite_state = STATE_JUMP;
-    audio_play_sound(snd_jumping,0,false); //BUZZ NOISE
+    if (!audio_is_playing(snd_jumping)) {
+        audio_play_sound(snd_jumping,0,false); //BUZZ NOISE
+    }
 } else if (speed_horizontal != 0) {
     sprite_state = STATE_WALK;
-    audio_play_sound(snd_walking,0,false);//BUZZ NOISE
+    if (!audio_is_playing(snd_walking)) {
+        audio_play_sound(snd_walking,0,false);//BUZZ NOISE
+    }
 } else {
     sprite_state = STATE_STAND;
 }
