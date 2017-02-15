@@ -13,6 +13,7 @@
     <sound>sound\snd_drop</sound>
     <sound>sound\snd_lightorb</sound>
     <sound>sound\snd_dark</sound>
+    <sound>sound\snd_background1</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_char</sprite>
@@ -88,6 +89,7 @@
     <object>objects\obj_next</object>
     <object>objects\obj_lighting</object>
     <object>objects\obj_convo</object>
+    <object>objects\obj_backgroundmusic</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\test_room0</room>

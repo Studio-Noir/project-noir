@@ -18,8 +18,8 @@ if (block && (movement != 0) && !key_jump) {
         speed_horizontal = 0;
     }
     x += speed_horizontal;
-    if (!audio_is_playing(snd_pushing)) {
-        audio_play_sound(snd_pushing,0,0);
+    if (!audio_is_playing(snd_pulling)) {
+        audio_play_sound(snd_pulling,0,0);
     }
 } else {
     state = scr_move_state;

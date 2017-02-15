@@ -113,6 +113,7 @@ if (key_up || key_down) {
         sprite_index = spr_char_ladder;
         state = scr_ladder_state;
         exit;
+        audio_play_sound(snd_vine,0,0); //DOESNT WORK YET
     }
 }
 
@@ -152,12 +153,12 @@ if (place_meeting(x, y+speed_vertical, obj_ground) || place_meeting(x, y+speed_v
 if (speed_vertical != 0 && !is_climb) {
     sprite_state = STATE_JUMP;
     if (!audio_is_playing(snd_jumping)) {
-        audio_play_sound(snd_jumping,0,false); //BUZZ NOISE
+        audio_play_sound(snd_jumping,0,false); 
     }
 } else if (speed_horizontal != 0) {
     sprite_state = STATE_WALK;
     if (!audio_is_playing(snd_walking)) {
-        audio_play_sound(snd_walking,0,false);//BUZZ NOISE
+        audio_play_sound(snd_walking,0,false);
     }
 } else {
     sprite_state = STATE_STAND;
