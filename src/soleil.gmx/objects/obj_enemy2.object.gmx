@@ -148,8 +148,8 @@
           <argument>
             <kind>1</kind>
             <string>///Initialize move
-x_distance = 200
-y_distance = 36
+x_distance = 550
+y_distance = 175
 
 //check collision
 dir = sign(obj_char.x - x) // + = right; - = left 
