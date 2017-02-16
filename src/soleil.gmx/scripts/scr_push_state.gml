@@ -12,15 +12,16 @@ if (block && (movement != 0) && !key_jump) {
         var itm_block = instance_place(x + (speed_move * movement), y, par_block);
         with (itm_block) {
             obj_char.speed_horizontal = scr_block_move(obj_char.speed_horizontal);
+        if (!audio_is_playing(snd_pulling)) {
+        audio_play_sound(snd_pulling,0,0);
+        } 
         }
     } else {
         block = false;
         speed_horizontal = 0;
     }
     x += speed_horizontal;
-    if (!audio_is_playing(snd_pulling)) {
-        audio_play_sound(snd_pulling,0,0);
-    }
+
 } else {
     state = scr_move_state;
 }
