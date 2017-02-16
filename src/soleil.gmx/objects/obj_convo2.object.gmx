@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_text("Bear :#Press Z to drop a light orb in your current location by using 1 light essence.#Press X to lob a light orb in front of you by using 2 light essences. ", 0.5, 400, 400);
+            <string>scr_text("Bear : # Light orbs will stun both the crawlers and chargers, but be careful!           # You can only walk past crawlers if stunned! ", 0.5, 400, 400);
 </string>
           </argument>
         </arguments>
