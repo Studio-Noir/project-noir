@@ -11,9 +11,6 @@ if (key_jump) {
     }
     ladder = false;
     statte = scr_move_state;
-    if (!audio_is_playing(snd_vine)) {
-        audio_play_sound(snd_vine,0,0)
-    }
 }
 
 if (ladder) {
@@ -23,6 +20,9 @@ if (ladder) {
     if (key_down && place_meeting(x, y+1, obj_ground)) { state = scr_move_state; }
     y += speed_vertical;
     speed_vertical = 0;
+    if (!audio_is_playing(snd_vine)) {
+    audio_play_sound(snd_vine,0,0)
+    }
 } else {
     state = scr_move_state;
 }
