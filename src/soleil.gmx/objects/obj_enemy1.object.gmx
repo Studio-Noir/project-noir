@@ -647,7 +647,7 @@ stun = 1
         <arguments>
           <argument>
             <kind>2</kind>
-            <string>GAME OVER! (clike to restart)</string>
+            <string>Game Over! (Click to restart)</string>
           </argument>
         </arguments>
       </action>
