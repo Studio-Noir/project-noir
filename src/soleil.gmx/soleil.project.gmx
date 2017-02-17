@@ -54,7 +54,9 @@
     <background>background\mn2</background>
     <background>background\mn3</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path0</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\scr_move_state.gml</script>
     <script>scripts\scr_ledge_grab_state.gml</script>
