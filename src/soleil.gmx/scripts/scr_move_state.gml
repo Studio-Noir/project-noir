@@ -24,36 +24,44 @@ key_orb2_prev = key_orb2;
 key_orb1 = keyboard_check(ord('Z')) or keyboard_check(ord('H')) or keyboard_check_pressed(ord('1'));
 key_orb2 = keyboard_check(ord('X')) or keyboard_check(ord('J')) or keyboard_check_pressed(ord('2'));
 
-/// Setup dropping orb 
-/// FIXME: Implementation currently isn't there. This simply shows off the GUI
-if (key_orb1 and !key_orb1_prev) {
-    if (global.ORBCOUNT_CURRENT > 0) {
-        global.ORBCOUNT_CURRENT--;
-        //Action should only work with sufficient orbs.
-        //Drop orb in place, no velocity
-        instance_create(x, y - sprite_height/2, obj_orb);
-        audio_play_sound(snd_lightorb,0,0); // THIS ONE WORKS FINE.
-    }
+//Decrement orb cooldown if still in effect
+if(orb_cooldown > 0){
+    orb_cooldown--;
 }
-if (key_orb2 and !key_orb2_prev) {
-    //Action should only work with sufficient orbs.
-    if (global.ORBCOUNT_CURRENT > 1) {
-        global.ORBCOUNT_CURRENT -= 2;
-        //Calculate direction of throw: 30 degree angle upwards from the ground
-        lob_direction = direction;
-        if(image_xscale > 0){
-            lob_direction = 150;
-        }else{
-            lob_direction = 30;
+
+/// Setup dropping orb 
+if(orb_cooldown <= 0){
+    if (key_orb1 and !key_orb1_prev) {
+        if (global.ORBCOUNT_CURRENT > 0) {
+            global.ORBCOUNT_CURRENT--;
+            orb_cooldown = orb_cooldown_max;
+            //Action should only work with sufficient orbs.
+            //Drop orb in place, no velocity
+            instance_create(x, y - sprite_height/2, obj_orb);
+            audio_play_sound(snd_lightorb,0,0); // THIS ONE WORKS FINE.
         }
-        //Lob orb forwards at calculated angle
-        var inst;
-        inst = instance_create(x, y - sprite_height/2, obj_orb);
-        inst.speed = lob_power;
-        inst.direction = lob_direction;
-        inst.orb_value = 2;
-        audio_play_sound(snd_lightorb,0,0); // THIS ONE WORKS FINE.
-    }    
+    }
+    if (key_orb2 and !key_orb2_prev) {
+        //Action should only work with sufficient orbs.
+        if (global.ORBCOUNT_CURRENT > 1) {
+            global.ORBCOUNT_CURRENT -= 2;
+            orb_cooldown = orb_cooldown_max;
+            //Calculate direction of throw: 30 degree angle upwards from the ground
+            lob_direction = direction;
+            if(image_xscale > 0){
+                lob_direction = 150;
+            }else{
+                lob_direction = 30;
+            }
+            //Lob orb forwards at calculated angle
+            var inst;
+            inst = instance_create(x, y - sprite_height/2, obj_orb);
+            inst.speed = lob_power;
+            inst.direction = lob_direction;
+            inst.orb_value = 2;
+            audio_play_sound(snd_lightorb,0,0); // THIS ONE WORKS FINE.
+        }    
+    }
 }
 
 /// Execute movement actions
@@ -149,7 +157,7 @@ if (place_meeting(x, y+speed_vertical, obj_ground) || place_meeting(x, y+speed_v
     Movement Processing
 */
 
-if (speed_vertical != 0 && !is_climb) {
+if ((speed_vertical != 0 && !is_climb) || !(place_meeting(x, y+speed_vertical+34, obj_ground) || place_meeting(x, y+speed_vertical+34, par_block))) {
     sprite_state = STATE_JUMP;
     audio_stop_sound(snd_walking)
     if (!audio_is_playing(snd_jumping)) {
