@@ -16,11 +16,22 @@ key_down = keyboard_check(vk_down);
 /// Execute movement actions
 if (key_jump) {
     speed_vertical = -speed_jump;
+    //Adjust x position to 'pop' to out from ledge so they don't get stuck
+    if(image_xscale < 0){
+        //If facing left, move player right
+        x += 16;
+    }else{
+        //If facing right, move player left
+        x -= 16;
+    }
     state = scr_move_state;
-} else if (key_down != 0) {
-    state = scr_move_state;
+//} else if (key_down != 0) {
+    //state = scr_move_state;
+    speed_ledge = 0;
 } else if (key_up != 0) {
     speed_ledge = -5;
+}else{
+    speed_ledge = 0;
 }
 
 /// If Soleil is past the ledge, resume walking
