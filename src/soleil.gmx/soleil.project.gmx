@@ -92,14 +92,15 @@
     <object>objects\obj_lighting</object>
     <object>objects\obj_convo2</object>
     <object>objects\obj_convo</object>
+    <object>objects\obj_killzone</object>
     <object>objects\obj_backgroundmusic</object>
     <object>objects\obj_win</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\test_room0</room>
     <room>rooms\lv1_1</room>
     <room>rooms\lv1_2</room>
     <room>rooms\lv1_3</room>
+    <room>rooms\test_room0</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

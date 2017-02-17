@@ -77,7 +77,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1.8</string>
+            <string>2.2</string>
           </argument>
         </arguments>
       </action>
@@ -149,7 +149,7 @@
             <kind>1</kind>
             <string>///Initialize move
 x_distance = 550
-y_distance = 175
+y_distance = 200
 
 //check collision
 dir = sign(obj_char.x - x) // + = right; - = left 
