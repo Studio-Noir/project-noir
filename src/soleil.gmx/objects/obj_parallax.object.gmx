@@ -53,7 +53,7 @@ for (var i = 0; background_visible[i]; i++) { // loops through each background
           <argument>
             <kind>1</kind>
             <string>/// Enable parallax effect per step
-view_xview += 2 *( keyboard_check(vk_right) - keyboard_check(vk_left));
+view_xview += 4 *( keyboard_check(vk_right) - keyboard_check(vk_left));
 for (var i = 0; background_visible[i]; i++) {
     background_x[i] = parallax[i] * view_xview;
 }

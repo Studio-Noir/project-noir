@@ -49,7 +49,7 @@ STATE_WALK = 3;
 key_orb1 = false;
 key_orb2 = false;
 orb_cooldown = 0;
-orb_cooldown_max = 50;
+orb_cooldown_max = 10;
 lob_power = 15;
 light_size = 300;
 
