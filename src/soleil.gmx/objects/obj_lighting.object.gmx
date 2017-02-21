@@ -83,10 +83,22 @@ surface_reset_target();
 //So as not to make the demo unplayable, our fog of war is not absolute
 draw_set_alpha(0.6);
 draw_set_color(c_white);
+
+// Gaussian blur setup
+var bsize = shader_get_uniform(sh_gaussian,"size");
+var bradius = shader_get_uniform(sh_gaussian,"radius");
+shader_set(sh_gaussian)
+
+//set the blur uniforms
+shader_set_uniform_f(bsize,512,512)//size of background
+shader_set_uniform_f(bradius,50)//radius of blur
+
 draw_surface(light_overlay, view_xview, view_yview);
+
 //Reset draw alpha
 draw_set_alpha(1);
 draw_set_blend_mode(bm_normal);
+
 
 </string>
           </argument>

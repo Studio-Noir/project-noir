@@ -49,6 +49,7 @@
     <sprite>sprites\spr_h_bar</sprite>
     <sprite>sprites\spr_convo</sprite>
     <sprite>sprites\spr_vine_grow</sprite>
+    <sprite>sprites\spr_grass</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_rocks</background>
@@ -68,6 +69,9 @@
     <script>scripts\scr_block_move.gml</script>
     <script>scripts\scr_text.gml</script>
   </scripts>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\sh_gaussian.shader</shader>
+  </shaders>
   <fonts name="fonts">
     <font>fonts\font_chat</font>
   </fonts>
@@ -100,6 +104,7 @@
     <object>objects\obj_backgroundmusic</object>
     <object>objects\obj_win</object>
     <object>objects\obj_vine_grow</object>
+    <object>objects\obj_grass</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_menu</room>
