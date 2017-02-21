@@ -102,7 +102,7 @@
     <object>objects\obj_vine_grow</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\test_room0_main_menu</room>
+    <room>rooms\main_menu</room>
     <room>rooms\lv1_1</room>
     <room>rooms\lv1_2</room>
     <room>rooms\lv1_3</room>
