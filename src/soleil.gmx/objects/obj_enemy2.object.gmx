@@ -257,9 +257,12 @@ if stun == 0 and stop == 0{
           <argument>
             <kind>1</kind>
             <string>///change image; speed; refresh
-if (sprite_index != spr_enemy2_stun) {
-    sprite_index = spr_enemy2_stun;
+if (stun_time &gt; 100) {
+    sprite_index = spr_enemy2_stun1;
+} else if (stun_time &gt; 0) {
+    sprite_index = spr_enemy2_stun2;
 }
+
 if (stun_time&gt;=0){
     stun_time -= level;
 }else{
