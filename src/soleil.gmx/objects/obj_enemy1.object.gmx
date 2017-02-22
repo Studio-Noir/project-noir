@@ -178,7 +178,7 @@ if (surface_exists(light_overlay)) {
 }
 draw_sprite(sprite_index, image_index, x, y);
 surface_reset_target();
-
+while place_free(x,y+1) y+=1;
 </string>
           </argument>
         </arguments>

@@ -71,6 +71,7 @@
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\sh_gaussian.shader</shader>
+    <shader type="GLSLES">shaders\sh_bw.shader</shader>
   </shaders>
   <fonts name="fonts">
     <font>fonts\font_chat</font>

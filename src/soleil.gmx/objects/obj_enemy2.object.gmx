@@ -101,7 +101,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>200</string>
+            <string>150</string>
           </argument>
         </arguments>
       </action>
@@ -121,11 +121,34 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>stop</string>
+            <string>image_speed</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>0.5</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///on the floor
+
+while place_free(x,y+1) y+=1
+</string>
           </argument>
         </arguments>
       </action>
@@ -234,13 +257,15 @@ if stun == 0 and stop == 0{
           <argument>
             <kind>1</kind>
             <string>///change image; speed; refresh
-sprite_index = spr_enemy2_stun
+if (sprite_index != spr_enemy2_stun) {
+    sprite_index = spr_enemy2_stun;
+}
 if (stun_time&gt;=0){
-    stun_time -= level
+    stun_time -= level;
 }else{
     stun = 0
-    sprite_index = spr_enemy2
-    stun_time = 100 - level
+    sprite_index = spr_enemy2;
+    stun_time = 100 - level;
 }
 
 </string>
