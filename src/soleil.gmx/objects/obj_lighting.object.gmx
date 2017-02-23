@@ -82,7 +82,7 @@ surface_reset_target();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_blend_mode(bm_add);
+            <string>draw_set_blend_mode(bm_max);
 //So as not to make the demo unplayable, our fog of war is not absolute
 draw_set_alpha(1.0);
 draw_set_color(c_white);

@@ -119,11 +119,22 @@ if(speed != 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_blend_mode(bm_subtract);
-surface_set_target(light_overlay);
-draw_ellipse_color(x - light_size/2 - view_xview + sprite_width/2, y - light_size/2 - view_yview + sprite_height/2, x + light_size/2 - view_xview + sprite_width/2, y + light_size/2 - view_yview + sprite_height/2, c_white, c_black, false);
-surface_reset_target();
-draw_set_blend_mode(bm_normal);
+            <string>if (light_or_dark == 0) { // dark world
+    draw_set_blend_mode(bm_subtract);
+    surface_set_target(light_overlay);
+    draw_ellipse_color(x - light_size/2 - view_xview + sprite_width/2, y - light_size/2 - view_yview + sprite_height/2, x + light_size/2 - view_xview + sprite_width/2, y + light_size/2 - view_yview + sprite_height/2, c_white, c_black, false);
+    surface_reset_target();
+    draw_set_blend_mode(bm_normal);
+} else { // light world
+    draw_set_blend_mode(bm_add);
+    surface_set_target(light_overlay);
+    draw_set_alpha(0.3);
+    draw_ellipse_color(x - light_size/2 - view_xview + sprite_width/2, y - light_size/2 - view_yview + sprite_height/2, x + light_size/2 - view_xview + sprite_width/2, y + light_size/2 - view_yview + sprite_height/2, c_black, make_color_rgb(100,100,100), false);
+    draw_set_alpha(1);
+    surface_reset_target();
+    draw_set_blend_mode(bm_normal);
+}
+
 </string>
           </argument>
         </arguments>
