@@ -104,6 +104,7 @@
     </objects>
     <object>objects\obj_next</object>
     <object>objects\obj_lighting</object>
+    <object>objects\obj_dark</object>
     <object>objects\obj_convo2</object>
     <object>objects\obj_convo</object>
     <object>objects\obj_killzone</object>
@@ -116,10 +117,10 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\main_menu</room>
+    <room>rooms\lv2_1</room>
     <room>rooms\lv1_1</room>
     <room>rooms\lv1_2</room>
     <room>rooms\lv1_3</room>
-    <room>rooms\lv2_1</room>
     <room>rooms\lv2_2</room>
     <room>rooms\lv2_3</room>
   </rooms>
