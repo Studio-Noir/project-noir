@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-900</depth>
+  <depth>-1900</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,11 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>globalvar light_overlay;
-globalvar light_or_dark;
+            <string>globalvar conversation_overlay;
 
-light_or_dark = 1;
-light_overlay = surface_create(view_wview, view_hview);
+conversation_overlay = surface_create(view_wview, view_hview);
 </string>
           </argument>
         </arguments>
@@ -52,13 +50,13 @@ light_overlay = surface_create(view_wview, view_hview);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>surface_set_target(light_overlay);
+            <string>surface_set_target(conversation_overlay);
 //So as not to make the demo unplayable, our fog of war is not absolute
-// draw_set_alpha(0.5);
-draw_set_color(c_white);
+// draw_set_alpha(0.1);
+// draw_set_color(c_red);
 //Reset draw alpha
-// draw_set_alpha(1);
-draw_rectangle(0, 0, view_wview, view_hview, false);
+//draw_set_alpha(1);
+//draw_rectangle(0, 0, view_wview, view_hview, false);
 surface_reset_target();
 </string>
           </argument>
@@ -84,8 +82,8 @@ surface_reset_target();
             <kind>1</kind>
             <string>draw_set_blend_mode(bm_add);
 //So as not to make the demo unplayable, our fog of war is not absolute
-draw_set_alpha(1.0);
-draw_set_color(c_white);
+draw_set_alpha(0);
+draw_set_color(c_red);
 
 // Gaussian blur setup
 // var bsize = shader_get_uniform(sh_gaussian,"size");
@@ -97,7 +95,7 @@ draw_set_color(c_white);
 // shader_set_uniform_f(bradius,50)//radius of blur
 
 //shader_set(sh_bw);
-draw_surface(light_overlay, view_xview, view_yview);
+draw_surface(conversation_overlay, view_xview, view_yview);
 //shader_reset()
 
 //Reset draw alpha

@@ -29,7 +29,6 @@
     <sprite>sprites\spr_char_ladder</sprite>
     <sprite>sprites\spr_block</sprite>
     <sprite>sprites\spr_char_push</sprite>
-    <sprite>sprites\sprite13</sprite>
     <sprite>sprites\spr_orbcount</sprite>
     <sprite>sprites\spr_dropball</sprite>
     <sprite>sprites\spr_lobball</sprite>
@@ -54,7 +53,6 @@
     <sprite>sprites\spr_grass</sprite>
     <sprite>sprites\spr_hill_up_grass</sprite>
     <sprite>sprites\spr_hill_down_grass</sprite>
-    <sprite>sprites\sprite36</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_rocks</background>
@@ -105,8 +103,6 @@
     <object>objects\obj_next</object>
     <object>objects\obj_lighting</object>
     <object>objects\obj_dark</object>
-    <object>objects\obj_convo2</object>
-    <object>objects\obj_convo</object>
     <object>objects\obj_killzone</object>
     <object>objects\obj_backgroundmusic</object>
     <object>objects\obj_win</object>
@@ -114,13 +110,18 @@
     <object>objects\obj_grass</object>
     <object>objects\obj_grass_up</object>
     <object>objects\obj_grass_down</object>
+    <objects name="Conversations">
+      <object>objects\obj_conv_1_1_1</object>
+      <object>objects\obj_conv_1_1_2</object>
+      <object>objects\par_convo</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_menu</room>
-    <room>rooms\lv2_1</room>
     <room>rooms\lv1_1</room>
     <room>rooms\lv1_2</room>
     <room>rooms\lv1_3</room>
+    <room>rooms\lv2_1</room>
     <room>rooms\lv2_2</room>
     <room>rooms\lv2_3</room>
   </rooms>

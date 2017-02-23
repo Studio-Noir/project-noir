@@ -3,12 +3,12 @@
   <spriteName>spr_convo</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1000</depth>
+  <depth>-1900</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>par_convo</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="4" ename="obj_char">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,7 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_text("Bear :#Press Z to drop a light orb in your current location by using 1 light essence.#Press X to lob a light orb in front of you by using 2 light essences. ", 4.3, x, y);
+            <string>/// Init variables for conversation 2
+/// Variables for text - change this to change the text box.
+xvar = x;
+yvar = y;
+text = "Hi. I'm the bear. Welcome to our story.";
+color = c_blue;
+
+/// Constants
+alpha = 0;
+showtext = 0;
 </string>
           </argument>
         </arguments>

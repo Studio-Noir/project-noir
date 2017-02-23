@@ -3,7 +3,7 @@
   <spriteName>spr_convo</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_text("Bear : #Light orbs will stun both the crawlers and chargers, but be careful!           #You can only walk past crawlers if stunned! ", 4.3, 100, 300);
+            <string>scr_text("Bear : #Light orbs will stun both the crawlers and chargers, but be careful!           #You can only walk past crawlers if stunned! ", 4.3, self.x, 300);
 </string>
           </argument>
         </arguments>

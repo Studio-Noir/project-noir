@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1900</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -37,48 +37,7 @@ alarm[0] = 600;
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Add letters over time
-if (time &lt; text_length) {
-    time += spd;
-    print = string_copy(text, 0, time);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -104,12 +63,11 @@ if (alpha &lt; 1) {
 }
 
 draw_set_font(font);
-draw_set_color(c_black);
-draw_rectangle(x,y,x+boxwidth, y+boxheight, 0);
-draw_set_color(c_black);
-draw_rectangle(x,y,x+boxwidth, y+boxheight, 1);
+draw_set_blend_mode(bm_normal);
+// surface_set_target(conversation_overlay);
 
-draw_set_color(c_white);
+draw_set_alpha(1);
+draw_set_color(c_red);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_text_ext(
@@ -122,6 +80,32 @@ draw_text_ext(
 
 draw_set_alpha(1);
 draw_texture_flush();
+surface_reset_target();
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Add letters over time
+if (time &lt; text_length) {
+    time += spd;
+    print = string_copy(text, 0, time);
+}
 </string>
           </argument>
         </arguments>

@@ -3,7 +3,7 @@
   <spriteName>spr_char</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-2900</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -51,7 +51,7 @@ key_orb2 = false;
 orb_cooldown = 0;
 orb_cooldown_max = 10;
 lob_power = 15;
-light_size = 300;
+light_size = 1000;
 
 /* Init Character */
 sprite_state = STATE_STAND;
@@ -99,9 +99,9 @@ state = scr_move_state;
           <argument>
             <kind>1</kind>
             <string>if (light_or_dark == 1) { // light world
-    draw_set_blend_mode(bm_subtract);
+    draw_set_blend_mode(bm_normal);
     surface_set_target(light_overlay);
-    draw_ellipse_color(x - light_size/2 - view_xview, y - light_size/2 - view_yview - sprite_height/2, x + light_size/2 - view_xview, y + light_size/2 - view_yview - sprite_height/2, c_white, c_black, false);
+    draw_ellipse_color(x - light_size/2 - view_xview, y - light_size/2 - view_yview - sprite_height/2, x + light_size/2 - view_xview, y + light_size/2 - view_yview - sprite_height/2, c_black, c_white, false);
     surface_reset_target();
     draw_set_blend_mode(bm_normal);
 } else { // dark world
