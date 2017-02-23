@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>globalvar light_overlay;
+globalvar light_or_dark;
+
+light_or_dark = 1;
 light_overlay = surface_create(view_wview, view_hview);
 </string>
           </argument>
