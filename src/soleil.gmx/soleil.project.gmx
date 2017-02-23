@@ -52,6 +52,8 @@
     <sprite>sprites\spr_convo</sprite>
     <sprite>sprites\spr_vine_grow</sprite>
     <sprite>sprites\spr_grass</sprite>
+    <sprite>sprites\spr_hill_up_grass</sprite>
+    <sprite>sprites\spr_hill_down_grass</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_rocks</background>
@@ -108,6 +110,8 @@
     <object>objects\obj_win</object>
     <object>objects\obj_vine_grow</object>
     <object>objects\obj_grass</object>
+    <object>objects\obj_grass_up</object>
+    <object>objects\obj_grass_down</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_menu</room>
