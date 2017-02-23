@@ -54,6 +54,7 @@
     <sprite>sprites\spr_grass</sprite>
     <sprite>sprites\spr_hill_up_grass</sprite>
     <sprite>sprites\spr_hill_down_grass</sprite>
+    <sprite>sprites\sprite36</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_rocks</background>

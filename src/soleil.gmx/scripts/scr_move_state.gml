@@ -207,10 +207,20 @@ if (move > 0) {
 } 
 
 if (sprite_state == STATE_JUMP) {
-    sprite_index = spr_char_jump;
+    if (place_meeting(x, y + 20, obj_ground)) {
+    } else {
+        sprite_index = spr_char_jump;
+    }
 } else if (sprite_state == STATE_WALK) {
+    while (place_meeting(x, y, obj_ground)) {
+        y = y - 1
+    }
     sprite_index = spr_char_walk;
 } else {
+    while (place_meeting(x,y, obj_ground)) {
+        y = y - 1;
+    }
     sprite_index = spr_char;
 }
+
 
