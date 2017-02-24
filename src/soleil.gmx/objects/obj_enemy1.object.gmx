@@ -145,9 +145,31 @@
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///change scale
+image_xscale = image_yscale
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///on the floor
 
-while place_free(x,y+1) y+=1
+while place_free(x,y-2) y+=1
 </string>
           </argument>
         </arguments>
@@ -316,7 +338,7 @@ if (stun_time&gt;=0){
           <argument>
             <kind>1</kind>
             <string>///chack direction of enemy
-image_xscale=-sign(self.h_speed)*1
+image_xscale=-sign(self.h_speed)*image_yscale
 
 </string>
           </argument>

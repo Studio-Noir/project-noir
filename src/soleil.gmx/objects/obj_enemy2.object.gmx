@@ -145,9 +145,31 @@
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///change scale
+image_xscale = image_yscale
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///on the floor
 
-while place_free(x,y+1) y+=1
+while place_free(x,y+2) y+=1
 </string>
           </argument>
         </arguments>
@@ -176,19 +198,17 @@ y_distance = 200
 
 //check collision
 dir = sign(obj_char.x - x) // + = right; - = left 
-if place_free(self.x+dir*h_speed,self.y){
+if not place_meeting(self.x+dir*h_speed,self.y,obj_inv_blc){
     stop = 0
 }else{
     stop = 1
 }
 
 //move to player
-close = -1
 if stun == 0 and stop == 0{
     if (x - obj_char.x &lt;= x_distance and obj_char.x - x &lt;= x_distance - 50){
         if(abs(y - obj_char.y) &lt;= y_distance){
-            close = 1
-            mp_potential_step(obj_char.x,self.y,h_speed,false)
+            x+= sign(obj_char.x-x)*h_speed
             sprite_index = spr_enemy2_move
         }else sprite_index = spr_enemy2
     }else sprite_index = spr_enemy2
@@ -271,6 +291,71 @@ if (stun_time&gt;=0){
     stun_time = 100 - level;
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>421</id>
+        <kind>3</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///reverse image if needed
+
+image_xscale=sign(x-obj_char.x)*image_yscale
 </string>
           </argument>
         </arguments>

@@ -47,12 +47,17 @@
       <sprite>sprites\spr_enemy2_stun2</sprite>
     </sprites>
     <sprite>sprites\spr_next</sprite>
-    <sprite>sprites\spr_h_bar</sprite>
     <sprite>sprites\spr_convo</sprite>
     <sprite>sprites\spr_vine_grow</sprite>
     <sprite>sprites\spr_grass</sprite>
     <sprite>sprites\spr_hill_up_grass</sprite>
     <sprite>sprites\spr_hill_down_grass</sprite>
+    <sprites name="ground_dark">
+      <sprite>sprites\spr_grass_d</sprite>
+      <sprite>sprites\spr_hill_up_grass_d</sprite>
+      <sprite>sprites\spr_hill_down_grass_d</sprite>
+    </sprites>
+    <sprite>sprites\spr_button</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_rocks</background>
@@ -60,6 +65,7 @@
     <background>background\mn1</background>
     <background>background\mn2</background>
     <background>background\mn3</background>
+    <background>background\bg_skyline_dark</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
@@ -78,6 +84,7 @@
   </shaders>
   <fonts name="fonts">
     <font>fonts\font_chat</font>
+    <font>fonts\font_mainmenu</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_char</object>
@@ -99,8 +106,10 @@
       <object>objects\obj_enemy1</object>
       <object>objects\obj_enemy2</object>
       <object>objects\obj_inv_blc</object>
+      <object>objects\obj_inv_ground</object>
+      <object>objects\obj_enemy1_s</object>
+      <object>objects\obj_enemy2_s</object>
     </objects>
-    <object>objects\obj_next</object>
     <object>objects\obj_lighting</object>
     <object>objects\obj_dark</object>
     <object>objects\obj_killzone</object>
@@ -114,6 +123,16 @@
       <object>objects\obj_conv_1_1_1</object>
       <object>objects\obj_conv_1_1_2</object>
       <object>objects\par_convo</object>
+    </objects>
+    <objects name="obj_ground_dark">
+      <object>objects\obj_grass_d</object>
+      <object>objects\obj_hill_up_grass_d</object>
+      <object>objects\obj_hill_down_grass_d</object>
+    </objects>
+    <objects name="obj_mainmenu">
+      <object>objects\obj_next</object>
+      <object>objects\obj_quit</object>
+      <object>objects\obj_play</object>
     </objects>
   </objects>
   <rooms name="rooms">
