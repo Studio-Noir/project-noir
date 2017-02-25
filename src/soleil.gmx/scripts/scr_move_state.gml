@@ -37,7 +37,9 @@ if(orb_cooldown <= 0){
             orb_cooldown = orb_cooldown_max;
             //Action should only work with sufficient orbs.
             //Drop orb in place, no velocity
-            instance_create(x, y - sprite_height/2, obj_orb);
+            var inst = instance_create(x, y - sprite_height/2, obj_orb);
+            inst.direction = 270;
+            inst.speed = 10;
             audio_play_sound(snd_lightorb,0,0); // THIS ONE WORKS FINE.
         }
     }
