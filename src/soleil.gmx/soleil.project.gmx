@@ -58,6 +58,13 @@
       <sprite>sprites\spr_hill_down_grass_d</sprite>
     </sprites>
     <sprite>sprites\spr_button</sprite>
+    <sprite>sprites\sprite39</sprite>
+    <sprite>sprites\spr_tree_1</sprite>
+    <sprite>sprites\spr_tree_2</sprite>
+    <sprite>sprites\spr_tree_3</sprite>
+    <sprite>sprites\spr_tree_4</sprite>
+    <sprite>sprites\spr_tree_5</sprite>
+    <sprite>sprites\spr_tree_8</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_rocks</background>
@@ -134,6 +141,13 @@
       <object>objects\obj_quit</object>
       <object>objects\obj_play</object>
     </objects>
+    <object>objects\object37</object>
+    <object>objects\obj_tree_1</object>
+    <object>objects\obj_tree_2</object>
+    <object>objects\obj_tree_3</object>
+    <object>objects\obj_tree_4</object>
+    <object>objects\obj_tree_5</object>
+    <object>objects\obj_tree_8</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_menu</room>
