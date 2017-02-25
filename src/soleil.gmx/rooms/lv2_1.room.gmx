@@ -450,13 +450,13 @@
     <instance objName="obj_grass_d" x="32" y="864" name="inst_60831286" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_d" x="2624" y="896" name="inst_3F2F6FC7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_d" x="2080" y="776" name="inst_57B4885E" locked="0" code="" scaleX="16" scaleY="3.21333336830139" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass_d" x="2496" y="544" name="inst_97FCECB1" locked="0" code="" scaleX="3.20000004768372" scaleY="3.75999999046326" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_d" x="4256" y="864" name="inst_24E7CBEA" locked="0" code="" scaleX="61" scaleY="1.32000005245209" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_d" x="2720" y="448" name="inst_C263FA33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_d" x="2656" y="448" name="inst_F51347A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hill_down_grass_d" x="2752" y="384" name="inst_B57DC386" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hill_up_grass_d" x="480" y="480" name="inst_AC2988D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hill_up_grass_d" x="416" y="544" name="inst_BCF4A878" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground_dark" x="2496" y="544" name="inst_8C024F6A" locked="0" code="" scaleX="3.25" scaleY="3.90625" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

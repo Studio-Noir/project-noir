@@ -16,6 +16,7 @@
     <sound>sound\snd_background1</sound>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\spr_tree_2</sprite>
     <sprite>sprites\spr_char</sprite>
     <sprite>sprites\spr_ground</sprite>
     <sprite>sprites\spr_char_walk</sprite>
@@ -57,16 +58,24 @@
       <sprite>sprites\spr_grass_d</sprite>
       <sprite>sprites\spr_hill_up_grass_d</sprite>
       <sprite>sprites\spr_hill_down_grass_d</sprite>
+      <sprite>sprites\spr_ground_dark</sprite>
     </sprites>
     <sprite>sprites\spr_button</sprite>
     <sprite>sprites\sprite39</sprite>
     <sprite>sprites\spr_tree_1</sprite>
-    <sprite>sprites\spr_tree_2</sprite>
     <sprite>sprites\spr_tree_3</sprite>
     <sprite>sprites\spr_tree_4</sprite>
     <sprite>sprites\spr_tree_5</sprite>
     <sprite>sprites\spr_tree_8</sprite>
     <sprite>sprites\spr_orb_thrown</sprite>
+    <sprites name="tree_dark">
+      <sprite>sprites\spr_tree_dark_2</sprite>
+      <sprite>sprites\spr_tree_dark_1</sprite>
+      <sprite>sprites\spr_tree_dark_3</sprite>
+      <sprite>sprites\spr_tree_dark_5</sprite>
+      <sprite>sprites\spr_tree_dark_4</sprite>
+      <sprite>sprites\spr_tree_dark_8</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_rocks</background>
@@ -155,6 +164,7 @@
       <object>objects\obj_grass_d</object>
       <object>objects\obj_hill_up_grass_d</object>
       <object>objects\obj_hill_down_grass_d</object>
+      <object>objects\obj_ground_dark</object>
     </objects>
     <objects name="obj_mainmenu">
       <object>objects\obj_next</object>
@@ -169,6 +179,14 @@
     <object>objects\obj_tree_5</object>
     <object>objects\obj_tree_8</object>
     <object>objects\object62</object>
+    <objects name="obj_tree_dark">
+      <object>objects\obj_tree_dark_1</object>
+      <object>objects\obj_tree_dark_2</object>
+      <object>objects\obj_tree_dark_3</object>
+      <object>objects\obj_tree_dark_4</object>
+      <object>objects\obj_tree_dark_5</object>
+      <object>objects\obj_tree_dark_8</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_menu</room>
