@@ -127,8 +127,26 @@
     <object>objects\obj_grass_up</object>
     <object>objects\obj_grass_down</object>
     <objects name="Conversations">
-      <object>objects\obj_conv_1_1_1</object>
-      <object>objects\obj_conv_1_1_2</object>
+      <object>objects\obj_conv_demo1</object>
+      <object>objects\obj_conv_demo2</object>
+      <object>objects\obj_convo_1_1_1_Soleil</object>
+      <object>objects\obj_convo_1_1_1_Teddy</object>
+      <object>objects\obj_convo_1_2_1_Soleil</object>
+      <object>objects\obj_convo_1_2_1_Teddy</object>
+      <object>objects\obj_convo_1_3_1_Soleil</object>
+      <object>objects\obj_convo_1_3_1_Teddy</object>
+      <object>objects\obj_convo_1_4_1_Soleil</object>
+      <object>objects\obj_convo_1_4_1_Teddy</object>
+      <object>objects\obj_convo_2_1_1_Soleil</object>
+      <object>objects\obj_convo_2_1_1_Teddy</object>
+      <object>objects\obj_convo_2_2_1_Teddy</object>
+      <object>objects\obj_convo_2_2_1_Soleil</object>
+      <object>objects\obj_convo_2_3_1_Soleil</object>
+      <object>objects\obj_convo_2_3_1_Teddy</object>
+      <object>objects\obj_convo_2_4_1_Soleil</object>
+      <object>objects\obj_convo_2_4_2_Soleil</object>
+      <object>objects\obj_convo_2_4_1_Teddy</object>
+      <object>objects\obj_convo_3_1_1_Dark</object>
       <object>objects\par_convo</object>
     </objects>
     <objects name="obj_ground_dark">
