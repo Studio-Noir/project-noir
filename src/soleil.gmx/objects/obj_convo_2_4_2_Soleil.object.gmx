@@ -29,8 +29,8 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "Soleil: Mom! Dad! Are you okay?!";
-color = c_black;
+text = "Mom! Dad! Are you okay?!";
+color = c_white;
 
 /// Constants
 alpha = 0;

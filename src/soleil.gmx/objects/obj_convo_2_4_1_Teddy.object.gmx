@@ -29,8 +29,8 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "Teddy: No… Thank you…";
-color = c_blue;
+text = "No... #Thank you...";
+color = c_aqua;
 
 /// Constants
 alpha = 0;

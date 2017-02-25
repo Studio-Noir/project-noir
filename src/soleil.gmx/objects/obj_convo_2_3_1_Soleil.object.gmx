@@ -29,8 +29,8 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "Soleil: Why do I keep seeing my parents asleep…?#I’m getting more WORRIED about them… #Are you sure that they are okay Teddy?";
-color = c_black;
+text = "Why do I keep seeing my parents asleep…?#I’m getting more WORRIED about them… #Are you sure that they are okay Teddy?";
+color = c_white;
 
 /// Constants
 alpha = 0;

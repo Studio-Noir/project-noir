@@ -252,6 +252,12 @@
     <instance objName="obj_inv_blc" x="4512" y="576" name="inst_C88FBC98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inv_blc" x="4544" y="704" name="inst_E1D7553C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inv_blc" x="4832" y="704" name="inst_CB1C49E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_convo_1_3_1_Soleil" x="608" y="352" name="inst_23F062AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_convo_1_3_1_Teddy" x="1408" y="384" name="inst_B82437A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_3" x="1024" y="-640" name="inst_91F3F8F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_4" x="5088" y="416" name="inst_3BB2FA17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_8" x="3328" y="416" name="inst_F905C493" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_4" x="0" y="384" name="inst_B77DA896" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

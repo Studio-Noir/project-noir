@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="0" foreground="0" name="bg_skyline_dark" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_skyline_dark" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="-1" foreground="0" name="bg_skyline_dark" x="100" y="0" htiled="-1" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="mn1" x="90" y="125" htiled="-1" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="mn2" x="80" y="125" htiled="-1" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
@@ -122,7 +122,7 @@
     <instance objName="obj_ladder" x="2144" y="544" name="inst_E6290207" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder" x="2144" y="384" name="inst_EA556798" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="2624" y="384" name="inst_2997DD3C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_char" x="5760" y="768" name="inst_F3C9B781" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_char" x="5632" y="768" name="inst_F3C9B781" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inv_blc" x="608" y="800" name="inst_640D14EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inv_blc" x="1536" y="800" name="inst_72558810" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="2624" y="448" name="inst_EA14F4E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -208,9 +208,7 @@
     <instance objName="obj_inv_blc" x="2368" y="608" name="inst_DF212639" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inv_blc" x="2624" y="768" name="inst_6DC748FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inv_blc" x="3136" y="704" name="inst_A105B891" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass_d" x="5888" y="320" name="inst_8DB3394E" locked="0" code="" scaleX="0.244274809956551" scaleY="4.22516584396362" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="4512" y="835" name="inst_E1886A0B" locked="0" code="" scaleX="42.4375" scaleY="0.833333373069763" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="5888" y="485" name="inst_CC736018" locked="0" code="" scaleX="0.75" scaleY="10.6875" colour="4294967295" rotation="0"/>
     <instance objName="obj_hill_up" x="3872" y="770" name="inst_0A2C6083" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="3520" y="448" name="inst_DF2E78CA" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="2976" y="448" name="inst_DFD16A62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -224,7 +222,7 @@
     <instance objName="obj_grass_d" x="5856" y="832" name="inst_ED6D046E" locked="0" code="" scaleX="0.249027252197266" scaleY="0.213333338499069" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_d" x="5792" y="832" name="inst_21A101E4" locked="0" code="" scaleX="0.249027252197266" scaleY="0.213333338499069" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_d" x="5728" y="832" name="inst_0B3A84E5" locked="0" code="" scaleX="0.249027252197266" scaleY="0.213333338499069" colour="4294967295" rotation="0"/>
-    <instance objName="obj_next" x="5792" y="480" name="inst_58FFE900" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_next" x="5760" y="608" name="inst_58FFE900" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder" x="2144" y="224" name="inst_1B48023A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="1504" y="224" name="inst_5D22BB63" locked="0" code="" scaleX="16.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="992" y="128" name="inst_532F25D8" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
@@ -232,6 +230,8 @@
     <instance objName="obj_ground" x="1024" y="224" name="inst_9FB0BC5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder" x="2144" y="64" name="inst_18703411" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="992" y="32" name="inst_B3211454" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_convo_2_1_1_Soleil" x="5248" y="480" name="inst_513A6DEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_convo_2_1_1_Teddy" x="4864" y="416" name="inst_BF30A18D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

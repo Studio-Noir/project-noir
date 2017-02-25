@@ -29,8 +29,8 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "Teddy: I’m not too sure...We must HURRY back. HURRY! HURRY! Run faster!";
-color = c_blue;
+text = "I’m not too sure...We must HURRY back. HURRY! HURRY! Run faster!";
+color = c_aqua;
 
 /// Constants
 alpha = 0;

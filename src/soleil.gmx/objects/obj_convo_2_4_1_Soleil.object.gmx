@@ -29,8 +29,8 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "Soleil: You brought me home! Thank you, Teddy!#I couldn't have made it here without YOU!";
-color = c_black;
+text = "You brought me home! Thank you, Teddy!#I couldn't have made it here without YOU!";
+color = c_white;
 
 /// Constants
 alpha = 0;

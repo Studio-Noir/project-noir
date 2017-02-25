@@ -29,8 +29,8 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "Teddy: It looks similar to the path we took to the portal earlier...#This might be leading us back to our home…";
-color = c_blue;
+text = "It looks similar to the path we took to the portal earlier...#This might be leading us back to our home…";
+color = c_aqua;
 
 /// Constants
 alpha = 0;

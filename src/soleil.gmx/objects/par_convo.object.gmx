@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>-1900</depth>
+  <depth>-1899</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -85,6 +85,20 @@ if (showtext == 1) {
     } else {
         alpha = 1;
     }
+    
+    text_length = string_length(text);
+    font_size = font_get_size(font_chat);
+    text_width = string_width_ext(text, font_size+(font_size/2), 500);
+    text_height = string_height_ext(text, font_size+(font_size/2), 500);
+    
+    if (light_or_dark == 1) { // light world
+        draw_set_blend_mode(bm_add);
+        draw_set_alpha(alpha / 10);
+        draw_ellipse_color(xvar - text_width, yvar - 2 * text_height, xvar + text_width, yvar + 3 * text_height, c_white, c_black, false);
+        draw_set_alpha(alpha);
+        draw_set_blend_mode(bm_normal);
+    }
+    
     // write out text
     draw_set_font(font_chat);
     draw_set_color(color);

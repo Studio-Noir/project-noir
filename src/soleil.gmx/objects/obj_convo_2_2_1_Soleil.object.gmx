@@ -29,8 +29,8 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "Soleil: This seems place seems familiar....";
-color = c_black;
+text = "This seems place seems familiar....";
+color = c_white;
 
 /// Constants
 alpha = 0;

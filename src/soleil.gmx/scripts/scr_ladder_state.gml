@@ -10,7 +10,7 @@ if (key_jump) {
         sprite_state = STATE_JUMP;
     }
     ladder = false;
-    statte = scr_move_state;
+    state = scr_move_state;
 }
 
 if (ladder) {
@@ -18,6 +18,11 @@ if (ladder) {
     if (key_down && !place_meeting(x, y+1, obj_ground)) { speed_vertical = 5; }
     if (!place_meeting(x, y, par_ladder)) { ladder = false; }
     if (key_down && place_meeting(x, y+1, obj_ground)) { state = scr_move_state; }
+    if (speed_vertical != 0) {
+        sprite_index = spr_char_ladder;
+    } else {
+        sprite_index = spr_char_ladder_static;
+    }
     y += speed_vertical;
     speed_vertical = 0;
     if (!audio_is_playing(snd_vine)) {
