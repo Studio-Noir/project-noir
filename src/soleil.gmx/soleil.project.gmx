@@ -65,6 +65,7 @@
     <sprite>sprites\spr_tree_4</sprite>
     <sprite>sprites\spr_tree_5</sprite>
     <sprite>sprites\spr_tree_8</sprite>
+    <sprite>sprites\spr_orb_thrown</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_rocks</background>
@@ -166,6 +167,7 @@
     <object>objects\obj_tree_4</object>
     <object>objects\obj_tree_5</object>
     <object>objects\obj_tree_8</object>
+    <object>objects\object62</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_menu</room>
