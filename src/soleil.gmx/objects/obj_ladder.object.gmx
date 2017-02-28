@@ -3,7 +3,7 @@
   <spriteName>spr_vine</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-10</depth>
+  <depth>1</depth>
   <persistent>0</persistent>
   <parentName>par_ladder</parentName>
   <maskName>&lt;undefined&gt;</maskName>

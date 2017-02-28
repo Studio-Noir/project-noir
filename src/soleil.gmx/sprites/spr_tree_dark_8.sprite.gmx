@@ -7,18 +7,18 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>554</bbox_left>
-  <bbox_right>1179</bbox_right>
-  <bbox_top>525</bbox_top>
-  <bbox_bottom>1574</bbox_bottom>
+  <bbox_left>285</bbox_left>
+  <bbox_right>619</bbox_right>
+  <bbox_top>0</bbox_top>
+  <bbox_bottom>1049</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>1700</width>
-  <height>2100</height>
+  <width>850</width>
+  <height>1050</height>
   <frames>
     <frame index="0">images\spr_tree_dark_8_0.png</frame>
   </frames>

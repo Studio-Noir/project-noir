@@ -27,6 +27,7 @@
     <sprite>sprites\spr_char_ledge_static</sprite>
     <sprite>sprites\spr_ladder</sprite>
     <sprite>sprites\spr_vine</sprite>
+    <sprite>sprites\spr_vine_dark</sprite>
     <sprite>sprites\spr_char_ladder</sprite>
     <sprite>sprites\spr_char_ladder_static</sprite>
     <sprite>sprites\spr_block</sprite>
@@ -84,6 +85,8 @@
     <background>background\mn2</background>
     <background>background\mn3</background>
     <background>background\bg_skyline_dark</background>
+    <background>background\bg_treeline_1</background>
+    <background>background\bg_treeline_dark</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
@@ -111,6 +114,7 @@
     <object>objects\obj_hill_down</object>
     <object>objects\par_ladder</object>
     <object>objects\obj_ladder</object>
+    <object>objects\obj_ladder_dark</object>
     <object>objects\obj_block</object>
     <object>objects\par_block</object>
     <object>objects\obj_parallax</object>
