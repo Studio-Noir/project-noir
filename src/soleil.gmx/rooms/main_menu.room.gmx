@@ -41,7 +41,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="obj_char" xview="0" yview="0" wview="1680" hview="700" xport="0" yport="0" wport="1680" hport="700" hborder="600" vborder="500" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="obj_char" xview="0" yview="0" wview="1680" hview="700" xport="0" yport="0" wport="1680" hport="700" hborder="300" vborder="500" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="768" yview="0" wview="768" hview="512" xport="390" yport="0" wport="384" hport="256" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -162,7 +162,6 @@
     <instance objName="obj_hill_up" x="3200" y="670" name="inst_1505DAFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hill_up" x="3136" y="735" name="inst_DC716B4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hill_up" x="3072" y="800" name="inst_387C4991" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cont_main" x="96" y="0" name="inst_87D74006" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_orb_pickup" x="1408" y="735" name="inst_8D5D2EFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_orb_pickup" x="1888" y="220" name="inst_6144C5C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_orb_pickup" x="2144" y="765" name="inst_EAED59D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -475,25 +474,8 @@
     <instance objName="obj_grass" x="1984" y="795" name="inst_5658B286" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass" x="3872" y="375" name="inst_0663BC88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass" x="928" y="820" name="inst_C41A71DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_play" x="1152" y="155" name="inst_141368FC" locked="0" code="" scaleX="14.25" scaleY="6.375" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ladder" x="848" y="610" name="inst_2B5E9D8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ladder" x="848" y="450" name="inst_60F35D2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ladder" x="848" y="290" name="inst_FD1041B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ladder" x="848" y="130" name="inst_6AD08C0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inv_blc" x="912" y="90" name="inst_D138AB52" locked="0" code="" scaleX="0.5" scaleY="13.59375" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inv_blc" x="1376" y="110" name="inst_12CF180E" locked="0" code="" scaleX="0.5" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inv_blc" x="1248" y="380" name="inst_EE104CB2" locked="0" code="" scaleX="0.5" scaleY="4.21875" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass_d" x="1088" y="510" name="inst_3275D3C2" locked="0" code="" scaleX="1.36964988708496" scaleY="0.0500000007450581" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="1152" y="255" name="inst_4CD035BB" locked="0" code="" scaleX="7.75" scaleY="0.25" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="1088" y="510" name="inst_814A0148" locked="0" code="" scaleX="5.25" scaleY="0.109375" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy2_s" x="1168" y="205" name="inst_333FB9DE" locked="0" code="" scaleX="0.32258066534996" scaleY="0.375" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy2_s" x="1264" y="220" name="inst_1684B6F1" locked="0" code="" scaleX="0.408602178096771" scaleY="0.387755125761032" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy2_s" x="1056" y="225" name="inst_6D462D32" locked="0" code="" scaleX="0.28125" scaleY="0.266666680574417" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy2_s" x="1312" y="225" name="inst_AD1C83EF" locked="0" code="" scaleX="0.32258066534996" scaleY="0.305555582046509" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy1_s" x="1184" y="465" name="inst_FAB241C4" locked="0" code="" scaleX="0.49668875336647" scaleY="0.573529422283173" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy1_s" x="1040" y="465" name="inst_FC79A340" locked="0" code="" scaleX="0.197452232241631" scaleY="0.236111119389534" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy1_s" x="1104" y="475" name="inst_40A57FBA" locked="0" code="" scaleX="0.284768223762512" scaleY="0.279411792755127" colour="4294967295" rotation="0"/>
-    <instance objName="obj_quit" x="1088" y="435" name="inst_0AC906B0" locked="0" code="" scaleX="10" scaleY="4.40625" colour="4294967295" rotation="0"/>
+    <instance objName="obj_play" x="96" y="55" name="inst_CE9B0B09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mainmenu" x="96" y="5" name="inst_260F3903" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

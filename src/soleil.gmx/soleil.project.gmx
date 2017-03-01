@@ -77,6 +77,9 @@
       <sprite>sprites\spr_tree_dark_4</sprite>
       <sprite>sprites\spr_tree_dark_8</sprite>
     </sprites>
+    <sprite>sprites\spr_logo</sprite>
+    <sprite>sprites\sprite56</sprite>
+    <sprite>sprites\spr_play</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_rocks</background>
@@ -174,6 +177,7 @@
       <object>objects\obj_next</object>
       <object>objects\obj_quit</object>
       <object>objects\obj_play</object>
+      <object>objects\obj_mainmenu</object>
     </objects>
     <object>objects\object37</object>
     <object>objects\obj_tree_1</object>
