@@ -117,8 +117,15 @@ if (place_meeting(x, y + 1, obj_orb_pickup)) {
 /* 
     Ladder Interaction
 */
+
+if (light_or_dark == 1) {
+    dir = 1;
+} else {
+    dir = -1;
+}
+
 if (key_up || key_down) {
-    if (place_meeting(x, y, par_ladder)) {
+    if (place_meeting(x + 50 * dir, y, par_ladder)) {
         ladder = true;
         sprite_index = spr_char_ladder;
         state = scr_ladder_state;
@@ -148,8 +155,14 @@ if (place_meeting(x+speed_horizontal, y, obj_ground) || place_meeting(x+speed_ho
     }
 } 
 
-if (place_meeting(x, y+speed_vertical, obj_ground) || place_meeting(x, y+speed_vertical, par_block)) {
-    while(!(place_meeting(x,y+sign(speed_vertical), obj_ground) || place_meeting(x,y+sign(speed_vertical), par_block))) {
+/*
+
+    Edgewise Fixing
+
+*/
+
+if (place_meeting(x+speed_horizontal, y+speed_vertical, obj_ground) || place_meeting(x, y+speed_vertical, par_block)) {
+    while(!(place_meeting(x+speed_horizontal,y+sign(speed_vertical), obj_ground) || place_meeting(x+speed_horizontal,y+sign(speed_vertical), par_block))) {
         y += sign(speed_vertical);
     }
     speed_vertical = 0;
@@ -214,13 +227,31 @@ if (sprite_state == STATE_JUMP) {
         sprite_index = spr_char_jump;
     }
 } else if (sprite_state == STATE_WALK) {
-    while (place_meeting(x, y, obj_ground)) {
-        y = y - 1
+    if (!(place_meeting(x+speed_horizontal, y - 50, obj_ground))) { // if space above is free
+        while (place_meeting(x, y, obj_ground)) {
+            y = y - 1;
+        }
+    } else {
+        // shift back to original position
+        if (!(place_meeting(x + 10 * -move, y, obj_ground))) {
+            x = x + 10 * -move;
+        } else if (!(place_meeting(x + 10 * move, y, obj_ground))) {
+            x = x + 10 * move;
+        }
     }
     sprite_index = spr_char_walk;
 } else {
-    while (place_meeting(x,y, obj_ground)) {
-        y = y - 1;
+    if (!(place_meeting(x, y - 50, obj_ground))) { // if space above is free
+        while (place_meeting(x, y, obj_ground)) {
+            y = y - 1;
+        }
+    } else {
+        // shift back to original position
+        if (!(place_meeting(x + 10 * -5, y, obj_ground))) {
+            x = x + 10 * -5;
+        } else if (!(place_meeting(x + 10 * 5, y, obj_ground))) {
+            x = x + 10 * 5;
+        }
     }
     sprite_index = spr_char;
 }

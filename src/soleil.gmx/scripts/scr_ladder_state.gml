@@ -13,6 +13,17 @@ if (key_jump) {
     state = scr_move_state;
 }
 
+if (light_or_dark == 1) {
+    dir = -1;
+} else {
+    dir = 1;
+}
+
+with (instance_nearest(x, y, par_ladder)) {
+    other.x = x + 46 * other.dir;
+    other.image_xscale = other.dir;
+}
+
 if (ladder) {
     if (key_up && !place_meeting(x, y-1, obj_ground)) { speed_vertical = -5; } 
     if (key_down && !place_meeting(x, y+1, obj_ground)) { speed_vertical = 5; }

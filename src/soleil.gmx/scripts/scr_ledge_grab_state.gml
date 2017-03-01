@@ -36,7 +36,7 @@ if (key_jump) {
 
 /// If Soleil is past the ledge, resume walking
 if (!place_meeting(x + (10 * direction_horizontal), y, obj_ground)) {
-    x = x + 30;
+    x = x + 30 * direction_horizontal;
     state = scr_move_state;
 }
 
