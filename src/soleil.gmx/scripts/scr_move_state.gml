@@ -78,7 +78,7 @@ speed_horizontal = move * speed_move;
 if (speed_vertical < 10) { // Vertical speed affected by gravity; limited to 10 downwards.
     speed_vertical += physics_gravity;
     sprite_state = STATE_JUMP;
-}
+} 
 if (place_meeting(x, y+1, obj_ground) || place_meeting(x, y+1, par_block)) {
     speed_vertical = key_jump * -speed_jump; 
     sprite_state = STATE_JUMP;
@@ -172,18 +172,19 @@ if (place_meeting(x+speed_horizontal, y+speed_vertical, obj_ground) || place_mee
     Movement Processing
 */
 
-if ((speed_vertical != 0 && !is_climb) || !(place_meeting(x, y+speed_vertical+34, obj_ground) || place_meeting(x, y+speed_vertical+34, par_block))) {
+if ((speed_vertical != 0 && !is_climb) || !(place_meeting(x, y+speed_vertical+2, obj_ground) || place_meeting(x, y+speed_vertical+34, par_block))) {
     sprite_state = STATE_JUMP;
-    audio_stop_sound(snd_walking)
+    audio_stop_sound(snd_walking);
     if (!audio_is_playing(snd_jumping)) {
         audio_play_sound(snd_jumping,0,false); 
     }
 } else if (speed_horizontal != 0) {
-    if(speed_vertical == 0)
+    //if(speed_vertical == 0) {
         sprite_state = STATE_WALK;
         if (!audio_is_playing(snd_walking)) {
             audio_play_sound(snd_walking,0,false);
-    }
+        }
+    //}
 } else {
     sprite_state = STATE_STAND;
 }
@@ -223,6 +224,9 @@ if (move > 0) {
 
 if (sprite_state == STATE_JUMP) {
     if (place_meeting(x, y + 20, obj_ground)) {
+        if (is_climb) {
+            sprite_index = spr_char_walk;
+        }
     } else {
         sprite_index = spr_char_jump;
     }
