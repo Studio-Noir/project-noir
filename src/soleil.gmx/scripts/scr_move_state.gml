@@ -174,9 +174,11 @@ if (place_meeting(x+speed_horizontal, y+speed_vertical, obj_ground) || place_mee
 
 if ((speed_vertical != 0 && !is_climb) || !(place_meeting(x, y+speed_vertical+2, obj_ground) || place_meeting(x, y+speed_vertical+34, par_block))) {
     sprite_state = STATE_JUMP;
+    if (speed_vertical <=-1) {
     audio_stop_sound(snd_walking);
     if (!audio_is_playing(snd_jumping)) {
         audio_play_sound(snd_jumping,0,false); 
+    }
     }
 } else if (speed_horizontal != 0) {
     //if(speed_vertical == 0) {

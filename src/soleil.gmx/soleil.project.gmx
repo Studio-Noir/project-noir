@@ -10,11 +10,10 @@
     <sound>sound\snd_pulling</sound>
     <sound>sound\snd_pushing</sound>
     <sound>sound\snd_vine</sound>
-    <sound>sound\snd_drop</sound>
+    <sound>sound\snd_death</sound>
     <sound>sound\snd_lightorb</sound>
     <sound>sound\snd_dark</sound>
     <sound>sound\snd_background1</sound>
-    <sound>sound\sound9</sound>
     <sound>sound\snd_background2</sound>
   </sounds>
   <sprites name="sprites">
