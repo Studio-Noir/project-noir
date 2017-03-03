@@ -125,7 +125,7 @@ if (light_or_dark == 1) {
 }
 
 if (key_up || key_down) {
-    if (place_meeting(x + 50 * dir, y, par_ladder)) {
+    if (place_meeting(x + 30 * dir, y, par_ladder)) {
         ladder = true;
         sprite_index = spr_char_ladder;
         state = scr_ladder_state;
@@ -253,9 +253,9 @@ if (sprite_state == STATE_JUMP) {
         }
     } else {
         // shift back to original position
-        if (!(place_meeting(x + 10 * -5, y, obj_ground))) {
+        if (!(place_meeting(x + 10 * -5, y - 10, obj_ground))) {
             x = x + 10 * -5;
-        } else if (!(place_meeting(x + 10 * 5, y, obj_ground))) {
+        } else if (!(place_meeting(x + 10 * 5, y - 10, obj_ground))) {
             x = x + 10 * 5;
         }
     }
