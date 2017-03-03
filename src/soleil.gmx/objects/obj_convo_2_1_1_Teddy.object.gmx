@@ -29,7 +29,7 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "I’m not too sure, but you are safe with me being here with you... #and with the necklace… ##Don’t be scared, I know you’re brave. #These enemies are nothing new.";
+text = "I'm not too sure where we are, but your necklace will keep us safe.#I'm sure of it! Don't be scared, I know you're brave. #These enemies are nothing new.";
 color = c_aqua;
 
 /// Constants
