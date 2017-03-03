@@ -29,7 +29,7 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "No... #Thank you...";
+text = "No, thank you...";
 color = c_aqua;
 
 /// Constants

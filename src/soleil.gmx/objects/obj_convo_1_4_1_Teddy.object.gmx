@@ -29,7 +29,7 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "Teddy: They must be in a deep sleep… You could wake them up with the NECKLACE! #We NEED to go through the portal to save them!";
+text = "They must be in a deep sleep. You could wake them up with the necklace! #We need to go through the portal to save them!";
 color = c_blue;
 
 /// Constants

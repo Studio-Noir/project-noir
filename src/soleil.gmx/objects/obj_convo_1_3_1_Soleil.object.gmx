@@ -29,7 +29,7 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "Soleil: Thanks Teddy. You are ALWAYS right. #I don’t have to be scared with you and the necklace with me!";
+text = "Thanks Teddy. You are always right. #I don’t have to be scared with you and the necklace with me!";
 color = c_black;
 
 /// Constants

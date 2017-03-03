@@ -29,7 +29,7 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "Teddy: They look like they have fallen asleep... #They are going to be alright...#Let’s continue running away...";
+text = "They look like they have fallen asleep.#They are going to be alright, but we need to get out of here.";
 color = c_blue;
 
 /// Constants

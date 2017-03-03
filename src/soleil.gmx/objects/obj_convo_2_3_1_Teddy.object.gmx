@@ -29,7 +29,7 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "I’m not too sure...We must HURRY back. HURRY! HURRY! Run faster!";
+text = "I’m not too sure...We must hurry back. Hurry! Hurry! Run faster!";
 color = c_aqua;
 
 /// Constants

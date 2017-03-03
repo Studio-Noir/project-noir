@@ -29,7 +29,7 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "Soleil: What did I just see…? It’s been a while… #Why are they still sleeping there…? Why aren’t they waking up…?";
+text = "What did I just see? It’s been a while.#Why are they still sleeping there? Why aren’t they waking up?";
 color = c_black;
 
 /// Constants

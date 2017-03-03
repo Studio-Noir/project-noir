@@ -29,7 +29,7 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "Teddy: I will always be here for you.";
+text = "I'll always be here for you!";
 color = c_blue;
 
 /// Constants

@@ -29,7 +29,7 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "Where am I…? #Why is it feel so DARK here…? #I’m SCARED Teddy";
+text = "Where am I? #Why does it feel so dark here? #I’m scared Teddy!";
 color = c_white;
 
 /// Constants

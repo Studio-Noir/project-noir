@@ -29,7 +29,7 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "Teddy: DON’T be scared.. #Remember dad? The necklace can PROTECT you!";
+text = "Don't be scared.#Remember dad? The necklace can protect you!";
 color = c_blue;
 
 /// Constants

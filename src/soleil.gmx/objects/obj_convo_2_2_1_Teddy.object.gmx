@@ -29,7 +29,7 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "It looks similar to the path we took to the portal earlier...#This might be leading us back to our home…";
+text = "It looks similar to the path we took to the portal earlier.#This might be leading us back home.";
 color = c_aqua;
 
 /// Constants
