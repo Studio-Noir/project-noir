@@ -36,17 +36,18 @@ if(orb_cooldown <= 0){
             global.ORBCOUNT_CURRENT--;
             orb_cooldown = orb_cooldown_max;
             //Action should only work with sufficient orbs.
-            //Drop orb in place, no velocity
+            //Drop orb in place, thrown down with velocity
             var inst = instance_create(x, y - sprite_height/2, obj_orb);
             inst.direction = 270;
             inst.speed = 10;
+            inst.orb_value = 1;
             audio_play_sound(snd_lightorb,0,0); // THIS ONE WORKS FINE.
         }
     }
     if (key_orb2 and !key_orb2_prev) {
         //Action should only work with sufficient orbs.
         if (global.ORBCOUNT_CURRENT > 1) {
-            global.ORBCOUNT_CURRENT -= 2;
+            global.ORBCOUNT_CURRENT --;
             orb_cooldown = orb_cooldown_max;
             //Calculate direction of throw: 30 degree angle upwards from the ground
             lob_direction = direction;
@@ -60,7 +61,7 @@ if(orb_cooldown <= 0){
             inst = instance_create(x, y - sprite_height/2, obj_orb);
             inst.speed = lob_power;
             inst.direction = lob_direction;
-            inst.orb_value = 2;
+            inst.orb_value = 1;
             audio_play_sound(snd_lightorb,0,0); // THIS ONE WORKS FINE.
         }    
     }

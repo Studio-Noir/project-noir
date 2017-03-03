@@ -19,15 +19,18 @@ if (key_jump) {
     //Adjust x position to 'pop' to out from ledge so they don't get stuck
     if(image_xscale < 0){
         //If facing left, move player right
-        x += 16;
+        x += 80;
+        speed_horizontal = 2;
     }else{
         //If facing right, move player left
-        x -= 16;
+        x -= 80;
+        speed_horizontal = -2;
     }
+    //image_xscale *= -1;
     state = scr_move_state;
 //} else if (key_down != 0) {
     //state = scr_move_state;
-    speed_ledge = 0;
+    //speed_ledge = 0;
 } else if (key_up != 0) {
     speed_ledge = -5;
 }else{

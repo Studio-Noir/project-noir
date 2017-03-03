@@ -208,8 +208,7 @@
     <instance objName="obj_grass" x="384" y="500" name="inst_0762A017" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass" x="512" y="500" name="inst_361ABD23" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass" x="448" y="500" name="inst_1C6C618E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="576" y="505" name="inst_8DE0ABCB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="512" y="505" name="inst_132C3511" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground" x="512" y="505" name="inst_132C3511" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="3168" y="780" name="inst_AB2C21A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="3264" y="675" name="inst_15980FC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="3264" y="735" name="inst_F7E58852" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

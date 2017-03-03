@@ -6,7 +6,7 @@ key_jump = keyboard_check_pressed(vk_space);
 
 if (key_jump) {
     if (place_meeting(x, y+1, obj_ground) || place_meeting(x, y+1, par_block)) {
-        speed_vertical = key_jump * -speed_jump; 
+        speed_vertical = -100;//-speed_jump;//key_jump * -speed_jump; 
         sprite_state = STATE_JUMP;
     }
     ladder = false;
