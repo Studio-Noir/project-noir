@@ -29,7 +29,7 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "This seems place seems familiar.";
+text = "This place seems familiar.";
 color = c_white;
 
 /// Constants
