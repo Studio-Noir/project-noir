@@ -209,10 +209,11 @@
     <instance objName="obj_inv_blc" x="1888" y="705" name="inst_E166DAC1" locked="0" code="" scaleX="-1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_inv_blc" x="2240" y="735" name="inst_E5C23CD7" locked="0" code="" scaleX="1" scaleY="4.6875" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_5" x="96" y="350" name="inst_7F89D53B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tree_4" x="2336" y="415" name="inst_0D8E5E68" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_4" x="2304" y="415" name="inst_0D8E5E68" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_3" x="2752" y="-660" name="inst_D1EBE269" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_4" x="5152" y="370" name="inst_305BF264" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_killzone" x="1376" y="1070" name="inst_5DD40BC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_killzone" x="2880" y="1180" name="inst_CA2ECE12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
