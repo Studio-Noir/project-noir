@@ -208,6 +208,7 @@
     <room>rooms\lv2_1</room>
     <room>rooms\lv2_2</room>
     <room>rooms\lv2_3</room>
+    <room>rooms\win_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
