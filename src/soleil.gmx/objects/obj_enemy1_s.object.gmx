@@ -77,7 +77,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>2.5</string>
           </argument>
         </arguments>
       </action>
@@ -146,8 +146,9 @@
           <argument>
             <kind>1</kind>
             <string>///change scale
-rate = sprite_height/sprite_get_height(sprite_index)
+
 image_xscale = image_yscale
+h_speed *= image_yscale
 </string>
           </argument>
         </arguments>
@@ -360,7 +361,7 @@ image_xscale=-sign(self.h_speed)*image_yscale
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="4" ename="obj_inv_blc">
+    <event eventtype="4" ename="obj_enemy1_s">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -385,7 +386,7 @@ x+=h_speed
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_enemy1">
+    <event eventtype="4" ename="obj_inv_blc">
       <action>
         <libid>1</libid>
         <id>603</id>

@@ -135,6 +135,7 @@
       <object>objects\obj_inv_ground</object>
       <object>objects\obj_enemy1_s</object>
       <object>objects\obj_enemy2_s</object>
+      <object>objects\kill_</object>
     </objects>
     <object>objects\obj_lighting</object>
     <object>objects\obj_dark</object>

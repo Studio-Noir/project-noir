@@ -55,12 +55,11 @@
     <instance objName="obj_ground" x="480" y="384" name="inst_1E49FE5A" locked="0" code="" scaleX="11.75" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="32" y="224" name="inst_3870B46A" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy1" x="256" y="320" name="inst_BF4CDF8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_next" x="0" y="768" name="inst_67693FAE" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_next" x="0" y="736" name="inst_67693FAE" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="800" y="864" name="inst_08287D5D" locked="0" code="" scaleX="6.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy1" x="864" y="800" name="inst_99B62CEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy1" x="512" y="800" name="inst_EDA6D93B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inv_blc" x="64" y="320" name="inst_5D2FACDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inv_blc" x="864" y="320" name="inst_91E30993" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_inv_blc" x="480" y="320" name="inst_91E30993" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inv_blc" x="288" y="832" name="inst_32CDB117" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inv_blc" x="1008" y="800" name="inst_13FAB6BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="1440" y="864" name="inst_9710F95A" locked="0" code="" scaleX="6.09523820877075" scaleY="1" colour="4294967295" rotation="0"/>
@@ -416,7 +415,7 @@
     <instance objName="obj_tree_dark_8" x="6976" y="896" name="inst_FA4968DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_dark_8" x="2656" y="928" name="inst_4F6D8E78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_dark_4" x="4608" y="896" name="inst_2AD281EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tree_dark_3" x="-352" y="-160" name="inst_6C613EBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_dark_3" x="-448" y="-128" name="inst_6C613EBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder_dark" x="960" y="384" name="inst_493A71C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder_dark" x="960" y="224" name="inst_D45DCDBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder_dark" x="960" y="544" name="inst_ACF28100" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -438,6 +437,8 @@
     <instance objName="obj_enemy2" x="3712" y="768" name="inst_03D5E135" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inv_blc" x="4928" y="800" name="inst_581A006F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder_dark" x="3168" y="608" name="inst_64A87739" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hill_up_grass_d" x="480" y="352" name="inst_7DF740FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hill_down_grass_d" x="544" y="352" name="inst_E1CB84C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

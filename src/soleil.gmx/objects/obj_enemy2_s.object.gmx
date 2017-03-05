@@ -77,7 +77,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>2.5</string>
           </argument>
         </arguments>
       </action>
@@ -170,6 +170,7 @@ while place_free(x,y+2) y+=1
             <kind>1</kind>
             <string>///change scale
 image_xscale = image_yscale
+h_speed*= image_yscale
 </string>
           </argument>
         </arguments>
@@ -193,8 +194,8 @@ image_xscale = image_yscale
           <argument>
             <kind>1</kind>
             <string>///Initialize move
-x_distance = 250
-y_distance = 100
+x_distance = 1000
+y_distance = 200
 
 //check collision
 dir = sign(obj_char.x - x) // + = right; - = left 

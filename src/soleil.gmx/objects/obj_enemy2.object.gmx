@@ -147,6 +147,7 @@
             <kind>1</kind>
             <string>///change scale
 image_xscale = image_yscale
+
 </string>
           </argument>
         </arguments>
