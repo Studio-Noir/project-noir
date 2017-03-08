@@ -173,7 +173,7 @@ if (place_meeting(x+speed_horizontal, y+speed_vertical, obj_ground) || place_mee
     Movement Processing
 */
 
-if ((speed_vertical != 0 && !is_climb) || !(place_meeting(x, y+speed_vertical+2, obj_ground) || place_meeting(x, y+speed_vertical+34, par_block))) {
+if ((speed_vertical != 0 && !is_climb) || !(place_meeting(x, y+speed_vertical+10, obj_ground) || place_meeting(x, y+speed_vertical+34, par_block))) {
     sprite_state = STATE_JUMP;
     if (speed_vertical <=-1) {
     audio_stop_sound(snd_walking);
