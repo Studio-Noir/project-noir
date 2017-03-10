@@ -39,7 +39,7 @@ if(orb_cooldown <= 0){
             //Drop orb in place, thrown down with velocity
             var inst = instance_create(x, y - sprite_height/2, obj_orb);
             inst.direction = 270;
-            inst.speed = 12;
+            inst.speed = 15;
             inst.orb_value = 1;
             audio_play_sound(snd_lightorb,0,0); // THIS ONE WORKS FINE.
         }
@@ -59,7 +59,7 @@ if(orb_cooldown <= 0){
                 }
             }else{
                 lob_direction = 270;
-                lob_power = 12;
+                lob_power = 15;
             }
             //Lob orb forwards at calculated angle
             var inst;
