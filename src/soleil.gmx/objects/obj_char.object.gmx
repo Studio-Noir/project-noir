@@ -50,7 +50,8 @@ key_orb1 = false;
 key_orb2 = false;
 orb_cooldown = 0;
 orb_cooldown_max = 10;
-lob_power = 15;
+lob_power = 0;
+lob_power_max = 15;
 light_size = 1000;
 
 /* Init Character */
