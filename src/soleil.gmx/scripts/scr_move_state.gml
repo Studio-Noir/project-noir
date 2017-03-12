@@ -143,7 +143,7 @@ if (light_or_dark == 1) {
 }
 
 if (key_up || key_down) {
-    if (place_meeting(x + 30 * dir, y, par_ladder)) {
+    if (place_meeting(x + 30 * dir, y, par_ladder) && place_meeting(x + 30 * dir, y - 150, par_ladder)) {
         ladder = true;
         sprite_index = spr_char_ladder;
         state = scr_ladder_state;

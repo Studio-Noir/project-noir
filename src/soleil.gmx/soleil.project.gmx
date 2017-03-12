@@ -40,6 +40,7 @@
     <sprite>sprites\spr_lobball</sprite>
     <sprite>sprites\spr_clear</sprite>
     <sprite>sprites\spr_orb</sprite>
+    <sprite>sprites\spr_lob_ui</sprite>
     <sprite>sprites\spr_orbcount_max</sprite>
     <sprite>sprites\spr_orbcount_ready</sprite>
     <sprites name="Enemy(Dover)">
@@ -204,6 +205,7 @@
     <object>objects\obj_fadeout</object>
     <object>objects\obj_nextroom</object>
     <object>objects\obj_backgroundmusic2</object>
+    <object>objects\obj_lob</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_menu</room>
