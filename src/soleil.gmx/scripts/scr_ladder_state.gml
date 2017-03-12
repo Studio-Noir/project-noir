@@ -78,7 +78,7 @@ if (key_jump) {
     ladder = false;
     state = scr_move_state;
 }
-
+if (!place_free(x,y+2)) state = scr_move_state
   
 if (light_or_dark == 1) {
     dir = -1;
