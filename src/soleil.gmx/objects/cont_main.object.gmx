@@ -54,9 +54,6 @@ draw_sprite_ext(spr_orbcount_max, 10, view_wview-150, 110, 1, global.ORBCOUNT_TO
 draw_sprite_ext(spr_orbcount_ready, 10, view_wview-150, 110, 1, global.ORBCOUNT_CURRENT / 20, 0, c_white, 1);
 
 draw_sprite(spr_orbcount, 1000, view_wview - 150, 170);
-draw_sprite(spr_dropball, 0, 50, view_hview - 60);
-draw_sprite(spr_lobball, 0, 100, view_hview - 60);
-draw_sprite(spr_clear, 0, 150, view_hview - 60);
 </string>
           </argument>
         </arguments>
