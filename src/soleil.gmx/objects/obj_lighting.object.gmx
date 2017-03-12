@@ -104,7 +104,6 @@ draw_surface(light_overlay, view_xview, view_yview);
 draw_set_alpha(1);
 draw_set_blend_mode(bm_normal);
 
-
 </string>
           </argument>
         </arguments>
