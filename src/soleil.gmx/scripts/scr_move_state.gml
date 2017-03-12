@@ -227,6 +227,7 @@ if (right_was_free && right_is_not_free && (yprevious <= y)) {
     sprite_index = spr_char_ledge_static;
     image_xscale = direction_horizontal;
     state = scr_ledge_grab_state;
+    audio_stop_sound(snd_walking);
     speed_ledge = 0;
     exit;
 }
@@ -249,6 +250,7 @@ if (sprite_state == STATE_JUMP) {
         }
     } else {
         sprite_index = spr_char_jump;
+        audio_stop_sound(snd_walking);
     }
 } else if (sprite_state == STATE_WALK) {
     if (!(place_meeting(x+speed_horizontal, y - 50, obj_ground))) { // if space above is free
@@ -264,6 +266,7 @@ if (sprite_state == STATE_JUMP) {
         }
     }
     sprite_index = spr_char_walk;
+    image_speed = 0.7; 
 } else {
     if (!(place_meeting(x, y - 50, obj_ground))) { // if space above is free
         while (place_meeting(x, y, obj_ground)) {
@@ -278,6 +281,7 @@ if (sprite_state == STATE_JUMP) {
         }
     }
     sprite_index = spr_char;
+    audio_stop_sound(snd_walking);
 }
 
 

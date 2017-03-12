@@ -101,11 +101,14 @@ if (ladder) {
     } else {
         sprite_index = spr_char_ladder_static;
     }
+    audio_stop_sound(snd_walking);
+    if (!audio_is_playing(snd_vine) && (speed_vertical != 0)) {
+        audio_play_sound(snd_vine,0,0)
+    } else {
+        audio_stop_sound(snd_vine);
+    }
     y += speed_vertical;
     speed_vertical = 0;
-    if (!audio_is_playing(snd_vine)) {
-    audio_play_sound(snd_vine,0,0)
-    }
 } else {
     state = scr_move_state;
 }
