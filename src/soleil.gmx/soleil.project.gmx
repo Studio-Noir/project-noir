@@ -91,6 +91,8 @@
     <background>background\bg_skyline_dark</background>
     <background>background\bg_treeline_1</background>
     <background>background\bg_treeline_dark</background>
+    <background>background\bg_paper</background>
+    <background>background\bg_paper_dark</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
