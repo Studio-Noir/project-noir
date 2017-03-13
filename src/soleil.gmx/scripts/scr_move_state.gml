@@ -174,9 +174,25 @@ if (place_meeting(x+speed_horizontal, y, obj_ground) || place_meeting(x+speed_ho
 } 
 
 /*
+    Downhill walking fix
+*/
 
+if (!place_meeting(x+speed_horizontal, y, obj_ground) && !is_climb && speed_horizontal != 0) {
+    found_slope = false;
+    //Limit downhill functionality to 45 degrees from the x-axis
+    for(i = 0; i <= (speed_horizontal + 4); i++){
+        if(found_slope = false){
+            //Check ground below area directly in front until either the immediate area is found empty, or ground is found
+            if(place_meeting(x+speed_horizontal, y+i, obj_ground)){
+                found_slope = true;
+                y += i;
+            }
+        }
+    }
+}
+
+/*
     Edgewise Fixing
-
 */
 
 if (place_meeting(x+speed_horizontal, y+speed_vertical, obj_ground) || place_meeting(x, y+speed_vertical, par_block)) {
