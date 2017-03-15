@@ -68,6 +68,8 @@ if(orb_cooldown <= 0){
             inst.direction = lob_direction;
             inst.orb_value = 1;
             audio_play_sound(snd_lightorb,0,0); // THIS ONE WORKS FINE.
+            //Reset lob power charge
+            lob_power = 0;
         }    
     }
     else if (key_orb2) {
@@ -177,13 +179,13 @@ if (place_meeting(x+speed_horizontal, y, obj_ground) || place_meeting(x+speed_ho
     Downhill walking fix
 */
 
-if (!place_meeting(x+speed_horizontal, y, obj_ground) && !is_climb && speed_horizontal != 0) {
+if (!place_meeting(x+speed_horizontal, y+speed_vertical, obj_ground) && !is_climb && speed_horizontal != 0) {
     found_slope = false;
     //Limit downhill functionality to 45 degrees from the x-axis
     for(i = 0; i <= (abs(speed_horizontal) + 4); i++){
         if(found_slope = false){
             //Check ground below area directly in front until either the immediate area is found empty, or ground is found
-            if(place_meeting(x+speed_horizontal, y+i, obj_ground)){
+            if(place_meeting(x+speed_horizontal, y+i+speed_vertical, obj_ground)){
                 found_slope = true;
                 y += i;
             }
