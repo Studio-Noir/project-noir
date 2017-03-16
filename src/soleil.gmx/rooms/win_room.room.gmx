@@ -31,8 +31,8 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_skyline" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_paper" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -51,66 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_ground" x="800" y="128" name="inst_9803187E" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="800" y="256" name="inst_D91807AA" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="672" y="256" name="inst_F37E32A2" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="800" y="384" name="inst_0C4CEFA0" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="992" y="256" name="inst_B502FD50" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="1184" y="256" name="inst_A0A814B2" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="1056" y="192" name="inst_CC7B9A58" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="1120" y="320" name="inst_7ED1640C" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="1088" y="256" name="inst_A8674ED1" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="1312" y="256" name="inst_B69CCA24" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="1376" y="384" name="inst_3C86EDE8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="1376" y="128" name="inst_096E064E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="1408" y="160" name="inst_61820D16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="1408" y="352" name="inst_D316E282" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="1504" y="256" name="inst_8A3043E7" locked="0" code="" scaleX="1" scaleY="1.015625" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="1440" y="192" name="inst_901198C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="1440" y="320" name="inst_B078C0BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="1472" y="288" name="inst_DBC0BA81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="1472" y="224" name="inst_8AF506A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_char" x="96" y="640" name="inst_DD931D72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass" x="32" y="736" name="inst_EF1C1616" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass" x="96" y="736" name="inst_3C6860EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass" x="160" y="736" name="inst_838BC503" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass" x="224" y="736" name="inst_56909230" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass" x="288" y="736" name="inst_94796FB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass" x="352" y="736" name="inst_7EB6905E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass" x="416" y="736" name="inst_1D26CAA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass" x="480" y="736" name="inst_BCD6E83B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass" x="544" y="736" name="inst_B792BE33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass" x="608" y="736" name="inst_68C69648" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass" x="672" y="736" name="inst_2DDA425B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass" x="736" y="736" name="inst_4F8E3AE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass" x="800" y="736" name="inst_2F969FB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass" x="864" y="736" name="inst_8CE66AF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass" x="928" y="736" name="inst_EBFA5A64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass" x="1088" y="736" name="inst_DC24EBA2" locked="0" code="" scaleX="19" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="850" y="742" name="inst_62385C0D" locked="0" code="" scaleX="27" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="96" y="128" name="inst_CB79ADC2" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="96" y="256" name="inst_039AA50D" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="224" y="256" name="inst_7A83FE28" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="352" y="256" name="inst_8218DF04" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="288" y="256" name="inst_DBC177BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="512" y="128" name="inst_C8D58DF1" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="512" y="384" name="inst_FD62AFAF" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="512" y="256" name="inst_7868FF01" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ground" x="448" y="256" name="inst_F10EFC73" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy1_s" x="672" y="640" name="inst_EC63DB31" locked="0" code="" scaleX="1.55629134178162" scaleY="1.44117641448975" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy2_s" x="1376" y="256" name="inst_7804D1D7" locked="0" code="" scaleX="0.5" scaleY="0.601398587226868" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy2_s" x="1056" y="640" name="inst_B46EC30A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy2_s" x="1408" y="608" name="inst_863D7967" locked="0" code="" scaleX="1.19565212726593" scaleY="1.51748251914978" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy2_s" x="384" y="640" name="inst_5E6BC840" locked="0" code="" scaleX="1.09677422046661" scaleY="0.767123281955719" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy2_s" x="160" y="640" name="inst_F64182C4" locked="0" code="" scaleX="0.5" scaleY="0.601398587226868" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy2_s" x="1568" y="640" name="inst_BEB15EB9" locked="0" code="" scaleX="0.847826063632965" scaleY="0.601398587226868" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inv_blc" x="1312" y="288" name="inst_852F40AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inv_blc" x="1408" y="288" name="inst_187E445C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inv_blc" x="1664" y="640" name="inst_A190E90B" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inv_blc" x="0" y="640" name="inst_616B5C71" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy1_s" x="896" y="672" name="inst_59065ABE" locked="0" code="" scaleX="0.284768223762512" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy1_s" x="1184" y="672" name="inst_E41DD512" locked="0" code="" scaleX="0.503311276435852" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy1_s" x="256" y="640" name="inst_1CE65358" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_win_title" x="288" y="576" name="inst_EBD21F2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

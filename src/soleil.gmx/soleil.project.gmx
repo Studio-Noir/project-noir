@@ -130,6 +130,7 @@
   <fonts name="fonts">
     <font>fonts\font_chat</font>
     <font>fonts\font_mainmenu</font>
+    <font>fonts\font_win_title</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_char</object>
@@ -221,8 +222,12 @@
     <object>objects\obj_nextroom</object>
     <object>objects\obj_backgroundmusic2</object>
     <object>objects\obj_lob</object>
+    <objects name="Win Room Text">
+      <object>objects\obj_win_title</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\win_room</room>
     <room>rooms\main_menu</room>
     <room>rooms\lv1_1</room>
     <room>rooms\lv1_2</room>
@@ -232,7 +237,6 @@
     <room>rooms\lv2_3</room>
     <room>rooms\lvboss_1</room>
     <room>rooms\lvboss_2</room>
-    <room>rooms\win_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
