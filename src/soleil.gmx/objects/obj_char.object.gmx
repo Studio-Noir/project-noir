@@ -163,7 +163,11 @@ script_execute(state);
           <argument>
             <kind>1</kind>
             <string>/// Draw lob ui
-draw_sprite_ext(spr_lob_ui, -1, self.x - view_xview, self.y + 50 - view_yview, lob_power / lob_power_max, 1, 0, c_white, 1);
+if (lob_power &gt; 0) {
+    draw_sprite_ext(spr_charge_bg, -1, self.x - view_xview, self.y + 50 - view_yview, 1, 1, 0, c_white, 1);
+    draw_sprite_ext(spr_charge_meter_2, -1, self.x - 108 - view_xview, self.y + 50 - view_yview, lob_power / lob_power_max, 1, 0, c_white, 1);
+    draw_sprite_ext(spr_charge_overlay, -1, self.x - view_xview, self.y + 50 - view_yview, 1, 1, 0, c_white, 1);
+}
 
 </string>
           </argument>

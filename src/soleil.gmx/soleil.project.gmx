@@ -82,9 +82,7 @@
       <sprite>sprites\spr_tree_dark_8</sprite>
     </sprites>
     <sprite>sprites\spr_logo</sprite>
-    <sprite>sprites\sprite56</sprite>
     <sprite>sprites\spr_play</sprite>
-    <sprite>sprites\sprite59</sprite>
     <sprites name="necklace_ui">
       <sprite>sprites\spr_power_1</sprite>
       <sprite>sprites\spr_power_2</sprite>
@@ -94,6 +92,12 @@
       <sprite>sprites\spr_base</sprite>
       <sprite>sprites\spr_overlay</sprite>
       <sprite>sprites\spr_orbv</sprite>
+    </sprites>
+    <sprites name="charge_ui">
+      <sprite>sprites\spr_charge_bg</sprite>
+      <sprite>sprites\spr_charge_meter_2</sprite>
+      <sprite>sprites\spr_charge_meter</sprite>
+      <sprite>sprites\spr_charge_overlay</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
