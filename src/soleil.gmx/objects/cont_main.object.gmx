@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>global.ORBCOUNT_TOTAL = 2;
 global.ORBCOUNT_CURRENT = 2;
+global.ORBCOUNT_STARTROOM = 2;
 </string>
           </argument>
         </arguments>
@@ -51,9 +52,25 @@ global.ORBCOUNT_CURRENT = 2;
             <kind>1</kind>
             <string>/// Draw UI
 draw_sprite_ext(spr_base, 10, view_wview-150, 110, 1, 1, 0, c_white, 1);
-draw_sprite_ext(spr_power_1, 10, view_wview-150, 110, global.ORBCOUNT_CURRENT / global.ORBCOUNT_TOTAL, global.ORBCOUNT_CURRENT / global.ORBCOUNT_TOTAL, 0, c_white, 1);
-draw_sprite_ext(spr_orbv, 10, view_wview-150, 110, global.ORBCOUNT_CURRENT / global.ORBCOUNT_TOTAL , global.ORBCOUNT_CURRENT / global.ORBCOUNT_TOTAL , 0, c_white, 1);
 
+switch (global.ORBCOUNT_TOTAL) {
+    case 2:
+        draw_sprite_ext(spr_power_1, 10, view_wview-150, 110, global.ORBCOUNT_CURRENT / global.ORBCOUNT_TOTAL , global.ORBCOUNT_CURRENT / global.ORBCOUNT_TOTAL, 0, c_white, 1);
+        break;
+    case 3:
+        draw_sprite_ext(spr_power_2, 10, view_wview-150, 110, global.ORBCOUNT_CURRENT / global.ORBCOUNT_TOTAL , global.ORBCOUNT_CURRENT / global.ORBCOUNT_TOTAL, 0, c_white, 1);
+        break;
+    case 4:
+        draw_sprite_ext(spr_power_3, 10, view_wview-150, 110, global.ORBCOUNT_CURRENT / global.ORBCOUNT_TOTAL , global.ORBCOUNT_CURRENT / global.ORBCOUNT_TOTAL, 0, c_white, 1);
+        break;
+    case 5:
+        draw_sprite_ext(spr_power_4, 10, view_wview-150, 110, global.ORBCOUNT_CURRENT / global.ORBCOUNT_TOTAL , global.ORBCOUNT_CURRENT / global.ORBCOUNT_TOTAL, 0, c_white, 1);
+        break;
+    case 6:
+    default:
+        draw_sprite_ext(spr_orbv, 10, view_wview-150, 110, global.ORBCOUNT_CURRENT / global.ORBCOUNT_TOTAL , global.ORBCOUNT_CURRENT / global.ORBCOUNT_TOTAL , 0, c_white, 1);
+        break;
+}
 //draw_sprite_ext(spr_orbcount_max, 10, view_wview-150, 110, 1, global.ORBCOUNT_TOTAL / 5, 0, c_white, 1);
 //draw_sprite_ext(spr_orbcount_ready, 10, view_wview-150, 110, 1, global.ORBCOUNT_CURRENT / 5, 0, c_white, 1);
 

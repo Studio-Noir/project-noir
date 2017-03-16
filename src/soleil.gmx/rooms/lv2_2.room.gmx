@@ -99,7 +99,6 @@
     <instance objName="obj_ground" x="3648" y="576" name="inst_87B48E70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dark" x="96" y="32" name="inst_FC7F46AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_parallax" x="160" y="32" name="inst_3EE9F82D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="cont_main" x="128" y="32" name="inst_E75D4C17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inv_blc" x="1216" y="800" name="inst_D73F25F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inv_blc" x="1632" y="800" name="inst_4363B87A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="4416" y="864" name="inst_F113AD84" locked="0" code="" scaleX="13" scaleY="1" colour="4294967295" rotation="0"/>
@@ -415,7 +414,7 @@
     <instance objName="obj_tree_dark_8" x="6976" y="896" name="inst_FA4968DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_dark_8" x="2656" y="928" name="inst_4F6D8E78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_dark_4" x="4608" y="896" name="inst_2AD281EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tree_dark_3" x="-480" y="-96" name="inst_6C613EBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_dark_3" x="-96" y="-128" name="inst_6C613EBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder_dark" x="960" y="416" name="inst_493A71C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder_dark" x="960" y="256" name="inst_D45DCDBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder_dark" x="960" y="576" name="inst_ACF28100" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -77,6 +77,8 @@ global.a = 0;
             <string>global.a = clamp(global.a + ( global.fade * 0.05), 0, 1);
 
 if (global.a == 1) {
+    global.ORBCOUNT_TOTAL = global.ORBCOUNT_STARTROOM;
+    global.ORBCOUNT_CURRENT = global.ORBCOUNT_TOTAL;
     room_restart();
     global.fade = -1;
 }
