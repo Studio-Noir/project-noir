@@ -50,10 +50,13 @@ global.ORBCOUNT_CURRENT = 2;
           <argument>
             <kind>1</kind>
             <string>/// Draw UI
-draw_sprite_ext(spr_orbcount_max, 10, view_wview-150, 110, 1, global.ORBCOUNT_TOTAL / 5, 0, c_white, 1);
-draw_sprite_ext(spr_orbcount_ready, 10, view_wview-150, 110, 1, global.ORBCOUNT_CURRENT / 5, 0, c_white, 1);
+draw_sprite_ext(spr_base, 10, view_wview-150, 110, 1, 1, 0, c_white, 1);
+draw_sprite_ext(spr_power_1, 10, view_wview-150, 110, global.ORBCOUNT_CURRENT / global.ORBCOUNT_TOTAL, global.ORBCOUNT_CURRENT / global.ORBCOUNT_TOTAL, 0, c_white, 1);
+draw_sprite_ext(spr_orbv, 10, view_wview-150, 110, global.ORBCOUNT_CURRENT / global.ORBCOUNT_TOTAL , global.ORBCOUNT_CURRENT / global.ORBCOUNT_TOTAL , 0, c_white, 1);
 
-draw_sprite(spr_orbcount, 1000, view_wview - 150, 170);
+//draw_sprite_ext(spr_orbcount_max, 10, view_wview-150, 110, 1, global.ORBCOUNT_TOTAL / 5, 0, c_white, 1);
+//draw_sprite_ext(spr_orbcount_ready, 10, view_wview-150, 110, 1, global.ORBCOUNT_CURRENT / 5, 0, c_white, 1);
+
 </string>
           </argument>
         </arguments>

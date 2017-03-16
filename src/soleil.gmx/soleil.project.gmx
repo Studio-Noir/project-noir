@@ -84,6 +84,17 @@
     <sprite>sprites\spr_logo</sprite>
     <sprite>sprites\sprite56</sprite>
     <sprite>sprites\spr_play</sprite>
+    <sprite>sprites\sprite59</sprite>
+    <sprites name="necklace_ui">
+      <sprite>sprites\spr_power_1</sprite>
+      <sprite>sprites\spr_power_2</sprite>
+      <sprite>sprites\spr_power_3</sprite>
+      <sprite>sprites\spr_power_4</sprite>
+      <sprite>sprites\spr_power_5</sprite>
+      <sprite>sprites\spr_base</sprite>
+      <sprite>sprites\spr_overlay</sprite>
+      <sprite>sprites\spr_orbv</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_rocks</background>
