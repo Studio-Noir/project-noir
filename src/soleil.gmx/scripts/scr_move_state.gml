@@ -93,7 +93,7 @@ if(orb_cooldown <= 0){
 */
 
 move = key_left + key_right;
-speed_horizontal = move * speed_move;
+if(not ladder)speed_horizontal = move * speed_move;
 
 if (speed_vertical < 10) { // Vertical speed affected by gravity; limited to 10 downwards.
     speed_vertical += physics_gravity;

@@ -69,6 +69,11 @@ if(orb_cooldown <= 0){
         lob_power = 0;
     }
 }
+if (keyboard_check(vk_right) or keyboard_check(vk_left)){// fix moving screen problem
+    ladder = false;
+    sprite_state = STATE_JUMP;
+    state = scr_move_state;
+}
 
 if (key_jump) {
     if (place_meeting(x, y+1, obj_ground) || place_meeting(x, y+1, par_block)||true) {       
