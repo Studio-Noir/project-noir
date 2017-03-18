@@ -311,7 +311,7 @@ if(stun == 0){
 }
 
 //Move towards player
-if stop == 0{
+if (stop == 0 and stun == 0){
     if (x - obj_char.x &lt;= x_distance and obj_char.x - x &lt;= x_distance - 50){
         if(abs(y - obj_char.y) &lt;= y_distance){
             x+= sign(obj_char.x-x)*h_speed*stun_speed_modifier;
