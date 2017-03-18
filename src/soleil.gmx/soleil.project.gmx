@@ -19,30 +19,13 @@
     <sound>sound\snd_forest_dark</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_tree_2</sprite>
-    <sprite>sprites\spr_char</sprite>
-    <sprite>sprites\spr_ground</sprite>
-    <sprite>sprites\spr_char_walk</sprite>
-    <sprite>sprites\spr_char_jump</sprite>
-    <sprite>sprites\spr_hill_up</sprite>
-    <sprite>sprites\spr_hill_down</sprite>
-    <sprite>sprites\spr_char_ledge</sprite>
-    <sprite>sprites\spr_char_ledge_static</sprite>
-    <sprite>sprites\spr_ladder</sprite>
-    <sprite>sprites\spr_vine</sprite>
-    <sprite>sprites\spr_vine_dark</sprite>
-    <sprite>sprites\spr_char_ladder</sprite>
-    <sprite>sprites\spr_char_ladder_static</sprite>
-    <sprite>sprites\spr_block</sprite>
-    <sprite>sprites\spr_char_push</sprite>
-    <sprite>sprites\spr_orbcount</sprite>
-    <sprite>sprites\spr_dropball</sprite>
-    <sprite>sprites\spr_lobball</sprite>
-    <sprite>sprites\spr_clear</sprite>
-    <sprite>sprites\spr_orb</sprite>
-    <sprite>sprites\spr_lob_ui</sprite>
-    <sprite>sprites\spr_orbcount_max</sprite>
-    <sprite>sprites\spr_orbcount_ready</sprite>
+    <sprites name="Collisions">
+      <sprite>sprites\spr_ground</sprite>
+      <sprite>sprites\spr_hill_up</sprite>
+      <sprite>sprites\spr_hill_down</sprite>
+      <sprite>sprites\spr_block</sprite>
+      <sprite>sprites\spr_block_fix</sprite>
+    </sprites>
     <sprites name="Enemy(Dover)">
       <sprite>sprites\spr_enemy1</sprite>
       <sprite>sprites\spr_enemy2</sprite>
@@ -53,26 +36,42 @@
       <sprite>sprites\spr_enemy2_stun1</sprite>
       <sprite>sprites\spr_enemy2_stun2</sprite>
     </sprites>
-    <sprite>sprites\spr_next</sprite>
-    <sprite>sprites\spr_convo</sprite>
-    <sprite>sprites\spr_vine_grow</sprite>
-    <sprite>sprites\spr_grass</sprite>
-    <sprite>sprites\spr_hill_up_grass</sprite>
-    <sprite>sprites\spr_hill_down_grass</sprite>
+    <sprites name="Environment (Light)">
+      <sprite>sprites\spr_grass</sprite>
+      <sprite>sprites\spr_hill_up_grass</sprite>
+      <sprite>sprites\spr_hill_down_grass</sprite>
+    </sprites>
     <sprites name="ground_dark">
       <sprite>sprites\spr_grass_d</sprite>
       <sprite>sprites\spr_hill_up_grass_d</sprite>
       <sprite>sprites\spr_hill_down_grass_d</sprite>
       <sprite>sprites\spr_ground_dark</sprite>
     </sprites>
-    <sprite>sprites\spr_button</sprite>
-    <sprite>sprites\spr_block_fix</sprite>
-    <sprite>sprites\spr_tree_1</sprite>
-    <sprite>sprites\spr_tree_3</sprite>
-    <sprite>sprites\spr_tree_4</sprite>
-    <sprite>sprites\spr_tree_5</sprite>
-    <sprite>sprites\spr_tree_8</sprite>
-    <sprite>sprites\spr_orb_thrown</sprite>
+    <sprites name="Orbs">
+      <sprite>sprites\spr_orb</sprite>
+      <sprite>sprites\spr_orb_thrown</sprite>
+    </sprites>
+    <sprite>sprites\spr_convo</sprite>
+    <sprite>sprites\spr_logo</sprite>
+    <sprite>sprites\spr_next</sprite>
+    <sprites name="Soleil (Player Character)">
+      <sprite>sprites\spr_char</sprite>
+      <sprite>sprites\spr_char_walk</sprite>
+      <sprite>sprites\spr_char_jump</sprite>
+      <sprite>sprites\spr_char_ledge</sprite>
+      <sprite>sprites\spr_char_ledge_static</sprite>
+      <sprite>sprites\spr_char_push</sprite>
+      <sprite>sprites\spr_char_ladder</sprite>
+      <sprite>sprites\spr_char_ladder_static</sprite>
+    </sprites>
+    <sprites name="Trees">
+      <sprite>sprites\spr_tree_1</sprite>
+      <sprite>sprites\spr_tree_2</sprite>
+      <sprite>sprites\spr_tree_3</sprite>
+      <sprite>sprites\spr_tree_4</sprite>
+      <sprite>sprites\spr_tree_5</sprite>
+      <sprite>sprites\spr_tree_8</sprite>
+    </sprites>
     <sprites name="tree_dark">
       <sprite>sprites\spr_tree_dark_2</sprite>
       <sprite>sprites\spr_tree_dark_1</sprite>
@@ -81,8 +80,12 @@
       <sprite>sprites\spr_tree_dark_4</sprite>
       <sprite>sprites\spr_tree_dark_8</sprite>
     </sprites>
-    <sprite>sprites\spr_logo</sprite>
-    <sprite>sprites\spr_play</sprite>
+    <sprites name="charge_ui">
+      <sprite>sprites\spr_charge_bg</sprite>
+      <sprite>sprites\spr_charge_meter_2</sprite>
+      <sprite>sprites\spr_charge_meter</sprite>
+      <sprite>sprites\spr_charge_overlay</sprite>
+    </sprites>
     <sprites name="necklace_ui">
       <sprite>sprites\spr_power_1</sprite>
       <sprite>sprites\spr_power_2</sprite>
@@ -93,11 +96,22 @@
       <sprite>sprites\spr_overlay</sprite>
       <sprite>sprites\spr_orbv</sprite>
     </sprites>
-    <sprites name="charge_ui">
-      <sprite>sprites\spr_charge_bg</sprite>
-      <sprite>sprites\spr_charge_meter_2</sprite>
-      <sprite>sprites\spr_charge_meter</sprite>
-      <sprite>sprites\spr_charge_overlay</sprite>
+    <sprites name="UI">
+      <sprite>sprites\spr_play</sprite>
+      <sprite>sprites\spr_button</sprite>
+      <sprite>sprites\spr_lob_ui</sprite>
+      <sprite>sprites\spr_orbcount</sprite>
+      <sprite>sprites\spr_orbcount_max</sprite>
+      <sprite>sprites\spr_orbcount_ready</sprite>
+      <sprite>sprites\spr_dropball</sprite>
+      <sprite>sprites\spr_lobball</sprite>
+      <sprite>sprites\spr_clear</sprite>
+    </sprites>
+    <sprites name="Vines">
+      <sprite>sprites\spr_ladder</sprite>
+      <sprite>sprites\spr_vine_grow</sprite>
+      <sprite>sprites\spr_vine</sprite>
+      <sprite>sprites\spr_vine_dark</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -134,39 +148,17 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_char</object>
-    <object>objects\obj_ground</object>
-    <object>objects\obj_hill_up</object>
-    <object>objects\obj_hill_down</object>
-    <object>objects\par_ladder</object>
-    <object>objects\obj_ladder</object>
-    <object>objects\obj_ladder_dark</object>
-    <object>objects\obj_block</object>
-    <object>objects\par_block</object>
-    <object>objects\obj_parallax</object>
     <objects name="Controllers">
       <object>objects\cont_main</object>
+      <object>objects\obj_text</object>
+      <object>objects\obj_killzone</object>
+      <object>objects\obj_parallax</object>
+      <object>objects\obj_backgroundmusic</object>
+      <object>objects\obj_backgroundmusic2</object>
+      <object>objects\obj_fadeout</object>
+      <object>objects\obj_nextroom</object>
+      <object>objects\obj_win</object>
     </objects>
-    <object>objects\obj_orb_pickup</object>
-    <object>objects\obj_orb</object>
-    <object>objects\obj_text</object>
-    <objects name="Enemy(Dover)">
-      <object>objects\obj_enemy1</object>
-      <object>objects\obj_enemy2</object>
-      <object>objects\obj_inv_blc</object>
-      <object>objects\obj_inv_ground</object>
-      <object>objects\obj_enemy1_s</object>
-      <object>objects\obj_enemy2_s</object>
-      <object>objects\obj_bosslv</object>
-    </objects>
-    <object>objects\obj_lighting</object>
-    <object>objects\obj_dark</object>
-    <object>objects\obj_killzone</object>
-    <object>objects\obj_backgroundmusic</object>
-    <object>objects\obj_win</object>
-    <object>objects\obj_vine_grow</object>
-    <object>objects\obj_grass</object>
-    <object>objects\obj_grass_up</object>
-    <object>objects\obj_grass_down</object>
     <objects name="Conversations">
       <object>objects\obj_conv_demo1</object>
       <object>objects\obj_conv_demo2</object>
@@ -190,27 +182,58 @@
       <object>objects\obj_convo_3_1_1_Dark</object>
       <object>objects\par_convo</object>
     </objects>
+    <objects name="Enemy(Dover)">
+      <object>objects\obj_enemy1</object>
+      <object>objects\obj_enemy2</object>
+      <object>objects\obj_inv_blc</object>
+      <object>objects\obj_inv_ground</object>
+      <object>objects\obj_enemy1_s</object>
+      <object>objects\obj_enemy2_s</object>
+      <object>objects\obj_bosslv</object>
+    </objects>
+    <objects name="Grass Blocks">
+      <object>objects\obj_grass_down</object>
+      <object>objects\obj_grass_up</object>
+      <object>objects\obj_grass</object>
+    </objects>
+    <objects name="Main Menu">
+      <object>objects\obj_next</object>
+      <object>objects\obj_quit</object>
+      <object>objects\obj_play</object>
+      <object>objects\obj_mainmenu</object>
+    </objects>
     <objects name="obj_ground_dark">
       <object>objects\obj_grass_d</object>
       <object>objects\obj_hill_up_grass_d</object>
       <object>objects\obj_hill_down_grass_d</object>
       <object>objects\obj_ground_dark</object>
     </objects>
-    <objects name="obj_mainmenu">
-      <object>objects\obj_next</object>
-      <object>objects\obj_quit</object>
-      <object>objects\obj_play</object>
-      <object>objects\obj_mainmenu</object>
+    <objects name="Orbs + Lighting">
+      <object>objects\obj_dark</object>
+      <object>objects\obj_lighting</object>
+      <object>objects\obj_orb</object>
+      <object>objects\obj_orb_pickup</object>
     </objects>
-    <object>objects\object37</object>
-    <object>objects\obj_tree_1</object>
-    <object>objects\obj_tree_2</object>
-    <object>objects\obj_tree_3</object>
-    <object>objects\obj_tree_4</object>
-    <object>objects\obj_tree_5</object>
-    <object>objects\obj_tree_8</object>
-    <object>objects\object62</object>
-    <objects name="obj_tree_dark">
+    <objects name="Terrain + Collisions">
+      <object>objects\par_block</object>
+      <object>objects\obj_block</object>
+      <object>objects\obj_ground</object>
+      <object>objects\obj_hill_up</object>
+      <object>objects\obj_hill_down</object>
+      <object>objects\par_ladder</object>
+      <object>objects\obj_ladder</object>
+      <object>objects\obj_ladder_dark</object>
+      <object>objects\obj_vine_grow</object>
+    </objects>
+    <objects name="Trees (Light)">
+      <object>objects\obj_tree_1</object>
+      <object>objects\obj_tree_2</object>
+      <object>objects\obj_tree_3</object>
+      <object>objects\obj_tree_4</object>
+      <object>objects\obj_tree_5</object>
+      <object>objects\obj_tree_8</object>
+    </objects>
+    <objects name="Trees (Dark)">
       <object>objects\obj_tree_dark_1</object>
       <object>objects\obj_tree_dark_2</object>
       <object>objects\obj_tree_dark_3</object>
@@ -218,16 +241,11 @@
       <object>objects\obj_tree_dark_5</object>
       <object>objects\obj_tree_dark_8</object>
     </objects>
-    <object>objects\obj_fadeout</object>
-    <object>objects\obj_nextroom</object>
-    <object>objects\obj_backgroundmusic2</object>
-    <object>objects\obj_lob</object>
     <objects name="Win Room Text">
       <object>objects\obj_win_title</object>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\win_room</room>
     <room>rooms\main_menu</room>
     <room>rooms\lv1_1</room>
     <room>rooms\lv1_2</room>
@@ -237,6 +255,7 @@
     <room>rooms\lv2_3</room>
     <room>rooms\lvboss_1</room>
     <room>rooms\lvboss_2</room>
+    <room>rooms\win_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
