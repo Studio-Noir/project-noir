@@ -361,7 +361,7 @@ image_xscale=-sign(self.h_speed)*image_yscale
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="4" ename="obj_enemy1_s">
+    <event eventtype="4" ename="obj_enemy1_safe">
       <action>
         <libid>1</libid>
         <id>603</id>

@@ -187,8 +187,8 @@
       <object>objects\obj_enemy2</object>
       <object>objects\obj_inv_blc</object>
       <object>objects\obj_inv_ground</object>
-      <object>objects\obj_enemy1_s</object>
-      <object>objects\obj_enemy2_s</object>
+      <object>objects\obj_enemy1_safe</object>
+      <object>objects\obj_enemy2_safe</object>
       <object>objects\obj_bosslv</object>
     </objects>
     <objects name="Grass Blocks">
