@@ -25,8 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.ORBCOUNT_TOTAL = 5;
-global.ORBCOUNT_CURRENT = 5;
+            <string>global.ORBCOUNT_TOTAL = 2;
+global.ORBCOUNT_CURRENT = 2;
+global.ORBCOUNT_STARTROOM = 2;
 alpha = 0;
 spd = 0.2;
 </string>
