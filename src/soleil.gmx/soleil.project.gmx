@@ -117,6 +117,9 @@
     <sprites name="Boss">
       <sprite>sprites\spr_boss_static</sprite>
     </sprites>
+    <sprites name="Cutscenes and Intro">
+      <sprite>sprites\spr_intro</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_rocks</background>
@@ -249,8 +252,12 @@
     <objects name="Win Room Text">
       <object>objects\obj_win_title</object>
     </objects>
+    <objects name="Cutscenes and Intro">
+      <object>objects\obj_intro</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\intro_screen</room>
     <room>rooms\main_menu</room>
     <room>rooms\lv1_1</room>
     <room>rooms\lv1_2</room>
