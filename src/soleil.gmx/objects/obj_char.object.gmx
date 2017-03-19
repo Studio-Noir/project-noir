@@ -144,6 +144,41 @@ script_execute(state);
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Play enemy sounds depending on how close they are to Soleil
+if (distance_to_object(obj_enemy1) &lt; 800 || distance_to_object(obj_enemy1) &lt; 800) {
+    if (!audio_is_playing(snd_dark)) {
+        audio_play_sound(snd_dark, 10, true);
+    }
+    if (distance_to_object(obj_enemy1) &lt; distance_to_object(obj_enemy2)) {
+        vol = 1 - (distance_to_object(obj_enemy1) / 800);
+    } else {
+        vol = 1 - (distance_to_object(obj_enemy2) / 800);
+    }
+    sound_volume(snd_dark, vol);
+} else {
+    audio_stop_sound(snd_dark);
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="8" enumb="64">
       <action>

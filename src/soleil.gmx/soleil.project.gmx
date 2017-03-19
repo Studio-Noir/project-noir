@@ -17,6 +17,7 @@
     <sound>sound\snd_background2</sound>
     <sound>sound\snd_forest_light</sound>
     <sound>sound\snd_forest_dark</sound>
+    <sound>sound\snd_enemy</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Collisions">
@@ -112,6 +113,9 @@
       <sprite>sprites\spr_vine_grow</sprite>
       <sprite>sprites\spr_vine</sprite>
       <sprite>sprites\spr_vine_dark</sprite>
+    </sprites>
+    <sprites name="Boss">
+      <sprite>sprites\spr_boss_static</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
