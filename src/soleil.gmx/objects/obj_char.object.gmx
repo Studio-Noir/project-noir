@@ -162,17 +162,17 @@ script_execute(state);
             <kind>1</kind>
             <string>/// Play enemy sounds depending on how close they are to Soleil
 if (distance_to_object(obj_enemy1) &lt; 800 || distance_to_object(obj_enemy1) &lt; 800) {
-    if (!audio_is_playing(snd_dark)) {
-        audio_play_sound(snd_dark, 10, true);
+    if (!audio_is_playing(snd_enemy)) {
+        audio_play_sound(snd_enemy, 10, true);
     }
     if (distance_to_object(obj_enemy1) &lt; distance_to_object(obj_enemy2)) {
         vol = 1 - (distance_to_object(obj_enemy1) / 800);
     } else {
         vol = 1 - (distance_to_object(obj_enemy2) / 800);
     }
-    sound_volume(snd_dark, vol);
+    sound_volume(snd_enemy, vol);
 } else {
-    audio_stop_sound(snd_dark);
+    audio_stop_sound(snd_enemy);
 }
 
 </string>
