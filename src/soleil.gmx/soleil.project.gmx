@@ -231,7 +231,32 @@
             <object>objects\obj_cut_12</object>
           </objects>
         </objects>
-        <object>objects\obj_mm_1</object>
+        <object>objects\obj_convo_mm_1</object>
+        <object>objects\obj_convo_cut_1_and_2</object>
+        <object>objects\ob_convo_cut_3_1</object>
+        <object>objects\obj_convo_cut_3_2</object>
+        <object>objects\obj_convo_cut_3_3</object>
+        <object>objects\obj_convo_cut_4_1</object>
+        <object>objects\obj_convo_cut_4_2</object>
+        <object>objects\obj_convo_cut_5_1</object>
+        <object>objects\obj_convo_cut_5_2</object>
+        <object>objects\obj_convo_cut_5_3</object>
+        <object>objects\obj_convo_cut_5_4</object>
+        <object>objects\obj_convo_cut_6_1</object>
+        <object>objects\obj_convo_cut_6_2</object>
+        <object>objects\obj_convo_cut_6_3</object>
+        <object>objects\obj_convo_cut_6_visions</object>
+        <object>objects\obj_convo_cut_6_visions_2</object>
+        <object>objects\obj_convo_cut_10_1_endofvs2</object>
+        <object>objects\obj_convo_cut_10_to_12_1</object>
+        <object>objects\obj_convo_cut_10_to_12_end</object>
+        <object>objects\obj_convo_cut_10_1_endofvs2_1</object>
+        <object>objects\obj_convo_cut_7_1</object>
+        <object>objects\obj_convo_cut_7_2</object>
+        <object>objects\obj_convo_cut_7_3</object>
+        <object>objects\obj_convo_cut_13_1</object>
+        <object>objects\obj_convo_cut_13_2</object>
+        <object>objects\obj_convo_cut_13_3</object>
       </objects>
     </objects>
     <objects name="Enemy(Dover)">

@@ -29,7 +29,7 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "Once upon a time, #there was a girl named Soleil and her best friend Teddy, #who lived with her family in the forest.";
+text ='As Soleil’s father wakes up, he sits up and smiles. #“Well done Soleil. I’m so proud of you.” #responds Soleil’s father as he embraces Soleil.';
 color = c_black;
 
 /// Constants
