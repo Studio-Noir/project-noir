@@ -119,6 +119,21 @@
     </sprites>
     <sprites name="Cutscenes and Intro">
       <sprite>sprites\spr_intro</sprite>
+      <sprites name="Cutscene List">
+        <sprite>sprites\spr_cut_1</sprite>
+        <sprite>sprites\spr_cut_2</sprite>
+        <sprite>sprites\spr_cut_3</sprite>
+        <sprite>sprites\spr_cut_4</sprite>
+        <sprite>sprites\spr_cut_5</sprite>
+        <sprite>sprites\spr_cut_6</sprite>
+        <sprite>sprites\spr_cut_7</sprite>
+        <sprite>sprites\spr_cut_8</sprite>
+        <sprite>sprites\spr_cut_9</sprite>
+        <sprite>sprites\spr_cut_10</sprite>
+        <sprite>sprites\spr_cut_11</sprite>
+        <sprite>sprites\spr_cut_12</sprite>
+        <sprite>sprites\spr_cut_13</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -189,6 +204,9 @@
       <object>objects\obj_convo_2_4_1_Teddy</object>
       <object>objects\obj_convo_3_1_1_Dark</object>
       <object>objects\par_convo</object>
+      <objects name="Main Menu">
+        <object>objects\obj_mm_1</object>
+      </objects>
     </objects>
     <objects name="Enemy(Dover)">
       <object>objects\obj_enemy1</object>
@@ -252,24 +270,65 @@
     <objects name="Win Room Text">
       <object>objects\obj_win_title</object>
     </objects>
-    <objects name="Cutscenes and Intro">
+    <objects name="Introduction">
       <object>objects\obj_intro</object>
+    </objects>
+    <objects name="Cutscenes">
+      <objects name="First Cutscene">
+        <object>objects\obj_cut_1</object>
+        <object>objects\obj_cut_2</object>
+        <object>objects\obj_cut_3</object>
+        <object>objects\obj_cut_4</object>
+        <object>objects\obj_cut_5</object>
+      </objects>
+      <objects name="Second Cutscene">
+        <object>objects\obj_cut_6</object>
+        <object>objects\obj_cut_6_dark</object>
+        <object>objects\obj_cut_6_flash</object>
+      </objects>
+      <objects name="Third Cutscene">
+        <object>objects\obj_cut_10</object>
+        <object>objects\obj_cut_7</object>
+        <object>objects\obj_cut_8</object>
+        <object>objects\obj_cut_9</object>
+      </objects>
+      <objects name="Fourth Cutscene">
+        <object>objects\obj_cut_13</object>
+        <object>objects\obj_cut_10_2</object>
+        <object>objects\obj_cut_11</object>
+        <object>objects\obj_cut_12</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\intro_screen</room>
-    <room>rooms\main_menu</room>
-    <room>rooms\lv1_1</room>
-    <room>rooms\lv1_2</room>
-    <room>rooms\lv1_3</room>
-    <room>rooms\lv2_1</room>
-    <room>rooms\lv2_2</room>
-    <room>rooms\lv2_3</room>
-    <room>rooms\lvboss_1</room>
-    <room>rooms\lvboss_2</room>
-    <room>rooms\lvboss_3</room>
-    <room>rooms\lvboss_fight</room>
-    <room>rooms\win_room</room>
+    <rooms name="main_menu">
+      <room>rooms\intro_screen</room>
+      <room>rooms\main_menu</room>
+    </rooms>
+    <rooms name="act_1">
+      <room>rooms\cutscene_1</room>
+      <room>rooms\lv1_1</room>
+      <room>rooms\lv1_2</room>
+      <room>rooms\lv1_3</room>
+      <room>rooms\cutscene_2</room>
+    </rooms>
+    <rooms name="act_2">
+      <room>rooms\lv2_1</room>
+      <room>rooms\cutscene_3</room>
+      <room>rooms\lv2_2</room>
+      <room>rooms\lv2_3</room>
+      <room>rooms\cutscene_4</room>
+    </rooms>
+    <rooms name="act_3">
+      <room>rooms\lvboss_1</room>
+      <room>rooms\lvboss_2</room>
+      <room>rooms\lvboss_3</room>
+      <room>rooms\lvboss_fight</room>
+      <room>rooms\cutscene_5</room>
+    </rooms>
+    <rooms name="end_act">
+      <room>rooms\win_room</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
