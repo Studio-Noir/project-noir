@@ -92,11 +92,16 @@ if (showtext == 1) {
     text_height = string_height_ext(text, font_size+(font_size/2), 500);
     
     if (light_or_dark == 1) { // light world
-        draw_set_blend_mode(bm_add);
-        draw_set_alpha(alpha / 10);
-        draw_ellipse_color(xvar - text_width, yvar - 2 * text_height, xvar + text_width, yvar + 3 * text_height, c_white, c_black, false);
-        draw_set_alpha(alpha);
-        draw_set_blend_mode(bm_normal);
+        x1 = xvar;
+        y1 = yvar;
+        draw_text(x1 - 1, y1 - 1, text);
+        draw_text(x1, y1 - 1, text);
+        draw_text(x1 + 1, y1 - 1, text);
+        draw_text(x1 - 1, y1, text);
+        draw_text(x1 + 1, y1, text);
+        draw_text(x1 - 1, y1 + 1, text);
+        draw_text(x1, y1 + 1, text);
+        draw_text(x1 + 1, y1 + 1, text);
     } else {
         draw_set_blend_mode(bm_subtract);
         draw_set_alpha(alpha / 10);

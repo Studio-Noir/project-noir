@@ -205,6 +205,32 @@
       <object>objects\obj_convo_3_1_1_Dark</object>
       <object>objects\par_convo</object>
       <objects name="Main Menu">
+        <objects name="Cutscenes">
+          <objects name="First Cutscene">
+            <object>objects\obj_cut_1</object>
+            <object>objects\obj_cut_2</object>
+            <object>objects\obj_cut_3</object>
+            <object>objects\obj_cut_4</object>
+            <object>objects\obj_cut_5</object>
+          </objects>
+          <objects name="Second Cutscene">
+            <object>objects\obj_cut_6</object>
+            <object>objects\obj_cut_6_dark</object>
+            <object>objects\obj_cut_6_flash</object>
+          </objects>
+          <objects name="Third Cutscene">
+            <object>objects\obj_cut_10</object>
+            <object>objects\obj_cut_7</object>
+            <object>objects\obj_cut_8</object>
+            <object>objects\obj_cut_9</object>
+          </objects>
+          <objects name="Fourth Cutscene">
+            <object>objects\obj_cut_13</object>
+            <object>objects\obj_cut_10_2</object>
+            <object>objects\obj_cut_11</object>
+            <object>objects\obj_cut_12</object>
+          </objects>
+        </objects>
         <object>objects\obj_mm_1</object>
       </objects>
     </objects>
@@ -272,32 +298,6 @@
     </objects>
     <objects name="Introduction">
       <object>objects\obj_intro</object>
-    </objects>
-    <objects name="Cutscenes">
-      <objects name="First Cutscene">
-        <object>objects\obj_cut_1</object>
-        <object>objects\obj_cut_2</object>
-        <object>objects\obj_cut_3</object>
-        <object>objects\obj_cut_4</object>
-        <object>objects\obj_cut_5</object>
-      </objects>
-      <objects name="Second Cutscene">
-        <object>objects\obj_cut_6</object>
-        <object>objects\obj_cut_6_dark</object>
-        <object>objects\obj_cut_6_flash</object>
-      </objects>
-      <objects name="Third Cutscene">
-        <object>objects\obj_cut_10</object>
-        <object>objects\obj_cut_7</object>
-        <object>objects\obj_cut_8</object>
-        <object>objects\obj_cut_9</object>
-      </objects>
-      <objects name="Fourth Cutscene">
-        <object>objects\obj_cut_13</object>
-        <object>objects\obj_cut_10_2</object>
-        <object>objects\obj_cut_11</object>
-        <object>objects\obj_cut_12</object>
-      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
