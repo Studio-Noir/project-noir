@@ -279,6 +279,7 @@
       <object>objects\obj_lighting</object>
       <object>objects\obj_orb</object>
       <object>objects\obj_orb_dark</object>
+      <object>objects\obj_orb_dark_thrown</object>
       <object>objects\obj_orb_pickup</object>
     </objects>
     <objects name="Terrain + Collisions">
