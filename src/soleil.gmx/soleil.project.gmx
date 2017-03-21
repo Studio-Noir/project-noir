@@ -53,6 +53,7 @@
     <sprites name="Orbs">
       <sprite>sprites\spr_orb</sprite>
       <sprite>sprites\spr_orb_thrown</sprite>
+      <sprite>sprites\spr_orb_dark</sprite>
     </sprites>
     <sprite>sprites\spr_convo</sprite>
     <sprite>sprites\spr_logo</sprite>
@@ -271,6 +272,7 @@
       <object>objects\obj_dark</object>
       <object>objects\obj_lighting</object>
       <object>objects\obj_orb</object>
+      <object>objects\obj_orb_dark</object>
       <object>objects\obj_orb_pickup</object>
     </objects>
     <objects name="Terrain + Collisions">
