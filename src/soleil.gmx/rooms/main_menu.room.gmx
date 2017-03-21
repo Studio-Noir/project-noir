@@ -166,7 +166,6 @@
     <instance objName="obj_orb_pickup" x="1888" y="220" name="inst_6144C5C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_orb_pickup" x="2144" y="765" name="inst_EAED59D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_orb_pickup" x="3488" y="320" name="inst_6097A3CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_next" x="0" y="700" name="inst_F163E307" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_lighting" x="0" y="0" name="inst_053C21AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_parallax" x="64" y="0" name="inst_47B9A63E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy1" x="2880" y="765" name="inst_1E3BF429" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

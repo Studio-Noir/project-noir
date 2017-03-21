@@ -29,7 +29,7 @@
 xvar = 1100;
 yvar = 80;
 color = c_black;
-text = "Soleil's father uses his necklace #to throw light orbs to stall #the dark from reaching Soleil.";
+text = "Soleil's father uses his necklace #to throw light orbs to stall #the Dark from reaching Soleil.";
 </string>
           </argument>
         </arguments>
@@ -165,6 +165,7 @@ text_height = string_height_ext(text, font_size+(font_size/2), 500);
 
 draw_set_alpha(image_alpha);
 draw_set_color(c_white);
+draw_set_font(font_chat);
 
 x1 = xvar;
 y1 = yvar;
@@ -178,7 +179,6 @@ draw_text(x1 - 1, y1 + 1, text);
 draw_text(x1, y1 + 1, text);
 draw_text(x1 + 1, y1 + 1, text);
 
-draw_set_font(font_chat);
 draw_set_color(color);
 draw_text(xvar, yvar, text);
 draw_set_alpha(1);

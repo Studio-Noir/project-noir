@@ -45,7 +45,7 @@
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>snd_backgroundboss</sound>
+            <sound>snd_background1</sound>
           </argument>
         </arguments>
       </action>
@@ -65,7 +65,7 @@
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>snd_forest_dark</sound>
+            <sound>snd_backgroundboss</sound>
           </argument>
         </arguments>
       </action>
@@ -110,7 +110,7 @@
           <argument>
             <kind>1</kind>
             <string>/// Adjust boss volume
-audio_sound_gain(snd_backgroundboss, 0.4, 0);
+audio_sound_gain(snd_backgroundboss, 0.2, 0);
 </string>
           </argument>
         </arguments>

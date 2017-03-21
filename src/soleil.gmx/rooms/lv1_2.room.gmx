@@ -84,7 +84,6 @@
     <instance objName="obj_next" x="4448" y="680" name="inst_F492576E" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_orb_pickup" x="4096" y="430" name="inst_24BDBBF7" locked="0" code="" scaleX="1.60000002384186" scaleY="1.60000002384186" colour="4294967295" rotation="0"/>
     <instance objName="obj_char" x="96" y="705" name="inst_1F5D2757" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_next" x="32" y="460" name="inst_BAB615A0" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy2" x="1888" y="765" name="inst_75F325AD" locked="0" code="" scaleX="1" scaleY="0.970000028610229" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy1" x="2688" y="775" name="inst_EC09FAE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy1" x="3328" y="715" name="inst_B5B1BD1A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -203,7 +202,7 @@
     <instance objName="obj_next" x="4960" y="540" name="inst_0E204853" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inv_blc" x="1824" y="700" name="inst_E166DAC1" locked="0" code="" scaleX="-1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_inv_blc" x="2240" y="735" name="inst_E5C23CD7" locked="0" code="" scaleX="1" scaleY="4.6875" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tree_5" x="320" y="405" name="inst_7F89D53B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_5" x="320" y="420" name="inst_7F89D53B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_3" x="2496" y="-605" name="inst_D1EBE269" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_4" x="5152" y="370" name="inst_305BF264" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_killzone" x="1280" y="1145" name="inst_5DD40BC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
