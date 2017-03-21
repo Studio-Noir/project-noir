@@ -2,13 +2,21 @@
 
 key_up = keyboard_check(vk_up);
 key_down = keyboard_check(vk_down);
+key_left = keyboard_check(vk_left);
+key_right = keyboard_check(vk_right);
+
 key_jump = keyboard_check_pressed(vk_space);
+
+//Camera action
 
 //Orb Mechanics still function on ledge
 key_orb1_prev = key_orb1;
 key_orb2_prev = key_orb2;
 key_orb1 = keyboard_check(ord('Z')) or keyboard_check(ord('H')) or keyboard_check_pressed(ord('1'));
 key_orb2 = keyboard_check(ord('X')) or keyboard_check(ord('J')) or keyboard_check_pressed(ord('2'));
+
+//Movement
+movement = keyboard_check(vk_right) - keyboard_check(vk_left);
 
 //Decrement orb cooldown if still in effect
 if(orb_cooldown > 0){
@@ -69,21 +77,19 @@ if(orb_cooldown <= 0){
         lob_power = 0;
     }
 }
-if (keyboard_check(vk_right) or keyboard_check(vk_left)){// fix moving screen problem
-    ladder = false;
-    sprite_state = STATE_JUMP;
-    state = scr_move_state;
-}
 
-if (key_jump) {
-    if (place_meeting(x, y+1, obj_ground) || place_meeting(x, y+1, par_block)||true) {       
-        speed_vertical = -13;//-speed_jump;//key_jump * -speed_jump; 
-        sprite_state = STATE_JUMP;
-    }
+if (key_jump && movement != 0) {     
+    speed_vertical = -13;//-speed_jump;//key_jump * -speed_jump; 
+    speed_horizontal = movement * 10;
+    sprite_state = STATE_JUMP;
+    ladder = false;
+    state = scr_move_state;
+} else if (movement != 0 && place_meeting(x, y + 50, obj_ground)) {
+    speed_horizontal = movement * 10;
+    sprite_state = STATE_WALK;
     ladder = false;
     state = scr_move_state;
 }
-if (!place_free(x,y+2)) state = scr_move_state
   
 if (light_or_dark == 1) {
     dir = -1;
@@ -102,9 +108,17 @@ if (ladder) {
     if (!place_meeting(x, y, par_ladder)) { ladder = false; }
     if (key_down && place_meeting(x, y+1, obj_ground)) { state = scr_move_state; }
     if (speed_vertical != 0) {
-        sprite_index = spr_char_ladder;
+        if (global.bear_present) {
+            sprite_index = spr_char_ladder;
+        } else {
+            sprite_index = spr_char_ladder_nobear;
+        }
     } else {
-        sprite_index = spr_char_ladder_static;
+        if (global.bear_present) {
+            sprite_index = spr_char_ladder_static;
+        } else {
+            sprite_index = spr_char_ladder_static_nobear;
+        }
     }
     audio_stop_sound(snd_walking);
     if (!audio_is_playing(snd_vine) && (speed_vertical != 0)) {
