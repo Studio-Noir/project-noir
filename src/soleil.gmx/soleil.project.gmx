@@ -350,11 +350,11 @@
       <room>rooms\lvboss_1</room>
       <room>rooms\lvboss_2</room>
       <room>rooms\lvboss_3</room>
-      <room>rooms\lvboss_fight</room>
       <room>rooms\cutscene_5</room>
     </rooms>
     <rooms name="end_act">
       <room>rooms\win_room</room>
+      <room>rooms\lvboss_fight</room>
     </rooms>
   </rooms>
   <help>
