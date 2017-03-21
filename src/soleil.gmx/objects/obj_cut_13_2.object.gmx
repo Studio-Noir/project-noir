@@ -29,7 +29,7 @@
 xvar = 100;
 yvar = 100;
 color = c_black;
-text = "As Soleil's father wakes up, he sits up and smiles." + '#"Well done Soleil. I am so proud of you."' + "#responds Soleil's father as he embraces Soleil.";
+text = "As Soleil's father wakes up, he sits up and smiles." + '#"Well done Soleil. I am so proud of you."' + "#responds Soleil;s father as he embraces Soleil.";
 </string>
           </argument>
         </arguments>

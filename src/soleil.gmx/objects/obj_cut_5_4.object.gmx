@@ -29,7 +29,7 @@
 xvar = 1250;
 yvar = 80;
 color = c_black;
-text = "Soleil quiets, nods and flees into the forest. #In the distance, she sees several dark, large, #and scary creatures crawling towards her. #Taking comfort in Teddy, Soleil musters #up the confidence to confront these #creatures to progress forward.";
+text = "Soleil quiets down, nods and flees into the forest. #In the distance, she sees several dark, large, #and scary creatures crawling towards her. #Taking comfort in Teddy, Soleil musters #up the confidence to confront these #creatures to progress forward.";
 </string>
           </argument>
         </arguments>

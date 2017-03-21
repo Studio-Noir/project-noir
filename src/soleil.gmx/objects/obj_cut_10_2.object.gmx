@@ -29,7 +29,7 @@
 xvar = 200;
 yvar = 80;
 color = c_black;
-text = '"No...Thank you..." Teddy whispered.';
+text = '"No... Thank you..." Teddy whispered.';
 </string>
           </argument>
         </arguments>

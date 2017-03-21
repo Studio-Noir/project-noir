@@ -29,7 +29,7 @@
 xvar = 1100;
 yvar = 80;
 color = c_black;
-text = "Soleil's father uses his necklace #to throw light orbs to stall #the dark from reaching Soleil.";
+text = "Soleil's father uses his necklace #to throw light orbs to stall #the Dark from reaching Soleil.";
 </string>
           </argument>
         </arguments>
