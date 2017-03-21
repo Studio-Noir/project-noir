@@ -153,6 +153,9 @@
         <sprite>sprites\spr_cut_13</sprite>
       </sprites>
     </sprites>
+    <sprites name="Portal">
+      <sprite>sprites\spr_portal</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_rocks</background>
@@ -318,6 +321,9 @@
     <objects name="Boss">
       <object>objects\obj_boss</object>
       <object>objects\obj_dark_orb_boss</object>
+    </objects>
+    <objects name="Portal">
+      <object>objects\obj_portal</object>
     </objects>
   </objects>
   <rooms name="rooms">
