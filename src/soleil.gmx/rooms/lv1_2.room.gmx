@@ -85,7 +85,7 @@
     <instance objName="obj_orb_pickup" x="4096" y="430" name="inst_24BDBBF7" locked="0" code="" scaleX="1.60000002384186" scaleY="1.60000002384186" colour="4294967295" rotation="0"/>
     <instance objName="obj_char" x="96" y="705" name="inst_1F5D2757" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_next" x="32" y="460" name="inst_BAB615A0" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy2" x="1888" y="765" name="inst_75F325AD" locked="0" code="" scaleX="1" scaleY="0.97000002861023" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy2" x="1888" y="765" name="inst_75F325AD" locked="0" code="" scaleX="1" scaleY="0.970000028610229" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy1" x="2688" y="775" name="inst_EC09FAE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy1" x="3328" y="715" name="inst_B5B1BD1A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lighting" x="64" y="55" name="inst_8D0E539C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
