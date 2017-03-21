@@ -7,6 +7,8 @@ key_right = keyboard_check(vk_right);
 
 key_jump = keyboard_check_pressed(vk_space);
 
+//Camera action
+
 //Orb Mechanics still function on ledge
 key_orb1_prev = key_orb1;
 key_orb2_prev = key_orb2;

@@ -54,6 +54,12 @@ lob_power = 0;
 lob_power_max = 25;
 light_size = 1000;
 
+/* Camera movement for vines */
+old_xview = view_xview[0];
+old_yview = view_yview[0];
+x_pre = x;
+y_pre = y;
+
 /* Init Character */
 sprite_state = STATE_STAND;
 state = scr_move_state;
@@ -175,6 +181,38 @@ if (distance_to_object(obj_enemy1) &lt; 800 || distance_to_object(obj_enemy1) &l
     audio_stop_sound(snd_enemy);
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Setup xview monitoring
+if (x_pre == x &amp;&amp; y_pre == y) {
+    view_xview[0] = old_xview;
+    view_yview[0] = old_yview;
+    x = x_pre;
+    y = y_pre;
+} else {
+    x_pre = x;
+    y_pre = y;
+    old_xview = view_xview[0];
+    old_yview = view_yview[0];
+}
 </string>
           </argument>
         </arguments>
