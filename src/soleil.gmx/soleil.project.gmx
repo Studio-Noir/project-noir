@@ -128,6 +128,12 @@
     </sprites>
     <sprites name="Boss">
       <sprite>sprites\spr_boss_static</sprite>
+      <sprite>sprites\spr_boss_1_idle</sprite>
+      <sprite>sprites\spr_boss_1_attack</sprite>
+      <sprite>sprites\spr_boss_2_idle</sprite>
+      <sprite>sprites\spr_boss_2_attack</sprite>
+      <sprite>sprites\spr_boss_3_idle</sprite>
+      <sprite>sprites\spr_boss_3_attack</sprite>
     </sprites>
     <sprites name="Cutscenes and Intro">
       <sprite>sprites\spr_intro</sprite>
@@ -309,6 +315,10 @@
     <objects name="Introduction">
       <object>objects\obj_intro</object>
     </objects>
+    <objects name="Boss">
+      <object>objects\obj_boss</object>
+      <object>objects\obj_dark_orb_boss</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <rooms name="main_menu">
@@ -326,18 +336,19 @@
       <room>rooms\lv2_1</room>
       <room>rooms\cutscene_3</room>
       <room>rooms\lv2_2</room>
+      <room>rooms\cutscene3_5</room>
+      <room>rooms\Cutscene3_7</room>
       <room>rooms\lv2_3</room>
       <room>rooms\cutscene_4</room>
     </rooms>
     <rooms name="act_3">
       <room>rooms\lvboss_1</room>
       <room>rooms\lvboss_2</room>
-      <room>rooms\lvboss_3</room>
+      <room>rooms\lvboss_fight</room>
       <room>rooms\cutscene_5</room>
     </rooms>
     <rooms name="end_act">
       <room>rooms\win_room</room>
-      <room>rooms\lvboss_fight</room>
     </rooms>
   </rooms>
   <help>

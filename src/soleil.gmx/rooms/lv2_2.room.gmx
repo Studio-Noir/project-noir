@@ -8,7 +8,7 @@
   <isometric>0</isometric>
   <speed>50</speed>
   <persistent>0</persistent>
-  <colour>12632256</colour>
+  <colour>0</colour>
   <showcolour>-1</showcolour>
   <code>global.is_cutscene = 0;</code>
   <enableViews>-1</enableViews>
@@ -93,7 +93,6 @@
     <instance objName="obj_inv_blc" x="3456" y="800" name="inst_6330CD8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="3008" y="384" name="inst_AA3EA4C1" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_char" x="6176" y="768" name="inst_29A84B1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_next" x="5344" y="512" name="inst_8A9F6AC1" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="3648" y="576" name="inst_87B48E70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dark" x="96" y="32" name="inst_FC7F46AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_parallax" x="160" y="32" name="inst_3EE9F82D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -112,7 +111,6 @@
     <instance objName="obj_ground" x="3584" y="736" name="inst_05B0A636" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="4928" y="576" name="inst_A7CABDCD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="3648" y="256" name="inst_7DA92A46" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_next" x="6496" y="704" name="inst_06CBF608" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_dark" x="3648" y="128" name="inst_161A93AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_dark" x="3648" y="192" name="inst_552310C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_dark" x="4608" y="576" name="inst_D12A1477" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -406,7 +404,7 @@
     <instance objName="obj_ground_dark" x="2208" y="544" name="inst_26BAE159" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_dark" x="2272" y="480" name="inst_3994E654" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground_dark" x="2240" y="544" name="inst_02B62756" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tree_dark_8" x="6880" y="928" name="inst_FA4968DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_dark_8" x="6656" y="896" name="inst_FA4968DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_dark_8" x="2112" y="928" name="inst_4F6D8E78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_dark_4" x="4608" y="896" name="inst_2AD281EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_dark_3" x="-96" y="-128" name="inst_6C613EBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -128,7 +128,6 @@
     <instance objName="obj_ground" x="4736" y="832" name="inst_985A6D14" locked="0" code="" scaleX="5" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="4864" y="736" name="inst_634F3F0C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_killzone" x="4096" y="928" name="inst_835ABADC" locked="0" code="" scaleX="30" scaleY="0.0500000007450581" colour="4294967295" rotation="0"/>
-    <instance objName="obj_next" x="32" y="512" name="inst_7B234E91" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_inv_blc" x="2048" y="576" name="inst_402FC5F9" locked="0" code="" scaleX="0.15625" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inv_blc" x="2336" y="288" name="inst_4FD13AF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hill_up" x="2336" y="347" name="inst_10D42008" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -240,7 +239,7 @@
     <instance objName="obj_tree_4" x="5440" y="416" name="inst_3BB2FA17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_8" x="3296" y="288" name="inst_F905C493" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_4" x="1312" y="448" name="inst_B77DA896" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tree_3" x="-736" y="-704" name="inst_B65FA64D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_3" x="-768" y="-640" name="inst_B65FA64D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hill_up" x="4160" y="448" name="inst_CA4472FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inv_blc" x="2238" y="160" name="inst_B22BA0CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="2976" y="416" name="inst_C24A0CE8" locked="0" code="" scaleX="4.5" scaleY="1" colour="4294967295" rotation="0"/>

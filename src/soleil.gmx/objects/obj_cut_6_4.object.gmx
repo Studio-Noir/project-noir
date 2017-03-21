@@ -164,7 +164,9 @@ font_size = font_get_size(font_chat);
 text_width = string_width_ext(text, font_size+(font_size/2), 500);
 text_height = string_height_ext(text, font_size+(font_size/2), 500);
 
+draw_set_alpha(image_alpha);
 draw_set_color(c_white);
+draw_set_font(font_chat);
 
 x1 = xvar;
 y1 = yvar;
@@ -178,9 +180,7 @@ draw_text(x1 - 1, y1 + 1, text);
 draw_text(x1, y1 + 1, text);
 draw_text(x1 + 1, y1 + 1, text);
 
-draw_set_font(font_chat);
 draw_set_color(color);
-draw_set_alpha(image_alpha);
 draw_text(xvar, yvar, text);
 draw_set_alpha(1);
 </string>
