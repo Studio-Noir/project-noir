@@ -18,6 +18,8 @@
     <sound>sound\snd_forest_light</sound>
     <sound>sound\snd_forest_dark</sound>
     <sound>sound\snd_enemy</sound>
+    <sound>sound\snd_backgroundboss</sound>
+    <sound>sound\snd_backgroundlight</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Collisions">
@@ -184,8 +186,10 @@
       <object>objects\obj_text</object>
       <object>objects\obj_killzone</object>
       <object>objects\obj_parallax</object>
+      <object>objects\obj_backgroundmusiclight</object>
       <object>objects\obj_backgroundmusic</object>
       <object>objects\obj_backgroundmusic2</object>
+      <object>objects\obj_backgroundmusicboss</object>
       <object>objects\obj_fadeout</object>
       <object>objects\obj_nextroom</object>
       <object>objects\obj_win</object>
