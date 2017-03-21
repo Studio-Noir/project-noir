@@ -96,6 +96,7 @@
     <instance objName="obj_ground" x="1696" y="512" name="inst_B34877BC" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="2016" y="448" name="inst_1D30D32D" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="2592" y="544" name="inst_DEF81345" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_nextroom" x="2816" y="640" name="inst_BD041088" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

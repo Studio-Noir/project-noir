@@ -27,9 +27,9 @@
             <kind>1</kind>
             <string>/// Text for drawing font
 xvar = 100;
-yvar = 100;
+yvar = 80;
 color = c_black;
-text = 'This is some text to add to the cutscenes';
+text = '"Foolish child, you really believe that #you can defeat me on your own? I am #the reason you even made it this far! #You are nothing without me." #laughs Teddy.';
 </string>
           </argument>
         </arguments>
@@ -51,16 +51,16 @@ text = 'This is some text to add to the cutscenes';
           <argument>
             <kind>1</kind>
             <string>/// Setup variables for use by par_cutscene
-time = 120;
-next_room = true;
-next_instance = null;
+time = 300;
+next_room = false;
+next_instance = obj_cut_9_1;
 fadein = 1;
 
 alarm[10] = time;
 fading = 0;
 
 // Setup destruction variables
-build_next_instance = 0;
+build_next_instance = 1;
 
 // Setup fadein on entry
 fadein = 1;

@@ -25,21 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Setup variables for use by par_cutscene
-time = 120;
-next_room = false;
-next_instance = obj_cut_2;
-
-alarm[10] = time;
-fading = 0;
-
-// Setup destruction variables
-build_next_instance = 1;
-
-// Setup fadein on entry
-fadein = 1;
-image_alpha = 0;
-
+            <string>/// Text for drawing font
+xvar = 1250;
+yvar = 80;
+color = c_black;
+text = "As the dark begins to creep #through the door crack," + "# Soleil's father exclaims," + '#"Soleil! Get to the back door!' + '# Do not come near us!"';
 </string>
           </argument>
         </arguments>
@@ -60,11 +50,21 @@ image_alpha = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Text for drawing font
-xvar = 100;
-yvar = 100;
-color = c_black;
-text = 'This is some text to add to the cutscenes';
+            <string>/// Setup variables for use by par_cutscene
+time = 90;
+next_room = false;
+next_instance = obj_cut_2;
+
+alarm[10] = time;
+fading = 0;
+
+// Setup destruction variables
+build_next_instance = 1;
+
+// Setup fadein on entry
+fadein = 1;
+image_alpha = 0;
+
 </string>
           </argument>
         </arguments>

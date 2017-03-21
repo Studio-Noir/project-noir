@@ -26,9 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>/// Setup variables for use by par_cutscene
-time = 120;
+time = 210;
 next_room = false;
-next_instance = obj_cut_3;
+next_instance = obj_cut_3_1;
 fadein = 1;
 
 alarm[10] = time;
@@ -61,10 +61,10 @@ image_alpha = 0;
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 100;
-yvar = 100;
+xvar = 1250;
+yvar = 80;
 color = c_black;
-text = 'This is some text to add to the cutscenes';
+text = "As the dark begins to creep #through the door crack," + "# Soleil's father exclaims," + '#"Soleil! Get to the back door!' + '# Do not come near us!"';
 </string>
           </argument>
         </arguments>
