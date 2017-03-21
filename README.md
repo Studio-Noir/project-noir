@@ -18,6 +18,10 @@ Instructions:
 
 -=-=-=-=-==-=-=-=-=-=-=-=-=-
 
+Please run this game at minimum resolution 1680x700. 
+
+-=-=-=-=-==-=-=-=-=-=-=-=-=-
+
 Questions:
 
 * How does the gameplay work? Are certain mechanics confusing, difficult, or unfair?
