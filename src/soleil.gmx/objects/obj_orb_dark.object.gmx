@@ -231,6 +231,8 @@ randomize();
             <kind>1</kind>
             <string>if(touched_ground){
     elapsed_time_scaled = time_since_touch/time_for_spawn;
+    image_alpha = 1 - image_alpha;
+    //TODO: Figure out the dark orb explosion. None of the code below does anything
     //Activate lighting effect based on how long it's been since touching the ground
     draw_set_blend_mode(bm_add);
     surface_set_target(light_overlay);
