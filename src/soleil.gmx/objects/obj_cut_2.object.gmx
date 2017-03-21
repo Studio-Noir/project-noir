@@ -64,7 +64,7 @@ image_alpha = 0;
 xvar = 1250;
 yvar = 80;
 color = c_black;
-text = "As the dark begins to creep #through the door crack," + "# Soleil's father exclaims," + '#"Soleil! Get to the back door!' + '# Do not come near us!"';
+text = "As the dark begins to creep #through the door crack," + "#Soleil's father exclaims," + '#"Soleil! Get to the back door!' + '# Do not come near us!"';
 </string>
           </argument>
         </arguments>
