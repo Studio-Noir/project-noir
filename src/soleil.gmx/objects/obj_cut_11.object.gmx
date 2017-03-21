@@ -29,7 +29,7 @@
 xvar = 100;
 yvar = 100;
 color = c_black;
-text = "Light emerges from the house towards the forest bringing life #to everything that was once consumed by darkness. The trees #and plants flourish and the bird's chirping returns as the world #is restored.";
+text = "Light emerges from the house towards the forest, bringing life #to everything that was once consumed by darkness. The trees #and plants flourish and the birds' chirping returns as the world #is restored.";
 </string>
           </argument>
         </arguments>

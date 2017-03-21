@@ -29,7 +29,7 @@
 xvar = 100;
 yvar = 100;
 color = c_black;
-text = "Soleil sees her parent's" + ' eyes open while crying a joyful tear. #"I missed you." cries Soleil.';
+text = "Soleil sees her parents'" + ' eyes open while crying a joyful tear. #"I missed you." cries Soleil.';
 </string>
           </argument>
         </arguments>

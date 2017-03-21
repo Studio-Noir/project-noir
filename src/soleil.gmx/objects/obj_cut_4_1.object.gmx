@@ -29,7 +29,7 @@
 xvar = 1150;
 yvar = 150;
 color = c_black;
-text = "The Dark quickly overwhelms Soleil's father.#He is consumed by the Dark and the #necklace falls on the ground.";
+text = "The Dark quickly overwhelms Soleil's father.#He is consumed by the Dark and the #necklace falls to the ground.";
 </string>
           </argument>
         </arguments>

@@ -63,7 +63,7 @@ image_alpha = 0;
 xvar = 1100;
 yvar = 70;
 color = c_black;
-text = "As the Dark flees from the burst of light,#the Dark conceals into various objects in #the house. However, the Dark continues to #creep through the door crack.";
+text = "As the Dark flees from the burst of light,#the Dark conceals itself in various objects in #the house. However, the Dark continues to #creep through the door crack.";
 </string>
           </argument>
         </arguments>
