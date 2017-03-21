@@ -68,12 +68,6 @@
       <sprite>sprites\spr_char_ladder_static</sprite>
     </sprites>
     <sprites name="Soleil_No_Bear">
-      <sprite>sprites\spr_char_ledge_nobear</sprite>
-      <sprite>sprites\spr_char_ladder_nobear</sprite>
-      <sprite>sprites\spr_char_ladder_static_nobear</sprite>
-      <sprite>sprites\spr_char_ledge_static_nobear</sprite>
-      <sprite>sprites\spr_char_walk_nobear</sprite>
-      <sprite>sprites\spr_char_nobear</sprite>
       <sprite>sprites\spr_char_jump_nobear</sprite>
     </sprites>
     <sprites name="Trees">
@@ -238,6 +232,7 @@
             <object>objects\object_cut_13_2</object>
           </objects>
         </objects>
+        <object>objects\obj_convo_mm_1</object>
       </objects>
     </objects>
     <objects name="Enemy(Dover)">

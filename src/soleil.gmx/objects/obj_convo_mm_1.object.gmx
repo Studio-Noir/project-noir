@@ -29,7 +29,7 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "Once upon a time, #there was a girl named Soleil who lived with her mother, father, and her best friend, Teddy. #For generations, the Dark has been slowly consuming humanity. #Soleil's forefather had fashioned a light necklace to protect themselves from the Dark #as people have been known to fall asleep and to never wake up afte encountering the Dark.";
+text = "Once upon a time, #there was a girl named Soleil who lived with her mother, father, and her best friend, Teddy. #For generations, the Dark has been slowly consuming humanity. #Soleil's forefather had fashioned a light necklace to protect themselves from the Dark #as people have been known to fall asleep and to never wake up after encountering the Dark.";
 color = c_black;
 
 /// Constants
