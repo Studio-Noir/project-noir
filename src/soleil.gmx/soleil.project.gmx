@@ -67,9 +67,6 @@
       <sprite>sprites\spr_char_ladder</sprite>
       <sprite>sprites\spr_char_ladder_static</sprite>
     </sprites>
-    <sprites name="Soleil_No_Bear">
-      <sprite>sprites\spr_char_jump_nobear</sprite>
-    </sprites>
     <sprites name="Trees">
       <sprite>sprites\spr_tree_1</sprite>
       <sprite>sprites\spr_tree_2</sprite>

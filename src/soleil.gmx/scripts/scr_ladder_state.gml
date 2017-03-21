@@ -108,17 +108,9 @@ if (ladder) {
     if (!place_meeting(x, y, par_ladder)) { ladder = false; }
     if (key_down && place_meeting(x, y+1, obj_ground)) { state = scr_move_state; }
     if (speed_vertical != 0) {
-        if (global.bear_present) {
-            sprite_index = spr_char_ladder;
-        } else {
-            sprite_index = spr_char_ladder_nobear;
-        }
+        sprite_index = spr_char_ladder;
     } else {
-        if (global.bear_present) {
-            sprite_index = spr_char_ladder_static;
-        } else {
-            sprite_index = spr_char_ladder_static_nobear;
-        }
+        sprite_index = spr_char_ladder_static;
     }
     audio_stop_sound(snd_walking);
     if (!audio_is_playing(snd_vine) && (speed_vertical != 0)) {

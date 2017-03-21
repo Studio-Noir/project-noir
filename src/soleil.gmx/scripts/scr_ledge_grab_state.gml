@@ -46,15 +46,7 @@ if (!place_meeting(x + (10 * direction_horizontal), y, obj_ground)) {
 
 y = y + speed_ledge;
 if (speed_ledge != 0) {
-    if (global.bear_present) {
-        sprite_index = spr_char_ledge;
-    } else {
-        sprite_index = spr_char_ledge_nobear;
-    }
+    sprite_index = spr_char_ledge;
 } else {
-    if (global.bear_present) {
-        sprite_index = spr_char_ledge_static;
-    } else {
-        sprite_index = spr_char_ledge_static_nobear;
-    }
+    sprite_index = spr_char_ledge_static;
 }
