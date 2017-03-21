@@ -29,7 +29,7 @@
 xvar = 400;
 yvar = 100;
 color = c_black;
-text = "The vivid visions don't stop. Soleil’s heart beats faster as she asks Teddy," + "Why do I keep seeing #my parents asleep? I’m getting more worried about them. Are you sure they’re okay Teddy?"';
+text = "The vivid visions don't stop. Soleil’s heart beats faster as she asks Teddy," + '"Why do I keep seeing #my parents asleep? I’m getting more worried about them. Are you sure they’re okay Teddy?"';
 </string>
           </argument>
         </arguments>
