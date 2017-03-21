@@ -53,6 +53,7 @@
     <sprites name="Orbs">
       <sprite>sprites\spr_orb</sprite>
       <sprite>sprites\spr_orb_thrown</sprite>
+      <sprite>sprites\spr_orb_dark</sprite>
     </sprites>
     <sprite>sprites\spr_convo</sprite>
     <sprite>sprites\spr_logo</sprite>
@@ -271,6 +272,7 @@
       <object>objects\obj_dark</object>
       <object>objects\obj_lighting</object>
       <object>objects\obj_orb</object>
+      <object>objects\obj_orb_dark</object>
       <object>objects\obj_orb_pickup</object>
     </objects>
     <objects name="Terrain + Collisions">
@@ -323,7 +325,6 @@
       <room>rooms\lv2_1</room>
       <room>rooms\cutscene_3</room>
       <room>rooms\lv2_2</room>
-      <room>rooms\Cutscene_3_5</room>
       <room>rooms\lv2_3</room>
       <room>rooms\cutscene_4</room>
     </rooms>
@@ -331,11 +332,11 @@
       <room>rooms\lvboss_1</room>
       <room>rooms\lvboss_2</room>
       <room>rooms\lvboss_3</room>
-      <room>rooms\lvboss_fight</room>
       <room>rooms\cutscene_5</room>
     </rooms>
     <rooms name="end_act">
       <room>rooms\win_room</room>
+      <room>rooms\lvboss_fight</room>
     </rooms>
   </rooms>
   <help>
