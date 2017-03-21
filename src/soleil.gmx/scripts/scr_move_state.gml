@@ -147,7 +147,11 @@ if (light_or_dark == 1) {
 if (key_up || key_down) {
     if (place_meeting(x + 30 * dir, y, par_ladder) && place_meeting(x + 30 * dir, y - 150, par_ladder)) {
         ladder = true;
-        sprite_index = spr_char_ladder;
+        if (global.bear_present) {
+            sprite_index = spr_char_ladder;
+        } else {
+            sprite_index = spr_char_ladder_nobear;
+        }
         state = scr_ladder_state;
         exit;
     }
@@ -242,7 +246,11 @@ var right_is_not_free = place_meeting(x + (10 * direction_horizontal), y-130, ob
 if (right_was_free && right_is_not_free && (yprevious <= y)) {
     speed_horizontal = 0;
     speed_vertical = 0;
-    sprite_index = spr_char_ledge_static;
+    if (global.bear_present) {
+        sprite_index = spr_char_ledge_static;
+    } else {
+        sprite_index = spr_char_ledge_static_nobear;
+    }
     image_xscale = direction_horizontal;
     state = scr_ledge_grab_state;
     audio_stop_sound(snd_walking);
@@ -264,10 +272,18 @@ if (move > 0) {
 if (sprite_state == STATE_JUMP) {
     if (place_meeting(x, y + 20, obj_ground)) {
         if (is_climb) {
-            sprite_index = spr_char_walk;
+            if (global.bear_present) {
+                sprite_index = spr_char_walk;
+            } else {
+                sprite_index = spr_char_walk_nobear;
+            }
         }
     } else {
-        sprite_index = spr_char_jump;
+        if (global.bear_present) {
+            sprite_index = spr_char_jump;
+        } else {
+            sprite_index = spr_char_jump_nobear;
+        }
         audio_stop_sound(snd_walking);
     }
 } else if (sprite_state == STATE_WALK) {
@@ -283,7 +299,11 @@ if (sprite_state == STATE_JUMP) {
             x = x + 10 * move;
         }
     }
-    sprite_index = spr_char_walk;
+    if (global.bear_present) {
+        sprite_index = spr_char_walk;
+    } else {
+        sprite_index = spr_char_walk_nobear;
+    }
     image_speed = 0.7; 
 } else {
     if (!(place_meeting(x, y - 50, obj_ground))) { // if space above is free
@@ -298,7 +318,11 @@ if (sprite_state == STATE_JUMP) {
             x = x + 10 * 5;
         }
     }
-    sprite_index = spr_char;
+    if (global.bear_present) {
+        sprite_index = spr_char;
+    } else {
+        sprite_index = spr_char_nobear;
+    }
     audio_stop_sound(snd_walking);
 }
 
