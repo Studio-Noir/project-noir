@@ -196,80 +196,48 @@
       <object>objects\obj_boss_final</object>
     </objects>
     <objects name="Conversations">
-      <object>objects\obj_conv_demo1</object>
-      <object>objects\obj_conv_demo2</object>
-      <object>objects\obj_convo_1_1_1_Soleil</object>
-      <object>objects\obj_convo_1_1_1_Teddy</object>
-      <object>objects\obj_convo_1_1_2_Soleil</object>
-      <object>objects\obj_convo_1_1_2_Teddy</object>
-      <object>objects\obj_convo_1_3_1_Soleil</object>
-      <object>objects\obj_convo_1_3_1_Teddy</object>
-      <object>objects\obj_convo_1_4_1_Soleil</object>
-      <object>objects\obj_convo_1_4_1_Teddy</object>
-      <object>objects\obj_convo_2_1_1_Soleil</object>
-      <object>objects\obj_convo_2_1_1_Teddy</object>
-      <object>objects\obj_convo_2_2_1_Soleil</object>
-      <object>objects\obj_convo_2_2_1_Teddy</object>
-      <object>objects\obj_convo_2_3_1_Soleil</object>
-      <object>objects\obj_convo_2_3_1_Teddy</object>
-      <object>objects\obj_convo_2_4_1_Soleil</object>
-      <object>objects\obj_convo_2_4_2_Soleil</object>
-      <object>objects\obj_convo_2_4_1_Teddy</object>
-      <object>objects\obj_convo_3_1_1_Dark</object>
       <object>objects\par_convo</object>
       <objects name="Main Menu">
         <objects name="Cutscenes">
           <objects name="First Cutscene">
             <object>objects\obj_cut_1</object>
             <object>objects\obj_cut_2</object>
-            <object>objects\obj_cut_3</object>
-            <object>objects\obj_cut_4</object>
-            <object>objects\obj_cut_5</object>
+            <object>objects\obj_cut_3_1</object>
+            <object>objects\obj_cut_3_2</object>
+            <object>objects\obj_cut_3_3</object>
+            <object>objects\obj_cut_4_1</object>
+            <object>objects\obj_cut_4_2</object>
+            <object>objects\obj_cut_5_1</object>
+            <object>objects\obj_cut_5_2</object>
+            <object>objects\obj_cut_5_3</object>
+            <object>objects\obj_cut_5_4</object>
           </objects>
           <objects name="Second Cutscene">
-            <object>objects\obj_cut_6</object>
-            <object>objects\obj_cut_6_dark</object>
-            <object>objects\obj_cut_6_flash</object>
+            <object>objects\obj_cut_6_1</object>
+            <object>objects\obj_cut_6_2</object>
+            <object>objects\obj_cut_6_3</object>
+            <object>objects\obj_cut_6_4</object>
+            <object>objects\obj_cut_6_dark_1</object>
+            <object>objects\obj_cut_6_dark_2</object>
           </objects>
           <objects name="Third Cutscene">
             <object>objects\obj_cut_10</object>
+            <object>objects\obj_cut_10_2</object>
             <object>objects\obj_cut_7</object>
             <object>objects\obj_cut_8</object>
             <object>objects\obj_cut_9</object>
+            <object>objects\obj_cut_9_1</object>
           </objects>
           <objects name="Fourth Cutscene">
             <object>objects\obj_cut_13</object>
-            <object>objects\obj_cut_10_2</object>
+            <object>objects\obj_cut_13_2</object>
+            <object>objects\obj_cut_13_3</object>
+            <object>objects\obj_cut_10_3</object>
             <object>objects\obj_cut_11</object>
             <object>objects\obj_cut_12</object>
+            <object>objects\object_cut_13_2</object>
           </objects>
         </objects>
-        <object>objects\obj_convo_mm_1</object>
-        <object>objects\obj_convo_cut_1_and_2</object>
-        <object>objects\ob_convo_cut_3_1</object>
-        <object>objects\obj_convo_cut_3_2</object>
-        <object>objects\obj_convo_cut_3_3</object>
-        <object>objects\obj_convo_cut_4_1</object>
-        <object>objects\obj_convo_cut_4_2</object>
-        <object>objects\obj_convo_cut_5_1</object>
-        <object>objects\obj_convo_cut_5_2</object>
-        <object>objects\obj_convo_cut_5_3</object>
-        <object>objects\obj_convo_cut_5_4</object>
-        <object>objects\obj_convo_cut_6_1</object>
-        <object>objects\obj_convo_cut_6_2</object>
-        <object>objects\obj_convo_cut_6_3</object>
-        <object>objects\obj_convo_cut_6_visions</object>
-        <object>objects\obj_convo_cut_6_visions_2</object>
-        <object>objects\obj_convo_cut_10_1_endofvs2</object>
-        <object>objects\obj_convo_cut_10_to_12_1</object>
-        <object>objects\obj_convo_cut_10_to_12_end</object>
-        <object>objects\obj_convo_cut_10_1_endofvs2_1</object>
-        <object>objects\obj_convo_cut_7_1</object>
-        <object>objects\obj_convo_cut_7_2</object>
-        <object>objects\obj_convo_cut_7_3</object>
-        <object>objects\obj_convo_cut_13_1</object>
-        <object>objects\obj_convo_cut_13_2</object>
-        <object>objects\obj_convo_cut_13_3</object>
       </objects>
     </objects>
     <objects name="Enemy(Dover)">
@@ -354,6 +322,7 @@
       <room>rooms\lv2_1</room>
       <room>rooms\cutscene_3</room>
       <room>rooms\lv2_2</room>
+      <room>rooms\Cutscene_3_5</room>
       <room>rooms\lv2_3</room>
       <room>rooms\cutscene_4</room>
     </rooms>

@@ -26,10 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 100;
-yvar = 100;
+xvar = 200;
+yvar = 80;
 color = c_black;
-text = 'This is some text to add to the cutscenes';
+text = '"You brought me home! Thank you, Teddy!' + '#I could not have made it here without you!"' + "#shouted Soleil while running into the house #to wake her parents up.";
 </string>
           </argument>
         </arguments>
@@ -51,9 +51,9 @@ text = 'This is some text to add to the cutscenes';
           <argument>
             <kind>1</kind>
             <string>/// Setup variables for use by par_cutscene
-time = 120;
+time = 250;
 next_room = false;
-next_instance = obj_cut_7;
+next_instance = obj_cut_10_2;
 
 alarm[10] = time;
 fading = 0;
