@@ -60,7 +60,7 @@ image_alpha = 0;
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 1100;
+xvar = 800;
 yvar = 80;
 color = c_black;
 text = "However, the dark overwhelms Soleil's father #and cracks a chip off the necklace causing #an explosion of light from the necklace.";

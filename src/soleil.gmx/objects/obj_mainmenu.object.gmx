@@ -60,7 +60,7 @@ if (alpha &lt; 1) {
     alpha = 1;
 }
 
-draw_sprite(spr_logo, -1, 1200, 300);
+draw_sprite(spr_logo, -1, 900, 300);
 draw_set_alpha(1);
 </string>
           </argument>

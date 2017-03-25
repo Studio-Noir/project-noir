@@ -25,11 +25,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Text for drawing font
-xvar = 200;
-yvar = 80;
-color = c_black;
-text = '"No... Thank you..." Teddy whispered.';
+            <string>/// Setup variables for use by par_cutscene
+time = 120;
+next_room = false;
+next_instance = obj_cut_7;
+
+alarm[10] = time;
+fading = 0;
+
+// Setup destruction variables
+build_next_instance = 1;
+
+// Setup fadein on entry
+fadein = 1;
+image_alpha = 0;
 </string>
           </argument>
         </arguments>
@@ -50,20 +59,11 @@ text = '"No... Thank you..." Teddy whispered.';
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Setup variables for use by par_cutscene
-time = 120;
-next_room = false;
-next_instance = obj_cut_7;
-
-alarm[10] = time;
-fading = 0;
-
-// Setup destruction variables
-build_next_instance = 1;
-
-// Setup fadein on entry
-fadein = 1;
-image_alpha = 0;
+            <string>/// Text for drawing font
+xvar = 200;
+yvar = 80;
+color = c_black;
+text = '"No... Thank you..." Teddy whispered.';
 </string>
           </argument>
         </arguments>

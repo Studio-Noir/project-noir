@@ -50,7 +50,7 @@ spd = 0.12;
           <argument>
             <kind>1</kind>
             <string>/// Goes to next room;
-if point_in_rectangle(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0),1106,445,1294,495)
+if point_in_rectangle(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0),806,445,1294,495)
     {
     if device_mouse_check_button_pressed(0, mb_left) {
         instance_create(0, 0, obj_nextroom);
@@ -86,7 +86,7 @@ if (alpha &lt; 1) {
     alpha = 1;
 }
 
-draw_sprite(spr_play, -1, 1200, 470);
+draw_sprite(spr_play, -1, 900, 470);
 draw_set_alpha(1);
 </string>
           </argument>

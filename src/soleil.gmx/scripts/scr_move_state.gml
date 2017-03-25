@@ -5,6 +5,8 @@ if (keyboard_check(ord('A'))) {
 } else if (keyboard_check(ord('P'))) { // artificially simulate grabbing ledge. Used for debugging.
     state = scr_ledge_grab_state;
     exit;
+} else if (keyboard_check(ord('['))) {
+    room_goto_next();
 }
 
 /// Read movement keys
