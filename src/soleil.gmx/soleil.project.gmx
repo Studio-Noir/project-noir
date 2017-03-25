@@ -206,6 +206,7 @@
       <object>objects\obj_boss_final</object>
     </objects>
     <objects name="Conversations">
+      <object>objects\obj_parent_cut</object>
       <object>objects\par_convo</object>
       <objects name="Main Menu">
         <objects name="Cutscenes">
