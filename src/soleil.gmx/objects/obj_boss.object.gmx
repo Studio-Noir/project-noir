@@ -347,7 +347,7 @@ if (ATTACK_STATE == 0) {
             <kind>1</kind>
             <string>BOSS_STATE += 1;
 if (BOSS_STATE &gt;= 4) {
-    instance_create(0, 0, obj_nextroom);
+    instance_create(0, 0, obj_fadeout_boss);
 }
 GLOW_STATE = 1;
 </string>

@@ -204,6 +204,7 @@
       <object>objects\obj_nextroom</object>
       <object>objects\obj_win</object>
       <object>objects\obj_boss_final</object>
+      <object>objects\obj_fadeout_boss</object>
     </objects>
     <objects name="Conversations">
       <object>objects\obj_parent_cut</object>
