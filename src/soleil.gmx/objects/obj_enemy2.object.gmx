@@ -384,9 +384,9 @@ if (stop == 0 and stun == 0){
             <kind>1</kind>
             <string>///Change image; speed; refresh
 if (stun_time &gt; 100) {
-    sprite_index = spr_enemy2;
+    sprite_index = spr_enemy2_move;
 } else if (stun_time &gt; 0) {
-    sprite_index = spr_enemy2;
+    sprite_index = spr_enemy2_move;
 }
 
 if (stun_time&gt;=0){
