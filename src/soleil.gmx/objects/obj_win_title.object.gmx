@@ -8,6 +8,22 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="5" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>332</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_end_game</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -51,7 +67,7 @@
             <kind>1</kind>
             <string>/// set draw color to black
 
-draw_set_color(c_black);
+draw_set_color(c_white);
 </string>
           </argument>
         </arguments>
@@ -67,7 +83,7 @@ draw_set_color(c_black);
         <functionname>action_draw_text</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
-        <relative>-1</relative>
+        <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
@@ -76,11 +92,11 @@ draw_set_color(c_black);
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>650</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>300</string>
           </argument>
         </arguments>
       </action>
@@ -104,7 +120,7 @@ draw_set_color(c_black);
           </argument>
           <argument>
             <kind>4</kind>
-            <string>0</string>
+            <string>1</string>
           </argument>
         </arguments>
       </action>
@@ -119,20 +135,48 @@ draw_set_color(c_black);
         <functionname>action_draw_text</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
-        <relative>-1</relative>
+        <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>2</kind>
-            <string>From the StudioNoir team</string>
+            <string>From the StudioNoir team: ##David Platek #Joshua Sahunta #Silas Kwok #Omer Ahmed #Wang Dong #Anson Li</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>-210</string>
+            <string>650</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>70</string>
+            <string>380</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>514</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_text</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>2</kind>
+            <string>[ESC]</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1200</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>650</string>
           </argument>
         </arguments>
       </action>

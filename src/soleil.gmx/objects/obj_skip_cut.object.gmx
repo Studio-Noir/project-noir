@@ -3,12 +3,36 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-9999</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="8" enumb="73">
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>526</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_font</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>12</kind>
+            <font>font_chat</font>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>1</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,57 +49,62 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>skiptext = "Press [ENTER] to skip";
-xskip = 1050;
-yskip = 650;
-skipcolor = c_black;
+            <string>/// set draw color to black
 
-draw_set_alpha(image_alpha);
 draw_set_color(c_white);
-draw_set_font(font_chat);
-
-x1 = xskip;
-y1 = yskip;
-
-draw_text(x1 - 1, y1 - 1, skiptext);
-draw_text(x1, y1 - 1, skiptext);
-draw_text(x1 + 1, y1 - 1, skiptext);
-draw_text(x1 - 1, y1, skiptext);
-draw_text(x1 + 1, y1, skiptext);
-draw_text(x1 - 1, y1 + 1, skiptext);
-draw_text(x1, y1 + 1, skiptext);
-draw_text(x1 + 1, y1 + 1, skiptext);
-
-draw_set_color(skipcolor);
-draw_text(xskip, yskip, skiptext);
-draw_set_alpha(1);
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="9" enumb="13">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
+        <id>514</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_draw_text</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>fading = 1;
-
-
-
-</string>
+            <kind>2</kind>
+            <string>[Enter] to Skip</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1200</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>650</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>526</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_font</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>12</kind>
+            <font>font_chat</font>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>

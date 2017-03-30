@@ -253,6 +253,7 @@
         <object>objects\obj_convo_mm_1</object>
         <object>objects\obj_convo_1_1</object>
       </objects>
+      <object>objects\obj_skip_cut</object>
     </objects>
     <objects name="Enemy(Dover)">
       <object>objects\obj_enemy1</object>
