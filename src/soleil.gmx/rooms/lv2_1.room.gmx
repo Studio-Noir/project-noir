@@ -542,7 +542,7 @@
     <instance objName="obj_hill_up" x="2449" y="576" name="inst_006BEE27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="2445" y="650" name="inst_4B938154" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hill_up_grass_d" x="2399" y="621" name="inst_718BBDA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hill_up_grass_d" x="2499" y="514" name="inst_954C97EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hill_up_grass_d" x="2498" y="518" name="inst_954C97EC" locked="0" code="" scaleX="1.18461537361145" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy1" x="960" y="768" name="inst_5B7D8CBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hill_down" x="2048" y="224" name="inst_3BDFDD17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hill_down_grass_d" x="2048" y="224" name="inst_FC23453D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -578,8 +578,8 @@
     <instance objName="obj_hill_up" x="1715" y="700" name="inst_237B0147" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hill_up" x="1660" y="752" name="inst_2E6853FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hill_up_grass_d" x="1568" y="800" name="inst_434FD52F" locked="0" code="" scaleX="1.16923081874847" scaleY="0.972972989082336" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hill_up_grass_d" x="1636" y="737" name="inst_BD7B3DEC" locked="0" code="" scaleX="1.10769236087799" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hill_up_grass_d" x="1698" y="674" name="inst_1542E780" locked="0" code="" scaleX="1.078125" scaleY="0.972972989082336" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hill_up_grass_d" x="1632" y="737" name="inst_BD7B3DEC" locked="0" code="" scaleX="1.16923081874847" scaleY="1.10810816287994" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hill_up_grass_d" x="1697" y="673" name="inst_1542E780" locked="0" code="" scaleX="1.078125" scaleY="0.972972989082336" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
