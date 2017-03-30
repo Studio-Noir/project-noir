@@ -337,13 +337,13 @@
     </rooms>
     <rooms name="act_1">
       <room>rooms\cutscene_1</room>
+      <room>rooms\lv2_1</room>
       <room>rooms\lv1_1</room>
       <room>rooms\lv1_2</room>
       <room>rooms\lv1_3</room>
       <room>rooms\cutscene_2</room>
     </rooms>
     <rooms name="act_2">
-      <room>rooms\lv2_1</room>
       <room>rooms\cutscene_3</room>
       <room>rooms\lv2_2</room>
       <room>rooms\cutscene3_5</room>

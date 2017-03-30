@@ -128,7 +128,6 @@
     <instance objName="obj_inv_blc" x="4448" y="256" name="inst_92F0FEAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="3072" y="832" name="inst_949AB34C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="3136" y="832" name="inst_9A4C2768" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_vine_grow" x="4288" y="736" name="inst_A04F50B3" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy1" x="3392" y="768" name="inst_83F40E8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy2" x="3008" y="736" name="inst_73DE28C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inv_blc" x="3264" y="768" name="inst_E6AFFC5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

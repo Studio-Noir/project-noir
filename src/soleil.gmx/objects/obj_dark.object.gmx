@@ -55,7 +55,7 @@ light_overlay = surface_create(view_wview, view_hview);
             <string>surface_set_target(light_overlay);
 //So as not to make the demo unplayable, our fog of war is not absolute
 draw_set_alpha(0.8);
-draw_set_color(c_white);
+draw_set_color(c_black);
 //Reset draw alpha
 // draw_set_alpha(1);
 draw_rectangle(0, 0, view_wview, view_hview, false);
@@ -83,9 +83,9 @@ surface_reset_target();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_blend_mode(bm_subtract);
+            <string>draw_set_blend_mode(bm_normal);
 //So as not to make the demo unplayable, our fog of war is not absolute
-draw_set_alpha(0.91);
+draw_set_alpha(1);
 draw_set_color(c_black);
 
 // Gaussian blur setup
