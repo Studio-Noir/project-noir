@@ -78,7 +78,7 @@ if(orb_cooldown <= 0){
     }
 }
 
-if (key_jump && movement != 0) {     
+if ((movement != 0 && place_meeting(x, y-10, obj_inv_blc)) || (key_jump && movement != 0)) {     
     speed_vertical = -13;//-speed_jump;//key_jump * -speed_jump; 
     speed_horizontal = movement * 10;
     sprite_state = STATE_JUMP;
