@@ -53,6 +53,7 @@ audio_stop_sound(snd_forest_dark);</code>
   </views>
   <instances>
     <instance objName="obj_cut_6_4" x="672" y="352" name="inst_B589145A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_skip_text" x="64" y="64" name="inst_C13BB68D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
