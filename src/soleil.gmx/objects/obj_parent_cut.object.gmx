@@ -25,30 +25,30 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>skiptext = "Press [ENTER] to skip";
-xskip = 1050;
-yskip = 650;
-skipcolor = c_black;
+            <string>//skiptext = "Press [ENTER] to skip";
+//xskip = 1050;
+//yskip = 650;
+//skipcolor = c_black;
 
-draw_set_alpha(image_alpha);
-draw_set_color(c_white);
-draw_set_font(font_chat);
+//draw_set_alpha(image_alpha);
+//draw_set_color(c_white);
+//draw_set_font(font_chat);
 
-x1 = xskip;
-y1 = yskip;
+//x1 = xskip;
+//y1 = yskip;
 
-draw_text(x1 - 1, y1 - 1, skiptext);
-draw_text(x1, y1 - 1, skiptext);
-draw_text(x1 + 1, y1 - 1, skiptext);
-draw_text(x1 - 1, y1, skiptext);
-draw_text(x1 + 1, y1, skiptext);
-draw_text(x1 - 1, y1 + 1, skiptext);
-draw_text(x1, y1 + 1, skiptext);
-draw_text(x1 + 1, y1 + 1, skiptext);
+//draw_text(x1 - 1, y1 - 1, skiptext);
+//draw_text(x1, y1 - 1, skiptext);
+//draw_text(x1 + 1, y1 - 1, skiptext);
+//draw_text(x1 - 1, y1, skiptext);
+//draw_text(x1 + 1, y1, skiptext);
+//draw_text(x1 - 1, y1 + 1, skiptext);
+//draw_text(x1, y1 + 1, skiptext);
+//draw_text(x1 + 1, y1 + 1, skiptext);
 
-draw_set_color(skipcolor);
-draw_text(xskip, yskip, skiptext);
-draw_set_alpha(1);
+//draw_set_color(skipcolor);
+//draw_text(xskip, yskip, skiptext);
+//draw_set_alpha(1);
 </string>
           </argument>
         </arguments>
