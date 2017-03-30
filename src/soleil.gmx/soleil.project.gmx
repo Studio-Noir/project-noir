@@ -251,6 +251,7 @@
           </objects>
         </objects>
         <object>objects\obj_convo_mm_1</object>
+        <object>objects\obj_convo_1_1</object>
       </objects>
     </objects>
     <objects name="Enemy(Dover)">
