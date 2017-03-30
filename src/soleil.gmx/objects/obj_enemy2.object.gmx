@@ -559,13 +559,15 @@ instance_create(0, 0, obj_fadeout);
           <argument>
             <kind>1</kind>
             <string>/// Dark world outlining
-draw_self();
 if (light_or_dark == 0) {
-    draw_sprite_ext(sprite_index, -1, x - 2, y, image_xscale, image_yscale, 0, c_white, 1);
-    draw_sprite_ext(sprite_index, -1, x + 2, y, image_xscale, image_yscale, 0, c_white, 1);
-    draw_sprite_ext(sprite_index, -1, x, y - 2, image_xscale, image_yscale, 0, c_white, 1);
-    draw_sprite_ext(sprite_index, -1, x, y + 2, image_xscale, image_yscale, 0, c_white, 1);
+    d3d_set_fog(true,c_gray,0,0);
+    draw_sprite_ext(sprite_index, -1, x - 1, y, image_xscale, image_yscale, 0, c_white, 1);
+    draw_sprite_ext(sprite_index, -1, x + 1, y, image_xscale, image_yscale, 0, c_white, 1);
+    draw_sprite_ext(sprite_index, -1, x, y - 1, image_xscale, image_yscale, 0, c_white, 1);
+    draw_sprite_ext(sprite_index, -1, x, y + 1, image_xscale, image_yscale, 0, c_white, 1);
+    d3d_set_fog(false,c_gray,0,0);
 }
+draw_self();
 </string>
           </argument>
         </arguments>
