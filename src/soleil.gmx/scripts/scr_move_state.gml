@@ -134,8 +134,12 @@ if (light_or_dark == 1) {
 } else {
     dir = -1;
 }
-
-if (key_up || key_down) {
+//Holding up while moving horizontally should result in you climbing the ladder,
+//Unless the player has just used their horizontal movement to exit the ladder state
+if(move == 0 || !place_meeting(x + 30 * dir, y, par_ladder)){
+    just_left_ladder = false;
+}
+if ((key_up || key_down) && just_left_ladder == false) {
     if (place_meeting(x + 30 * dir, y, par_ladder) && place_meeting(x + 30 * dir, y - 150, par_ladder)) {
         ladder = true;
         if (global.bear_present) {

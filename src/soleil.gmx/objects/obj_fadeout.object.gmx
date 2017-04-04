@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.fade = 1;
+            <string>//This is the variable that determines the speed at which the screen fades out.
+//Used to be set to 1 for the beta, now slowed down based on feedback.
+//This is the current level of visibility of the sprite, ranging from 0 to 1.
 global.a = 0;
 
 </string>

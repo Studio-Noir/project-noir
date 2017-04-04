@@ -591,7 +591,9 @@ x+=h_speed
           <argument>
             <kind>1</kind>
             <string>/// Fadeout logic
-instance_create(0, 0, obj_fadeout);
+if(!instance_exists(obj_fadeout)){
+    instance_create(0, 0, obj_fadeout);
+}
 
 </string>
           </argument>

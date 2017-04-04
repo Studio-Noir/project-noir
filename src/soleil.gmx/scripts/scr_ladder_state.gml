@@ -78,16 +78,22 @@ if(orb_cooldown <= 0){
     }
 }
 
-if ((movement != 0 && place_meeting(x, y-10, obj_inv_blc)) || (key_jump && movement != 0)) {     
-    speed_vertical = -13;//-speed_jump;//key_jump * -speed_jump; 
+if ((movement != 0 && place_meeting(x, y-10, obj_inv_blc)) || (key_jump/* && movement != 0*/)) {     
+    if(key_jump){
+        speed_vertical = /*-13;*/-speed_jump;//key_jump * -speed_jump; 
+    }else{
+        speed_vertical = -8;
+    }
     speed_horizontal = movement * 10;
     sprite_state = STATE_JUMP;
     ladder = false;
+    just_left_ladder = true;
     state = scr_move_state;
-} else if (movement != 0 && place_meeting(x, y + 50, obj_ground)) {
+} else if (movement != 0 && place_meeting(x, y + 50, obj_ground) && key_up == false) {
     speed_horizontal = movement * 10;
     sprite_state = STATE_WALK;
     ladder = false;
+    //just_left_ladder = false;
     state = scr_move_state;
 }
   
@@ -98,15 +104,19 @@ if (light_or_dark == 1) {
 }
 
 with (instance_nearest(x, y, par_ladder)) {
-    other.x = x + 46 * other.dir;
+    other.x = x + /*46*/32 * other.dir;
     other.image_xscale = other.dir;
 }
 
 if (ladder) {
+    just_left_ladder = false;
     if (key_up && !place_meeting(x, y-1, obj_ground) && !place_meeting(x,y-10,obj_inv_blc)){ speed_vertical = -5; } 
     if (key_down && !place_meeting(x, y+1, obj_ground)) { speed_vertical = 5; }
     if (!place_meeting(x, y, par_ladder)) { ladder = false; }
-    if (key_down && place_meeting(x, y+1, obj_ground)) { state = scr_move_state; }
+    if (key_down && place_meeting(x, y+1, obj_ground)) {
+        just_left_ladder = false;
+        state = scr_move_state;
+    }
     if (speed_vertical != 0) {
         if (global.bear_present) {
             sprite_index = spr_char_ladder;

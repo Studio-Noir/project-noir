@@ -35,6 +35,7 @@ speed_jump = 12;
 speed_move = 6;
 speed_climb = 6;
 direction_horizontal = 1;
+just_left_ladder = false;
 
 /* Object interactions */
 ladder = false;
