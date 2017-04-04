@@ -25,6 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>global.fade = 0.1;
 global.a = 0;
 
 </string>
