@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 350;
-yvar = 100;
+xvar = 200;
+yvar = 540;
 color = c_black;
 text = 'Trying to reassure Soleil, Teddy replies, "We must hurry back to wake them up! Hurry! Hurry! Run faster!"';
 </string>

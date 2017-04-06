@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 800;
-yvar = 80;
+xvar = 530;
+yvar = 530;
 color = c_black;
 text = "Soleil quiets down, nods and flees into the forest. #In the distance, she sees several dark, large, #and scary creatures crawling towards her. #Taking comfort in Teddy, Soleil musters #up the confidence to confront these #creatures to progress forward.";
 </string>

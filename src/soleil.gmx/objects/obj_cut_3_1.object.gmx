@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 800;
-yvar = 80;
+xvar = 545;
+yvar = 540;
 color = c_black;
 text = "Soleil's father uses his necklace #to throw light orbs to stall #the Dark from reaching Soleil.";
 </string>

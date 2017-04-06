@@ -61,7 +61,6 @@
     <instance objName="obj_hill_up" x="2400" y="750" name="inst_5CDA25DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="2464" y="755" name="inst_33DFE2B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="2528" y="755" name="inst_41ABFE13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_orb_pickup" x="2496" y="685" name="inst_F3B840C1" locked="0" code="" scaleX="1.60000002384186" scaleY="1.60000002384186" colour="4294967295" rotation="0"/>
     <instance objName="obj_hill_up" x="3200" y="815" name="inst_B1E099ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="3264" y="815" name="inst_223EB785" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ground" x="3328" y="815" name="inst_AB610AD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

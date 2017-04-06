@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 950;
-yvar = 80;
+xvar = 560;
+yvar = 560;
 color = c_black;
 text = "As the dark begins to creep #through the door crack," + "#Soleil's father exclaims," + '#"Soleil! Get to the back door!' + '# Do not come near us!"';
 </string>

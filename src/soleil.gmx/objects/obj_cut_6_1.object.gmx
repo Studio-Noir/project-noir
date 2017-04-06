@@ -25,11 +25,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Text for drawing font
-xvar = 200;
-yvar = 100;
-color = c_black;
-text = '"What did I just see? Why are they just lying there? Mom? Dad?" questions Soleil. She shivers as she begins to worry about her parents.';
+            <string>/// Setup variables for use by par_cutscene
+time = 300;
+next_room = false;
+next_instance = obj_cut_6_2;
+
+alarm[10] = time;
+fading = 0;
+
+// Setup destruction variables
+build_next_instance = 1;
+
+// Setup fadein on entry
+fadein = 1;
+image_alpha = 0;
 </string>
           </argument>
         </arguments>
@@ -50,20 +59,11 @@ text = '"What did I just see? Why are they just lying there? Mom? Dad?" question
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Setup variables for use by par_cutscene
-time = 300;
-next_room = false;
-next_instance = obj_cut_6_2;
-
-alarm[10] = time;
-fading = 0;
-
-// Setup destruction variables
-build_next_instance = 1;
-
-// Setup fadein on entry
-fadein = 1;
-image_alpha = 0;
+            <string>/// Text for drawing font
+xvar = 50;
+yvar = 540;
+color = c_black;
+text = '"What did I just see? Why are they just lying there? Mom? Dad?" questions Soleil. She shivers as she begins to worry about her parents.';
 </string>
           </argument>
         </arguments>

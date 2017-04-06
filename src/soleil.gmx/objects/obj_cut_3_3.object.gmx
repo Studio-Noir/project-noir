@@ -60,8 +60,8 @@ image_alpha = 0;
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 800;
-yvar = 70;
+xvar = 520;
+yvar = 540;
 color = c_black;
 text = "As the Dark flees from the burst of light,#the Dark conceals itself in various objects in #the house. However, the Dark continues to #creep through the door crack.";
 </string>

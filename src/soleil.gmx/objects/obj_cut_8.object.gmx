@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 100;
-yvar = 80;
+xvar = 530;
+yvar = 530;
 color = c_black;
 text = "As the Dark emerges out of Teddy, the grass and trees #surrounding him perish. Out of the barren black #darkness, creatures spawn, crawling towards Soleil. #Not being able to wake up her parents, Soleil lures #the dark creatures and Teddy out of the house #to keep her parents safe.";
 </string>

@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 850;
-yvar = 80;
+xvar = 535;
+yvar = 550;
 color = c_black;
 text = "The house is completely consumed #by the Dark and begins to #creep towards Soleil.";
 </string>

@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 150;
-yvar = 100;
+xvar = 10;
+yvar = 540;
 color = c_black;
 text = 'Seeing Soleil in distress, Teddy urges, "We need to go through the portal. We can wake them up with the necklace." At first, Soleil is hesitant of the #unknown; however, as Soleil looks into Teddy’s eyes, she becomes more confident and less frightened. Soleil nods and enters the portal with him.';
 </string>

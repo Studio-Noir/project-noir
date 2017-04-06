@@ -60,8 +60,8 @@ image_alpha = 0;
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 200;
-yvar = 80;
+xvar = 510;
+yvar = 540;
 color = c_black;
 text = '"No... Thank you..." Teddy whispered.';
 </string>

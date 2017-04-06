@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 850;
-yvar = 150;
+xvar = 520;
+yvar = 540;
 color = c_black;
 text = "Soleil's mother picks up the necklace and places #it around Soleil's neck and tells her," + '#"I love you Soleil. Run! We will be fine!"';
 </string>

@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 400;
-yvar = 100;
+xvar = 200;
+yvar = 540;
 color = c_black;
 text = "  ";
 </string>

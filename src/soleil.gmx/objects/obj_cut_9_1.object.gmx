@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 100;
-yvar = 80;
+xvar = 530;
+yvar = 530;
 color = c_black;
 text = 'Having briefly seen her parents strengthens Soleil #to confront the Dark.“No, you are not Teddy #and I’m not scared of you.” “The real #Teddy has taught me everything I need #to know to defeat you, and I will save #my parents!” responds Soleil confidently."';
 </string>
