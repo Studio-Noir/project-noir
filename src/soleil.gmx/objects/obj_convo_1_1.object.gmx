@@ -29,7 +29,7 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
-text = "With her necklace, Soleil can protect herself from evil. #Hold X to throw orbs.";
+text = "With her necklace, Soleil can protect herself from The Dark. #Hold X to throw orbs.";
 color = c_black;
 
 /// Constants

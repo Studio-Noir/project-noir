@@ -60,10 +60,10 @@ image_alpha = 0;
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 520;
+xvar = 145;
 yvar = 540;
 color = c_black;
-text = "However, the dark overwhelms Soleil's father #and cracks a chip off the necklace causing #an explosion of light from the necklace.";
+text = "However, the dark overwhelms Soleil's father and cracks a chip off the necklace, #causing an explosion of light from the necklace.";
 
 </string>
           </argument>

@@ -60,10 +60,10 @@ image_alpha = 0;
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 535;
+xvar = 145;
 yvar = 550;
 color = c_black;
-text = '"They are going to be alright. #Trust in them and keep running." #comforts Teddy.';
+text = '"They are going to be alright. Trust in them and keep running." comforts Teddy.';
 </string>
           </argument>
         </arguments>

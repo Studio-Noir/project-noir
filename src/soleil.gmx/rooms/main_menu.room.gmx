@@ -468,7 +468,7 @@
     <instance objName="obj_ladder" x="1776" y="230" name="inst_FDEF134D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inv_blc" x="1744" y="105" name="inst_7E9EE535" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_backgroundmusiclight" x="32" y="0" name="inst_69C50413" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_convo_mm_1" x="320" y="320" name="inst_AE8F7339" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_convo_mm_1" x="112" y="330" name="inst_AE8F7339" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_next" x="1472" y="340" name="inst_4B1620D5" locked="0" code="" scaleX="-8.8100004196167" scaleY="14.8400001525879" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

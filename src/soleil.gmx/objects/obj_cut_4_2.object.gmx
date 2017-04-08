@@ -26,10 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 520;
+xvar = 145;
 yvar = 540;
 color = c_black;
-text = "Soleil's mother picks up the necklace and places #it around Soleil's neck and tells her," + '#"I love you Soleil. Run! We will be fine!"';
+text = "Soleil's mother picks up the necklace and places it around Soleil's neck and tells her," + '#"I love you Soleil. You need to run, now!"';
 </string>
           </argument>
         </arguments>
@@ -53,7 +53,7 @@ text = "Soleil's mother picks up the necklace and places #it around Soleil's nec
             <string>/// Setup variables for use by par_cutscene
 time = 300;
 next_room = false;
-next_instance = obj_cut_5_1;
+next_instance = obj_cut_4_3;
 fadein = 1;
 
 alarm[10] = time;

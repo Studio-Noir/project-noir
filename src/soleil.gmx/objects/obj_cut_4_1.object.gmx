@@ -26,10 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 520;
+xvar = 145;
 yvar = 540;
 color = c_black;
-text = "The Dark quickly overwhelms Soleil's father.#He is consumed by the Dark and the #necklace falls to the ground.";
+text = "The Dark quickly overwhelms Soleil's father. #He is consumed by the Dark and the necklace falls to the ground.";
 </string>
           </argument>
         </arguments>
