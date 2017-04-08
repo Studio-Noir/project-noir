@@ -29,6 +29,7 @@
 /// Variables for text - change this to change the text box.
 xvar = x;
 yvar = y;
+text = "Once upon a time, there was a young girl named Soleil who lived #in a forest with her mom, her dad, and her best friend Teddy. ##For generations, a malicious force known as “The Dark” has been #slowly consuming the world of light. The moment #someone was captured by The Dark, they would fall into #an eternal sleep, never to be seen again.";
 color = c_black;
 
 /// Constants
