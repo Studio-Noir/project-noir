@@ -60,7 +60,7 @@ image_alpha = 0;
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 145;
+xvar = 50;
 yvar = 540;
 color = c_black;
 text = '"What did I just see? Why are they just lying there? Mom? Dad?" questions Soleil. She shivers as she begins to worry about her parents.';

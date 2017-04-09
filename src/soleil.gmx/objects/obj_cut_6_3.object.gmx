@@ -29,7 +29,7 @@
 xvar = 145;
 yvar = 540;
 color = c_black;
-text = "After entering the portal, the light disappears and Soleil's surroundings fade to black. The trees and #plants become barren and the bird’s chirping slowly disappears as all the life is drained around her.";
+text = "After entering the portal, the light disappears and Soleil's surroundings fade to black. #The trees and plants become barren and the bird’s chirping slowly disappears #as all the life is drained around her.";
 </string>
           </argument>
         </arguments>

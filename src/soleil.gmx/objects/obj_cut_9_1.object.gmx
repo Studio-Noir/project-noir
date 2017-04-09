@@ -26,10 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 530;
+xvar = 145;
 yvar = 530;
 color = c_black;
-text = 'Having briefly seen her parents strengthens Soleil #to confront the Dark.“No, you are not Teddy #and I’m not scared of you.” “The real #Teddy has taught me everything I need #to know to defeat you, and I will save #my parents!” responds Soleil confidently."';
+text = 'Soleil’s desperation in protecting her parents strengthens her to confront the Dark. #“No, you’re wrong. I’m not scared of you, and I won’t let you hurt my family!” responds Soleil confidently."';
 </string>
           </argument>
         </arguments>

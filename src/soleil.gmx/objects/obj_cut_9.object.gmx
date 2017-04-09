@@ -26,10 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 530;
+xvar = 145;
 yvar = 530;
 color = c_black;
-text = '"Foolish child, you really believe that #you can defeat me on your own? I am #the reason you even made it this far! #You are nothing without me." #Teddy laughs.';
+text = '"Foolish child, you really believe that you can defeat me on your own? #I am the reason you even made it this far! You are nothing without me." Teddy laughs.';
 </string>
           </argument>
         </arguments>
