@@ -28,11 +28,11 @@
             <string>/// Initialize Variables
 
 /* Initialise basic physics */
-physics_gravity = 0.8; /* ref. gravity */
+physics_gravity = 0.3; /* ref. gravity */
 speed_horizontal = 0; /* ref. hspeed */
 speed_vertical = 0;  /* ref. vspeed */
-speed_jump = 12;
-speed_move = 6;
+speed_jump = 9;
+speed_move = 4;
 speed_climb = 6;
 direction_horizontal = 1;
 just_left_ladder = false;
@@ -168,22 +168,7 @@ script_execute(state);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Play enemy sounds depending on how close they are to Soleil
-if (distance_to_object(obj_enemy1) &lt; 800 || distance_to_object(obj_enemy2) &lt; 800) {
-    if (!audio_is_playing(snd_enemy)) {
-        audio_play_sound(snd_enemy, 1, false);
-        audio_play_sound(snd_enemy, 1, false);
-        audio_play_sound(snd_enemy, 1, false);
-    }
-    if (distance_to_object(obj_enemy1) &lt; distance_to_object(obj_enemy2)) {
-        vol = 1 - (distance_to_object(obj_enemy1) / 400);
-    } else {
-        vol = 1 - (distance_to_object(obj_enemy2) / 400);
-    }
-    sound_volume(snd_enemy, vol);
-} else {
-    audio_stop_sound(snd_enemy);
-}
+            <string>script_execute(state);
 </string>
           </argument>
         </arguments>
