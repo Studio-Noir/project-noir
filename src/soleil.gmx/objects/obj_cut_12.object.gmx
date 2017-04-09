@@ -26,10 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 100;
-yvar = 100;
+xvar = 145;
+yvar = 540;
 color = c_black;
-text = "Light emerges from the house towards the forest, bringing life #to everything that was once consumed by darkness. The trees #and plants flourish and the bird's chirping returns as the world #is restored.";
+text = "Light emerges from the house towards the forest, bringing life to everything that was once consumed by darkness. #The trees and plants flourish and the bird's chirping returns as the world is restored.";
 </string>
           </argument>
         </arguments>

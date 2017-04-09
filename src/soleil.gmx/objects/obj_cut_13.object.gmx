@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>/// Text for drawing font
-xvar = 100;
-yvar = 100;
+xvar = 145;
+yvar = 540;
 color = c_black;
 text = "Soleil sees her parents'" + ' eyes open while crying a joyful tear. #"I missed you." cries Soleil.';
 </string>
@@ -53,7 +53,7 @@ text = "Soleil sees her parents'" + ' eyes open while crying a joyful tear. #"I 
             <string>/// Setup variables for use by par_cutscene
 time = 200;
 next_room = false;
-next_instance = obj_cut_13_2 ;
+next_instance = obj_cut_13_2;
 
 alarm[10] = time;
 fading = 0;
