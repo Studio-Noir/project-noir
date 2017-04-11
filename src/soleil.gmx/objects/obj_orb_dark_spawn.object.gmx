@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>//Initialize variables
+light_size = 128; //Maximum size of dark glow
 descend_speed = 2;
 enemy_to_spawn = irandom_range(1, 2);
 touched_ground = false;
@@ -234,6 +235,7 @@ randomize();
     draw_set_blend_mode(bm_add);
     surface_set_target(light_overlay);
     draw_set_alpha(1 - elapsed_time_scaled);
+    draw_ellipse_color(x - light_size*elapsed_time_scaled - view_xview, y - light_size*elapsed_time_scaled - view_yview, x + light_size*elapsed_time_scaled - view_xview, y + light_size*elapsed_time_scaled - view_yview, c_red, c_black, false);
     draw_set_alpha(1);
     surface_reset_target();
     draw_set_blend_mode(bm_normal);
