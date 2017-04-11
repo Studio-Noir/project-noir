@@ -520,7 +520,7 @@ stun = 1
           <argument>
             <kind>1</kind>
             <string>/// Fadeout logic
-if(!instance_exists(obj_fadeout)){
+if(!instance_exists(obj_fadeout) &amp;&amp; !instance_exists(obj_fadeout_boss)){
     instance_create(0, 0, obj_fadeout);
 }
 

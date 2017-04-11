@@ -93,11 +93,26 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>BOSS_STATE = 1;
+            <string>///Initialize variables
+BOSS_STATE = 1;
 GLOW_STATE = 0;
 glow_width = 300;
 ATTACK_STATE = 0;
 attack_alarm = 0;
+invulnerable = false;
+//Set warp destinations for boss movement
+//These only decide movement on the x axis
+warp_points[0] = x;//1472;
+warp_points[1] = 448;
+warp_points[2] = 1510;
+warp_points[3] = 2688;
+//Set spawn points for enemies
+spawn_y = 352;
+spawns_platforms[0] = 2560;//[2560, 352];
+spawns_platforms[1] = 1984;//[1984, 288];
+spawns_platforms[2] = 672;//[672, 352];
+//spawns_platforms[3] = [352, 320];
+
 </string>
           </argument>
         </arguments>
@@ -127,6 +142,103 @@ attack_alarm = 0;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Warp to different points on the x-axis
+if(BOSS_STATE &gt; 1 &amp;&amp; BOSS_STATE &lt; 4) {
+    warped = false;
+    i = 0;
+    next_point = x;
+    //Loop through array of predefined values of x to jump to
+    //When the current one is found, jump to the next one in the list
+    //If not found, jump to the second one in the list
+    while(warped == false){
+        if(x == warp_points[i]){
+            if(i+1 &gt;= array_length_1d(warp_points)){
+                next_point = warp_points[0];
+            }else{
+                next_point = warp_points[i+1];
+            }
+            warped = true;
+        }else{
+            if(i+1 &gt;= array_length_1d(warp_points)){
+                //Not found: escape loop by defaulting to some position
+                next_point = warp_points[1];
+                warped = true;
+            }
+        }
+        i++;
+    }
+    x = next_point;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>301</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_alarm</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>90</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>4</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///End invulnerability period
+invulnerable = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="2">
       <action>
         <libid>1</libid>
@@ -144,7 +256,8 @@ attack_alarm = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ATTACK_STATE = 1;
+            <string>///Set attack timing based on health state
+ATTACK_STATE = 1;
 switch (BOSS_STATE) {
     case 1: 
         alarm[2] = 90;
@@ -302,7 +415,7 @@ if (ATTACK_STATE == 0) {
             sprite_index = spr_boss_3_attack;
             break;
     }
-    if (attack_alarm == 1) {
+    if (attack_alarm == 29) {
         instance_create(x, y, obj_dark_orb_boss);
     } else if (attack_alarm == 30) {
         ATTACK_STATE = 0;
@@ -345,11 +458,45 @@ if (ATTACK_STATE == 0) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>BOSS_STATE += 1;
-if (BOSS_STATE &gt;= 4) {
-    instance_create(0, 0, obj_fadeout_boss);
+            <string>///If not invulnerable, take damage and either spawn enemies or fade out
+if(invulnerable == false){
+    BOSS_STATE += 1;
+    if(BOSS_STATE == 2){
+        //Spawn enemies (crawlers) on ground and start warping horizontally
+        for(i=0; i&lt;8; i++){
+            inst = instance_create(i*420, 650, obj_orb_dark_spawn);
+            inst.enemy_to_spawn = 1;
+        }
+        //Start moving the boss around
+        alarm[4] = 50;
+    }
+    if(BOSS_STATE == 3){
+        //Spawn enemies on platforms and some chasers on the ground.
+        //Continue to spawn enemies on the ground
+        //Playtest to make sure this isn't unbeatable, or difficult in an unfair manner
+        //Random enemies on platforms
+        inst = instance_create(2560, 352, obj_orb_dark_spawn);
+        //inst.enemy_to_spawn = 1;
+        inst = instance_create(1984, 288, obj_orb_dark_spawn);
+        //inst.enemy_to_spawn = 1;
+        inst = instance_create(672, 352, obj_orb_dark_spawn);
+        //inst.enemy_to_spawn = 1;
+        //inst = instance_create(352, 320, obj_orb_dark_spawn);
+        //inst.enemy_to_spawn = 1;
+        //Chasers on the right to encourage players to move left
+        inst = instance_create(2848, 650, obj_orb_dark_spawn);
+        inst.enemy_to_spawn = 2;
+        inst = instance_create(2400, 650, obj_orb_dark_spawn);
+        inst.enemy_to_spawn = 2;
+    }
+    if (BOSS_STATE &gt;= 4) {
+        instance_create(0, 0, obj_fadeout_boss);
+    }
+    GLOW_STATE = 1;
+    //Start invulnerability timer
+    invulnerable = true;
+    alarm[3] = 120;
 }
-GLOW_STATE = 1;
 </string>
           </argument>
         </arguments>
@@ -387,7 +534,7 @@ GLOW_STATE = 1;
           <argument>
             <kind>1</kind>
             <string>/// Fadeout logic
-if(!instance_exists(obj_fadeout)){
+if(!instance_exists(obj_fadeout) &amp;&amp; !instance_exists(obj_fadeout_boss)){
     instance_create(0, 0, obj_fadeout);
 }
 
@@ -427,22 +574,63 @@ if(!instance_exists(obj_fadeout)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (GLOW_STATE) {
+            <string>///Glow on hit and while invulnerable
+
+//Glow to indicate where Boss will warp to next
+if(alarm[4]&gt;0){
+    draw_set_blend_mode(bm_add);
+    draw_set_alpha(1);
+    next_point = 0;
+    i = 0;
+    while(next_point = 0){
+        if(warp_points[i] == x){
+            if(i+1 &gt;= array_length_1d(warp_points)){
+                next_point = warp_points[0];
+            }else{
+                next_point = warp_points[i+1];
+            }
+        }
+        i++;
+    }
+    nglow_width = /*(sprite_width*0.6)*/200*(1-(alarm[4]/120));
+    nglow_color = c_red;
+    draw_ellipse_color(next_point-nglow_width, y-nglow_width, next_point + nglow_width, y + nglow_width, nglow_color, c_black, false);
+    draw_set_blend_mode(bm_normal);
+    draw_set_alpha(1);
+}
+
+//Draw glow, then draw self over it
+if (GLOW_STATE) {
     glow_width += 15;
 } else if (glow_width &gt; 300) {
     glow_width -= 15;
 }
 if (GLOW_STATE || glow_width != 300) {
     draw_set_blend_mode(bm_add);
-    draw_ellipse_color(x-glow_width, y-glow_width, x + glow_width, y + glow_width, c_red, c_black, false);
+    glow_color = c_red;
+    if(invulnerable == false){
+        glow_color = c_red;
+    }
+    draw_ellipse_color(x-glow_width, y-glow_width, x + glow_width, y + glow_width, glow_color, c_black, false);
     draw_set_blend_mode(bm_normal);
     if (glow_width &gt; 500) {
         GLOW_STATE = 0;
     }
-}
+}//else{
+    
+//}
 draw_self();
    
-
+//Glow to indicate invulnerability
+if(invulnerable){
+    draw_set_blend_mode(bm_add);
+    draw_set_alpha(0.5);
+    iglow_width = sprite_height;
+    iglow_color = c_gray;
+    draw_ellipse_color(x-iglow_width, y-iglow_width, x + iglow_width, y + iglow_width, iglow_color, c_black, false);
+    draw_set_blend_mode(bm_normal);
+    draw_set_alpha(1);
+}
 </string>
           </argument>
         </arguments>

@@ -136,7 +136,7 @@ is_collide_ground = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!instance_exists(obj_fadeout)){
+            <string>if(!instance_exists(obj_fadeout) &amp;&amp; !instance_exists(obj_fadeout_boss)){
     instance_create(0, 0, obj_fadeout);
 }
 </string>
