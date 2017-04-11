@@ -462,6 +462,7 @@ if (ATTACK_STATE == 0) {
 if(invulnerable == false){
     BOSS_STATE += 1;
     if(BOSS_STATE == 2){
+        audio_play_sound(snd_boss_damage,0,0);
         //Spawn enemies (crawlers) on ground and start warping horizontally
         for(i=0; i&lt;8; i++){
             inst = instance_create(i*420, 650, obj_orb_dark_spawn);
@@ -471,6 +472,7 @@ if(invulnerable == false){
         alarm[4] = 50;
     }
     if(BOSS_STATE == 3){
+        audio_play_sound(snd_boss_damage,0,0);
         //Spawn enemies on platforms and some chasers on the ground.
         //Continue to spawn enemies on the ground
         //Playtest to make sure this isn't unbeatable, or difficult in an unfair manner
@@ -490,6 +492,11 @@ if(invulnerable == false){
         inst.enemy_to_spawn = 2;
     }
     if (BOSS_STATE &gt;= 4) {
+        //Stop background music. Play death sound. Fade out.
+        audio_play_sound(snd_boss_death_sound,0,0);
+        if(audio_is_playing(snd_backgroundboss)){
+            audio_stop_sound(snd_backgroundboss);
+        }
         instance_create(0, 0, obj_fadeout_boss);
     }
     GLOW_STATE = 1;

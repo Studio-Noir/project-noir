@@ -458,7 +458,10 @@ if (abs(x-obj_char.x)&gt;=2 or abs(y-obj_char.y)&lt;100)
           <argument>
             <kind>1</kind>
             <string>///Stunned
-stun = 1
+if(stun == 0){
+    audio_play_sound(snd_impact, 0, 0);
+}
+stun = 1;
 </string>
           </argument>
         </arguments>

@@ -12,7 +12,10 @@
     <sound>sound\snd_vine</sound>
     <sound>sound\snd_death</sound>
     <sound>sound\snd_lightorb</sound>
+    <sound>sound\snd_impact</sound>
     <sound>sound\snd_dark</sound>
+    <sound>sound\snd_boss_death_sound</sound>
+    <sound>sound\snd_boss_damage</sound>
     <sound>sound\snd_background1</sound>
     <sound>sound\snd_background2</sound>
     <sound>sound\snd_forest_light</sound>

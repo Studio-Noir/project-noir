@@ -450,8 +450,11 @@ image_xscale=-sign(self.h_speed)*image_yscale
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///stunned
-stun = 1
+            <string>///Stunned
+if(stun == 0){
+    audio_play_sound(snd_impact, 0, 0);
+}
+stun = 1;
 </string>
           </argument>
         </arguments>
