@@ -525,6 +525,7 @@ stun = 1;
             <string>/// Fadeout logic
 if(!instance_exists(obj_fadeout) &amp;&amp; !instance_exists(obj_fadeout_boss)){
     instance_create(0, 0, obj_fadeout);
+    audio_play_sound(snd_death, 0, 0);
 }
 
 </string>
